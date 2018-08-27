@@ -27,6 +27,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "openshift"
+    "imageid": "java"
   }
 }
