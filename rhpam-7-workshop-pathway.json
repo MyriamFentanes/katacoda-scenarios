@@ -1,0 +1,11 @@
+{
+  "title": "Red Hat Process Automation Manager 7 workshop",
+  "icon": "fa-openshift",
+  "courses": [
+    {
+      "external_link": "https://learn.openshift.com/rhpam-7-workshop/installation-scenario/",
+      "course_id": "installation scenario",
+      "title": "Installing Red Hat Process Automation Manager 7"
+    }
+  ]
+}
