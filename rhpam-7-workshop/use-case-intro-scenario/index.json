@@ -2,24 +2,16 @@
     "title": "Launch Kubernetes Cluster",
     "description": "Learn how to launch a Kubernetes cluster including DNS and Kube UI",
     "difficulty": "beginner",
-    "time": "45-60 minutes",
+    "time": "10-15 minutes",
     "details": {
         "steps": [
             {
-                "title": "Understanding the components and installation methods",
-                "text": "components-overview.md"
+                "title": "Step 1 - Etcd",
+                "text": "step1.md"
             },
             {
-                "title": "Cloud installation",
-                "text": "cloud-installation.md"
-            },
-            {
-                "title": "Verifying the installation",
-                "text": "verifying-installation.md"
-            },
-            {
-                "title": "Security of the platform console",
-                "text": "authentication-authorization.md"
+                "title": "Step 2 - API Server",
+                "text": "step2.md"
             }
         ],
         "intro": {

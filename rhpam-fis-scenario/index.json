@@ -1,0 +1,70 @@
+{
+    "title": "Create your first FIS process driven application",
+    "description": "Learn how to create from scratch your first process driven app",
+    "difficulty": "intermediate",
+    "time": "2 hours",
+    "details": {
+        "steps": [
+            {
+                "title": "Setting up your environment",
+                "text": "step1.md"
+            },
+            {
+                "title": "Creating your space and project",
+                "text": "step2.md"
+            }, {
+                "title": "Case Management modeling introduction",
+                "text": "step3.md"
+            }, {
+                "title": "Authoring your CC Dispute process",
+                "text": "step4.md"
+            }, {
+                "title": "Deploying a process service",
+                "text": "step5.md"
+            },
+            {
+                "title": "CI/CD pipelines for process driven apps",
+                "text": "step6.md"
+            },
+            {
+                "title": "API's interacting with the process",
+                "text": "step7.md"
+            },
+            {
+                "title": "Tasks, SLA, and rules based assignment",
+                "text": "step8.md"
+            },
+            {
+                "title": "Adding notifications",
+                "text": "step9.md"
+            },
+            {
+                "title": "Dashboards and monitoring",
+                "text": "step10.md"
+            },
+            {
+                "title": "Adding the UI",
+                "text": "step11.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "courseBase.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "files": [
+        "app.js"
+    ],
+    "environment": {
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    },
+    "backend": {
+        "port": 8080,
+        "imageid": "openshift-middleware"
+    }
+}
