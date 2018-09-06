@@ -6,6 +6,11 @@
       "external_link": "https://learn.openshift.com/rhpam-7-workshop/installation-scenario/",
       "course_id": "installation-scenario",
       "title": "Installing Red Hat Process Automation Manager 7"
+    },
+    {
+      "external_link": "https://learn.openshift.com/rhpam-7-workshop/use-case-intro-scenario/",
+      "course_id": "use-case-intro-scenario",
+      "title": "Installing Red Hat Process Automation Manager 7"
     }
   ]
 }
