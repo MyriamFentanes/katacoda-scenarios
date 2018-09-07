@@ -41,14 +41,14 @@
         <counts>
           <entry key="json" value="1081" />
           <entry key="md" value="316" />
-          <entry key="sh" value="250" />
-          <entry key="txt" value="57" />
+          <entry key="sh" value="251" />
+          <entry key="txt" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="1081" />
-          <entry key="PLAIN_TEXT" value="623" />
+          <entry key="PLAIN_TEXT" value="653" />
         </counts>
       </usages-collector>
     </session>
@@ -64,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/courseBase.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" column="179" selection-start-line="7" selection-start-column="179" selection-end-line="7" selection-end-column="179" />
             </state>
           </provider>
         </entry>
@@ -133,7 +133,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536362842016" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536363521383" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536251636540</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changing the template version">
+      <created>1536362863765</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536362863768</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -224,7 +231,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding the installation scenario" />
     <MESSAGE value="adding the scenario steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding the scenario steps" />
+    <MESSAGE value="changing the template version" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing the template version" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/installation-scenario/index.json">
@@ -322,7 +330,7 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/courseBase.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="179" selection-start-line="7" selection-start-column="179" selection-end-line="7" selection-end-column="179" />
         </state>
       </provider>
     </entry>
