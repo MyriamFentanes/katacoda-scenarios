@@ -35,8 +35,10 @@
         "app.js"
     ],
     "environment": {
-        "uilayout": "terminal",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+        "showdashboard": true,
+        "dashboards": [{"name": "Business Central", "port": 8080}],
+        "uilayout": "terminal-iframe",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nConnect to OCP using oc client`\u001b[m\r\n"
     },
     "backend": {
         "port": 8080,
