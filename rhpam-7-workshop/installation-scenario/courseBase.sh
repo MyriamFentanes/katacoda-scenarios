@@ -1,10 +1,11 @@
 #!/bin/bash
+ssh root@host01 'echo "Login into the secured RedHat registry." >> script.log'
+#ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/rhpam71-dev/rhpam71-image-streams.yaml -n openshift && break || sleep 2; done'
 ssh root@host01 'echo "Importing Red Hat Process Automation Manager 7 Image Streams into OpenShift." >> script.log'
-# Need to temporarily patch the ImageStreams file to point to tech-preview version.
-ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/rhpam71-dev/rhpam71-image-streams.yaml -n openshift && break || sleep 2; done'
+ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/7.1.x/rhpam71-image-streams.yaml -n openshift && break || sleep 2; done'
 ssh root@host01 'echo "Importing Red Hat Process Automation Manager 7 - Trial ephimeral template into OpenShift." >> script.log'
-ssh root@host01 'for i in {1..200}; do wget https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/rhpam71-dev/templates/rhpam71-trial-ephemeral.yaml && break || sleep 2; done'
-#ssh root@host01 'for i in {1..200}; do oc create -f rhdm70-full-no-persistence.yaml -n openshift && break || sleep 2; done'
+#ssh root@host01 'for i in {1..200}; do wget https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/rhpam71-dev/templates/rhpam71-trial-ephemeral.yaml && break || sleep 2; done'
+ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/7.1.x/templates/rhpam71-trial-ephemeral.yaml -n openshift && break || sleep 2; done'
 #ssh root@host01 'echo "Logging into OpenShift as developer." >> script.log'
 #ssh root@host01 'for i in {1..200}; do oc login -u developer -p developer && break || sleep 2; done'
 #ssh root@host01 'echo "Creating new loan-demo project in OpenShift." >> script.log'
