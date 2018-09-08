@@ -5,6 +5,6 @@ Note: Because of the limitations of the environment itself all of the topics reg
 
 More information can be found at http://docs.redhat.com
 
-Here's a diagram of what the final cluster will look like:
+
 
 
