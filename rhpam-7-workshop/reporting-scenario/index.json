@@ -7,7 +7,7 @@
   "details": {
     "steps": [
       { "title": "Opening the Business Central workbench", "text": "opening-business-central.md" },
-      { "title": "Create a Data Source", "text": "create-data-source.md" },
+      { "title": "Create a Data Source", "text": "create-data-source.md" }
     ],
     "intro": {
       "text": "intro.md",
