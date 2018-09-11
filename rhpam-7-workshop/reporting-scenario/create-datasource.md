@@ -1,14 +1,14 @@
-  Before we can build a reporting page, we first need to define and create a so called *DataSet* that will provide the data that our report(s) will render.
+Before we can build a reporting page, we first need to define and create a so called *DataSet* that will provide the data that our report(s) will render.
 
-  As mentioned in the introduction of this scenario, a DataSet in Process Automation Manager 7 can be based on various data providers, including Java Beans, CSV and SQL. In this example we will use a DataSet that uses the SQL provider.
+As mentioned in the introduction of this scenario, a DataSet in Process Automation Manager 7 can be based on various data providers, including Java Beans, CSV and SQL. In this example we will use a DataSet that uses the SQL provider.
 
-  For this scenario, we’ve prepared a database with car incident data in the USA. The database is a MariaDB database.
+For this scenario, we’ve prepared a database with car incident data in the USA. The database is a MariaDB database.
 
-  * Host: `opendigitalautomation.com`{{copy}}
-  * Port: `3306`{{copy}}
-  * User: `developer`{{copy}}
-  * Password: `developer`{{copy}}
-  * Database: `pam7-enablement`{{copy}}
+* Host: `opendigitalautomation.com`{{copy}}
+* Port: `3306`{{copy}}
+* User: `developer`{{copy}}
+* Password: `developer`{{copy}}
+* Database: `pam7-enablement`{{copy}}
 
 In Business Central, you can use this information to create a new DataSource.
 
