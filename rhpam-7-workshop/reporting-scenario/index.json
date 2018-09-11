@@ -7,14 +7,7 @@
   "details": {
     "steps": [
       { "title": "Opening the Business Central workbench", "text": "opening-business-central.md" },
-      { "title": "Creating a page", "text": "create-page.md" },
-      { "title": "The Data-Model", "text": "data-model.md" },
-      { "title": "Decision Table", "text": "decision-table.md" },
-      { "title": "Decision Table Wizard", "text": "decision-table-wizard.md" },
-      { "title": "Writing the Rules", "text": "writing-the-rules.md" },
-      { "title": "Stateless KIE-Session", "text": "stateless-kie-session.md" },
-      { "title": "Build and Deploy project", "text": "build-and-deploy.md" },
-      { "title": "Testing the Service", "text": "testing-the-service.md" }
+      { "title": "Create a Data Source", "text": "create-data-source.md" },
     ],
     "intro": {
       "text": "intro.md",
