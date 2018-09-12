@@ -13,7 +13,7 @@ A *DataSet* in Process Automation Manager 7 defines a set of data, consumed from
   * Schema: (leave empty)
   * Source: enable *Query* and use the following SQL Query:
 		`SELECT S.state_name, COUNT(I.incident_reason) as number_of_incidents FROM FACT_INCIDENTS as I INNER JOIN DIM_STATES as S ON I.state_id = S.state_id GROUP BY S.state_name ORDER BY number_of_incidents DESC LIMIT 10`{{copy}}
-6. Click on the *Test* button.
+6. Click on the *Test* button. This will execute the query and show a preview of the result.
 7. When the test is successful, click on the *Next* button and save the *Data Set*.
 
 The configured query counts the number of incidents per state and selects the top 10 states with the most incidents.

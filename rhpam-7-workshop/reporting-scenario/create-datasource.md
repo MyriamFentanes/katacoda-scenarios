@@ -2,7 +2,7 @@ Before we can build a reporting page, we first need to define and create a so ca
 
 As mentioned in the introduction of this scenario, a DataSet in Process Automation Manager 7 can be based on various data providers, including Java Beans, CSV and SQL. In this example we will use a DataSet that uses the SQL provider.
 
-For this scenario, we’ve prepared a database with car incident data in the USA. The database is a MariaDB database.
+For this scenario, we’ve prepared a database with car incident data in the USA. The database is a MariaDB relational database.
 
 * Host: `opendigitalautomation.com`{{copy}}
 * Port: `3306`{{copy}}
@@ -10,7 +10,7 @@ For this scenario, we’ve prepared a database with car incident data in the USA
 * Password: `developer`{{copy}}
 * Database: `pam7-enablement`{{copy}}
 
-In Business Central, you can use this information to create a new DataSource.
+In Business Central, you can use this information to create a new *DataSource* that we can later use in our *DataSet*.
 
 ---
 **NOTE**
