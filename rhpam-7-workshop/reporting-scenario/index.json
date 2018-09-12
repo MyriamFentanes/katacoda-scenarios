@@ -9,7 +9,7 @@
       { "title": "Opening the Business Central workbench", "text": "opening-business-central.md" },
       { "title": "Create a DataSource", "text": "create-datasource.md" },
       { "title": "Create a DataSet", "text": "create-dataset.md" },
-      { "title": "Create a Report", "text": "create-report.md" },
+      { "title": "Create a Report", "text": "create-report.md" }
     ],
     "intro": {
       "text": "intro.md",
