@@ -1,7 +1,8 @@
 The Red Hat Process Automation Manager 7 Business Central workbench is provided in this Katacoda image and is automatically loaded and started when this scenario is started. Please observe the output of the terminal to verify that the Workbench is available.
 
-It may take a while for the platform to be ready as we are spinning up the entire decision framework.
-When it is ready you will see the following message in the terminal:
+It may take a while for the platform to be ready as we are spinning up the Process Automation Manager Business Central workbench and Process Execution Server.
+
+When the environment is ready you will see the following message in the terminal:
 
 ```
 Waiting for the Red Hat Process Automation Manager workbench to become available
