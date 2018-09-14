@@ -1,0 +1,46 @@
+{
+  "title": "Creating Business Activity Monitoring (BAM) reports with the Process Automation Manager 7",
+  "description": "Learn how to create a pages and business reports on Red Hat Process Automation Manager 7.",
+  "pathwayTitle": "Red Hat Process Automation Manager and Decision Manager 7 workshop",
+  "difficulty": "beginner",
+  "time": "30-60 minutes",
+  "details": {
+    "steps": [
+      { "title": "Opening the Business Central workbench", "text": "opening-business-central.md" },
+      { "title": "Create a DataSource", "text": "create-datasource.md" },
+      { "title": "Create a DataSet", "text": "create-dataset.md" },
+      { "title": "Create a Report", "text": "create-report.md" },
+      { "title": "Add reporting page to the workbench", "text": "add-report-to-workbench.md" },
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh",
+      "courseData": "env-init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01" : [
+        {
+          "file": "init-scenario.sh",
+          "target": "~/.init/",
+          "chmod": "+x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name":"OpenShift Console","port":8443}],
+    "uilayout": "terminal",
+    "hideintro": false,
+    "hidefinish": false
+  },
+  "backend": {
+    "imageid": "openshift-middleware",
+    "port": 8443
+  },
+  "environmentsprotocol": "http",
+  "environmentsdomain": ".http-proxy.katacoda.com"
+}
