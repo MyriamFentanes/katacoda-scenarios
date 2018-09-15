@@ -1,10 +1,14 @@
 {
-    "title": "Launch Kubernetes Cluster",
-    "description": "Learn how to launch a Kubernetes cluster including DNS and Kube UI",
+    "title": "Introduction and Installation Scenario",
+    "description": "It's your first day at Pecunia Inc. a very large banking corporation. you need to understand the company policies and install your working environment to create a process driven application",
     "difficulty": "beginner",
-    "time": "45-60 minutes",
+    "time": "20 minutes",
     "details": {
         "steps": [
+            {
+                "title": "Use Case Introduction",
+                "text": "use-case-overview.md"
+            },
             {
                 "title": "Understanding the components and installation methods",
                 "text": "components-overview.md"

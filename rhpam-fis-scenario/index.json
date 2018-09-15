@@ -1,12 +1,12 @@
 {
-    "title": "Create your first FIS process driven application",
-    "description": "Learn how to create from scratch your first process driven app",
+    "title": "Credit Card Dispute introduction ",
+    "description": "In this scenario you will learn what are the requirements from the business.",
     "difficulty": "intermediate",
     "time": "2 hours",
     "details": {
         "steps": [
             {
-                "title": "Setting up your environment",
+                "title": "The business problem.",
                 "text": "step1.md"
             },
             {
