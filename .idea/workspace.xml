@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/middleware/rhpam-7-workshop/high-level-capability-compoponents.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md" afterDir="false" />
     </list>
@@ -16,7 +17,7 @@
     <session id="-1227685203">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -50,7 +51,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="1802" />
-          <entry key="md" value="4390" />
+          <entry key="md" value="5130" />
           <entry key="sh" value="377" />
           <entry key="txt" value="307" />
         </counts>
@@ -58,7 +59,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="1802" />
-          <entry key="Markdown" value="3441" />
+          <entry key="Markdown" value="4181" />
           <entry key="PLAIN_TEXT" value="1633" />
         </counts>
       </usages-collector>
@@ -82,8 +83,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="300">
-                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <first_editor relative-caret-position="390">
+                <caret line="26" column="148" selection-start-line="26" selection-start-column="148" selection-end-line="26" selection-end-column="148" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -177,14 +178,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/middleware/rhpam-7-workshop" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/middleware/rhpam-7-workshop" />
       <recent name="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario" />
       <recent name="$PROJECT_DIR$/rhpam-7-workshop/use-case-intro-scenario" />
       <recent name="$PROJECT_DIR$/rhpam-fis-scenario" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/middleware/rhpam-7-workshop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537881234450</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Creating the first step in the installation lab">
+      <created>1537889874273</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1537889874273</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -434,7 +442,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21916972" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -462,7 +469,7 @@
       <window_info anchor="right" id="Maven Projects" order="6" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21184371" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21916972" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -477,7 +484,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.28367347" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993895" visible="true" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -646,8 +653,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <first_editor relative-caret-position="390">
+            <caret line="26" column="148" selection-start-line="26" selection-start-column="148" selection-end-line="26" selection-end-column="148" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
