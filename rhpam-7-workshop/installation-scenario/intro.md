@@ -1,4 +1,6 @@
-*****THE BUSINESS BACKGROUND*****
+****THE BUSINESS BACKGROUND****
+-------------------------------
+
 
 
 
