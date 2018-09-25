@@ -74,6 +74,7 @@ Process a credit card dispute
 **Functional Solution:**
 
 Have a rule in the systmem that makes sure that everytime you get a transaction with an amount > 1000 it triggers a user task to review the dispute.
+
 **Non Functional:**
 
 Allow the user to change the amount.

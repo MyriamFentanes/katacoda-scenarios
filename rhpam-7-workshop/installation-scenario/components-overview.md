@@ -12,9 +12,13 @@ The following diagram depicts the main components of Red Hat Process Automation 
  -------------------------------------
 
        - Decision Management a lightweight rules execution engine.
+
        - Business Optimization an AI optimizer for use cases like resource allocation, route planning and scenarios that involve fonding the optimal solution given certain constarints.
+
        - Process Management a lightweight process execution engine.
+
        - Business Central Console Modern workbench that provides user the tooling to build processes, rules, cases, monitor and manage.
+
        - Application Builder a digital experirence platform concentrated in tooling to build process driven applications, with widgets to build a UI for your automation services.
 
 <img src="../../assets/middleware/rhpam-7-workshop/rhpam-7-architecture.png" width="600" />
@@ -23,7 +27,11 @@ The following diagram depicts the main components of Red Hat Process Automation 
 -----------------------------------
 
       - Business Central Authoring-  To author any of the assests available in RHPAM
+
       - Asset Repository: To be collaborative all of the assets that you develelop will be stored in a git based asset repository, this will allow to version, index, search and share your work with the rest of your team.
-      - Artifact Repository:  Once you have completed the authoring phase and you are satisfied with the work and want to start the process of testi
+
+      - Artifact Repository:  Once you have completed the authoring phase and you are satisfied with the work and want to start the process of test.
+
+      -
 
 
