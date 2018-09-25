@@ -30,8 +30,13 @@ The following diagram depicts the main components of Red Hat Process Automation 
 
       - Asset Repository: To be collaborative all of the assets that you develelop will be stored in a git based asset repository, this will allow to version, index, search and share your work with the rest of your team.
 
-      - Artifact Repository:  Once you have completed the authoring phase and you are satisfied with the work and want to start the process of test.
+      - Artifact Repository:  Once you have completed the authoring phase and you are satisfied with the work you can create a deployment unit within the workbench this unit will be stored in the artifact repository.
 
-      -
+      - Controller: The deployment units created and stored once tested are deployed by the Controller to the Execution Engine in common scenarion where you have a clustered environment or heterogenous topologies that map the relations and dependencies between the lines of business, the controller absorbs all the complexity of keeping your environment configured according to what you have specified using a template.
+
+      - Kie Server: Is the actual component that will execute the rules and processes contained in the deployment unit, you can scale them horizontally or vertically in an aiutomatic fashion using the cloud native capabilities of Openshift Container Platform. Since the state of the process is stored in the database youcan consider the kie-servers stateless when it comes to process execution.
+
+      -  Smart Router: In classical enterprise environment where you have multiple instances running and different nodes starting or shutting down in an elastic way the complexity of tracking this chamges to load balance the requests accordingly goes to the Smart Router.
+
 
 
