@@ -1,8 +1,11 @@
 
 
-This are the requirements that are handed to you:
+The requirements that are handed to you:
+
 
 ****REQUIREMENTS****
+---------------------
+
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -73,6 +76,7 @@ Have a rule in the systmem that makes sure that everytime you get a transaction 
 **Non Functional:**
 
 Allow the user to change the amount.
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
