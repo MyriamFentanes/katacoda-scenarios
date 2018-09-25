@@ -26,11 +26,11 @@ The following diagram depicts the main components of Red Hat Process Automation 
 - Architectural components
 -----------------------------------
 
-      - Business Central Authoring-  To author any of the assests available in RHPAM
+      - Business Central Authoring:  To author any of the assests available in RHPAM
 
       - Asset Repository: To be collaborative all of the assets that you develelop will be stored in a git based asset repository, this will allow to version, index, search and share your work with the rest of your team.
 
-      - Artifact Repository:  Once you have completed the authoring phase and you are satisfied with the work you can create a deployment unit within the workbench this unit will be stored in the artifact repository.
+      - ***Artifact Repository:  Once you have completed the authoring phase and you are satisfied with the work you can create a deployment unit within the workbench this unit will be stored in the artifact repository.
 
       - Controller: The deployment units created and stored once tested are deployed by the Controller to the Execution Engine in common scenarion where you have a clustered environment or heterogenous topologies that map the relations and dependencies between the lines of business, the controller absorbs all the complexity of keeping your environment configured according to what you have specified using a template.
 
@@ -40,3 +40,5 @@ The following diagram depicts the main components of Red Hat Process Automation 
 
 
 
+For this course you will install an environment containing only the components needed to author, deploy, test and run your assets.
+Because a critical capability of a digitally enabled product is to be available as a service , we are gointto leverage  Openshift Container Platform has a self-
