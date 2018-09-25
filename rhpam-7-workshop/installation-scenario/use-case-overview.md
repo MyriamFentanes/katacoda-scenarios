@@ -7,13 +7,16 @@ This requirements are the policies of Pecunia Corp. to handle a credit card tran
 ****REQUIREMENTS****
 ---------------------
 
+The cost of processing a credit card dispute is very high, and also very critical from the customer experience perspective, usually the credit card holder is stressed to protect the assets trusted to the bank, one of the most critical aspects of the interaction with the system is the constant feedback to the customer, the system and the process for disputing a transaction has to constantly tell the credit card holder what is happening with the dispute, if something is needed from him, what is the current status, if something has gone wrong, etc.
+This are all considerations that need to be taken into account when automating the process.
+
 
 ------------------------------------------------------------------------------------------------------------------------------
 
 
 **Business:**
 
-The cost of processing a credit card dispute is very high, and also very critical to the customer, so a risk assessment must be performed based on the customer profile, the type of dispute, and the amount. This could lead to an automatic processing or to a manual approval to solve the dispute.
+A risk assessment must be performed based on the customer profile, the type of dispute, and the amount. This could lead to an automatic processing or to a manual approval to solve the dispute.
 The rules to qualify the risk for a credit card dispute are:
 
 - Automatic process is only available to Platinum and Gold customers
