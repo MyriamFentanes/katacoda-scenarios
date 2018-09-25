@@ -1,3 +1,7 @@
-TThe final architecture of the cluster that will be installed looks like the following:
+Setting up your work environment
+--------------------------------
 
- <img src="./assets/images/rhpam70-ephimeral-template.png" width="800" />
+
+
+ <img src="./assets/middleware/rhpam-7-workshop/gear-icon.png" width="800" />
+[](www.google.com)

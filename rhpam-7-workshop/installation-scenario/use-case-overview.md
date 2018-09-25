@@ -1,6 +1,7 @@
 
 
 The requirements that are handed to you:
+This requirements are the policies of Pecunia Corp. to handle a credit card transaction.
 
 
 ****REQUIREMENTS****
