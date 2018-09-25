@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/use-case-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/use-case-overview.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +50,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="1802" />
-          <entry key="md" value="6489" />
+          <entry key="md" value="6490" />
           <entry key="sh" value="377" />
           <entry key="txt" value="349" />
         </counts>
@@ -58,7 +58,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="1802" />
-          <entry key="Markdown" value="5540" />
+          <entry key="Markdown" value="5541" />
           <entry key="PLAIN_TEXT" value="1675" />
         </counts>
       </usages-collector>
@@ -78,12 +78,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="630">
-                <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+                <caret line="42" selection-start-line="42" selection-end-line="42" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -92,12 +92,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/use-case-overview.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="541">
-                <caret line="76" selection-start-line="76" selection-end-line="76" />
+              <first_editor relative-caret-position="592">
+                <caret line="49" column="58" lean-forward="true" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -120,8 +120,8 @@
         <option value="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/index.json" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop-pathway.json" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/intro.md" />
-        <option value="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/use-case-overview.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md" />
+        <option value="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/use-case-overview.md" />
       </list>
     </option>
   </component>
@@ -187,7 +187,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537899415786" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537899526638" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
@@ -455,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537891369417</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Adding content to the component overview">
+      <created>1537899421024</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1537899421024</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -664,18 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/use-case-overview.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="541">
-            <caret line="76" selection-start-line="76" selection-end-line="76" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/middleware/rhpam-7-workshop/rhpam70-ephimeral-template.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -688,7 +683,19 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="630">
-            <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <caret line="42" selection-start-line="42" selection-end-line="42" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/use-case-overview.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="592">
+            <caret line="49" column="58" lean-forward="true" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

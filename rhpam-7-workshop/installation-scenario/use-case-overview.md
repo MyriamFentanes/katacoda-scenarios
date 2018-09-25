@@ -10,24 +10,6 @@ This requirements are the policies of Pecunia Corp. to handle a credit card tran
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-**Business:**
-
-The type of security questions that the customers needs to answer depend on the merchant and the use case, this is very important as some of the information is necessary for the Payment gateway to process the refund or chargeback with the merchant.his questions are also susceptible to continuous change as the regulations may change with short notice, and as new type of credit card products come out this also need to be updated and maintained by the business user.
-
-
-**Stakeholder**
-
-Process a credit card dispute
-
-**Functional Solution:**
-
-Have a dynamic questionnaire , that has subordinated questions and answers based on previous questions answers. This will be implemented in a decision table that the business user can download as a spreadsheet, change any given question or add new ones and the upload the spreadsheet or save directly on the platform wizard.
-
-**Non Functional:**
-
-Allow the user to change the questions without technical assistance, have the tooling for the user to update the questions but also offline just using standard spreadsheets.
-
-------------------------------------------------------------------------------------------------------------------------------
 
 **Business:**
 
@@ -81,5 +63,23 @@ Allow the user to change the amount.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+**Business:**
+
+The type of security questions that the customers needs to answer depend on the merchant and the use case, this is very important as some of the information is necessary for the Payment gateway to process the refund or chargeback with the merchant.his questions are also susceptible to continuous change as the regulations may change with short notice, and as new type of credit card products come out this also need to be updated and maintained by the business user.
+
+
+**Stakeholder**
+
+Process a credit card dispute
+
+**Functional Solution:**
+
+Have a dynamic questionnaire , that has subordinated questions and answers based on previous questions answers. This will be implemented in a decision table that the business user can download as a spreadsheet, change any given question or add new ones and the upload the spreadsheet or save directly on the platform wizard.
+
+**Non Functional:**
+
+Allow the user to change the questions without technical assistance, have the tooling for the user to update the questions but also offline just using standard spreadsheets.
+
+------------------------------------------------------------------------------------------------------------------------------
 
 
