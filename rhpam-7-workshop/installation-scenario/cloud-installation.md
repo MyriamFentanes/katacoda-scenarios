@@ -33,7 +33,7 @@ When you click on the project you can see there are 2 deployments listed.
      - Go back to your home page by clicking the home icon on the top left hand side.
      - Click on the kebab on the right hand side of your project name
      - Select Delete Project.
-     - Type in ` credit-card-dispute`{{copy}}
+     - Type in `credit-card-dispute`{{copy}}
      - Click on Delete.
 
 Now what?
