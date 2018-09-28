@@ -26,10 +26,20 @@ When you click on the project you can see there are 2 deployments listed.
      - cc-dispute-kieserver
      - cc-dispute-rhpamcentr
 
- If you look at the diagram,this comprises the Authoring environment.
+ If you look at the diagram,this comprises your working environment. But what if you have special needs of tools and components? Or you simply want to know what you are working on.
+ Lets go ahead and delete the whole project and start a new deployment based on your requirements.
+
+     - Click on the kebab on the right hand side of your project name
+     - Select Delete Project.
+     - Type in credit-card-dispute and click on Delete.
+
+Now what?
+---------
+
+****TEMPLATES****
 
 
- This environments are prescriptive deployment architectures, recommended by Red Hat to provide a fully working  platform for development, production, or SIT  to develop, integrate, test or run processes and other assets.
+ What is a template? Is an environments that follows a Red Hat prescriptive deployment architecture, to provide a fully working  platform for development, production, or SIT  to develop, integrate, test or run processes and other assets.
  The available templates are:
 
       -  rhpam70-authoring.yaml
@@ -43,6 +53,8 @@ When you click on the project you can see there are 2 deployments listed.
       -  rhpam70-trial-ephemeral.yaml
 
  The difference between them lies on what type of environment do you want?, what do you want it for?, with high availability or not? So for example if you want an environment to author rules and process, you have the rhpam70-authoring.yaml that contains all the components necessary to do so. See the image above.
+ Quiz: From the previous step what components do you recognize in this template?
+
  In this particular case because you need a complete authoring environment with a process server where you can test your assets we could deploy the authoring environment, however due to the restrictions on this environment we will use the ephemera template instead.
 
 <img src="../../assets/middleware/rhpam-7-workshop/rhpam70-authoring.png" width="600" />
