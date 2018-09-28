@@ -1,5 +1,9 @@
 Red Hat Process Automation Manager is part of a rich set of tools to develop enterprise solution with multiple capabilities, thought to support multidisciplinary teams with teh right tool for every task a hand.
 
+The native cloud environment was already provisioned for you, you can access it either using a terminal y you are a developer:
+So for example you can log in as developer `oc login -u developer -p developer`{{execute}}
+
+
 Additional Markdown Syntax
 Katacoda has added extended markdown
 
