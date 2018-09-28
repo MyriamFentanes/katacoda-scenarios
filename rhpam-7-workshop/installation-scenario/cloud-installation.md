@@ -23,8 +23,8 @@ If you don't want to interact with the platform from a command line terminal, yo
 
 When you click on the project you can see there are 2 deployments listed.
 
-     - myapp-kieserver
-     - myapp-rhpamcentr
+     - cc-dispute-kieserver
+     - cc-dispute-rhpamcentr
 
  If you look at the diagram,this comprises the Authoring environment.
 
