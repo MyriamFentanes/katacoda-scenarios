@@ -41,4 +41,4 @@ The following diagram depicts the main components of Red Hat Process Automation 
 
 
 For this course you will install an environment containing only the components needed to author, deploy, test and run your assets.
-Because a critical capability of a digitally enabled product is to be available as a service , we are gointto leverage  Openshift Container Platform has a self-
+Because a critical capability of a digitally enabled product is to be available as a service , we are going to leverage  Openshift Container Platform has a self-service console where you can choose the different tools needed depending on your skills, LOB and solution.
