@@ -26,9 +26,11 @@ When you click on the project you can see there are 2 deployments listed.
      - cc-dispute-kieserver
      - cc-dispute-rhpamcentr
 
- If you look at the diagram,this comprises your working environment. But what if you have special needs of tools and components? Or you simply want to know what you are working on.
+ If you look at the diagram,this comprises your working environment.
+ But what if you have special needs of tools and components? Or you simply want to know what you are working on.
  Lets go ahead and delete the whole project and start a new deployment based on your requirements.
 
+     - Go back to your home page by clicking the home icon on the top left hand side.
      - Click on the kebab on the right hand side of your project name
      - Select Delete Project.
      - Type in credit-card-dispute and click on Delete.
@@ -60,3 +62,5 @@ Now what?
 <img src="../../assets/middleware/rhpam-7-workshop/rhpam70-authoring.png" width="600" />
 
 You will be working in a development version of the Credit Card Dispute project, you need an environment that has no security restrictions, one of the new features in the Red Hat Process Automation Manager is the ability to just order a complete environment with just the components needed for your daily tasks.
+
+<img src="../../assets/middleware/rhpam-7-workshop/rhpam70-ephimeral-template.png" width="600" />
