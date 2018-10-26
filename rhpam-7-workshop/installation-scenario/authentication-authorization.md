@@ -7,6 +7,7 @@ In this scenario we will learn how to secure the different components of RHPAM w
 
 So let's go back to your business case:
 You have 2 different type of users, platform users that are basically the ones that interact with your authoring environment for example the adminUser you used to log in, but for the case of the autoamtion of the credit card dispute we have idetified 3 different roles that interact with teh proces
+<img src="../../assets/middleware/rhpam-7-workshop/collaboration_tools.png" width="600" />
 
 
 
