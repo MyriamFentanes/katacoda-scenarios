@@ -1,6 +1,6 @@
 {
-    "title": "Introduction and Installation Scenario",
-    "description": "It's your first day at Pecunia Inc. a very large banking corporation. you need to understand the company policies and install your working environment to create a process driven application",
+    "title": "Business Policies and Decisions as a service",
+    "description": "In the previous scenario you succesfully installed and configured your environment, including the necessary groups to automate the Credit Card Dispute Process, here you will learn how to define the Pecunia Corp. policies in standard format and how to make those assets available to your customers",
     "difficulty": "beginner",
     "time": "40 minutes",
     "details": {
@@ -10,19 +10,19 @@
                 "text": "use-case-overview.md"
             },
             {
-                "title": "Understanding the components and installation methods",
+                "title": "What is a policy, decision, rule and how can I define one.",
                 "text": "components-overview.md"
             },
             {
-                "title": "Cloud installation",
+                "title": "Decisions authoring",
                 "text": "cloud-installation.md"
             },
             {
-                "title": "Verifying the installation",
+                "title": "Decisions as a service",
                 "text": "verifying-installation.md"
             },
             {
-                "title": "Security of the platform console",
+                "title": "Versioning your services",
                 "text": "authentication-authorization.md"
             }
         ],
