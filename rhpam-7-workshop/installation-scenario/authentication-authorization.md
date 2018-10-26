@@ -14,14 +14,35 @@ Here we can see that this are not users but groups that the different user will 
 
 ***User Configuration***
 
-Since the design of the console uses the activity center approach all the tasks related to an activity will be grouped together in a high level menu, in the case of configuration, you will find it when you click on the engine to the left of the username on the right hand side upper menu.
+1- Since the design of the console uses the activity center approach all the tasks related to an activity will be grouped together in a high level menu, in the case of configuration, you will find it when you click on the engine to the left of the username on the right hand side upper menu.
 
 <img src="../../assets/middleware/rhpam-7-workshop/engine-settings-menu.png" width="600" />
 
-Once you click on it you will see all the different components that you can configure in your environment for this step will focus on the users and groups
+2- Once you click on it you will see all the different components that you can configure in your environment for this step will focus on the users and groups
 
 <img src="../../assets/middleware/rhpam-7-workshop/settings-menu.png" width="600" />
 
+3- Click the groups icon and you'll see the group administration menu, where you can list the groups that currently exist, update or delete them or create a new group.
+
+<img src="../../assets/middleware/rhpam-7-workshop/groups-menu.png" width="600" />
+
+4- Click on New Group and we will add the following new groups
+- customer
+- agent
+- agent-manager
+
+After you type in the name of the group in this case customer select the adminUser and click on Add selected users to add it to the customer group. In a real world scenario all this groups will be associated to different personas but for simplicity the user you have will be part of all the groups needed so you can do your testing.
+
+5- Repeat for the group agent and agent-manager
+
+<img src="../../assets/middleware/rhpam-7-workshop/user-groups-settings-menu.png" width="600" />
+
+
+
+
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/groups-menu.png" width="600" />
 
 
 
