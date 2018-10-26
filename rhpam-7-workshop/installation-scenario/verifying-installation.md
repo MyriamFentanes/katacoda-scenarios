@@ -36,7 +36,7 @@ So at this point we are interested on the authoring environment.
 Use the credentials:
 
 user: userAdmin
-password: Red Hat
+password: RedHat
 
 And you should see the console as follows:
 
