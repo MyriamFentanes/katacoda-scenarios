@@ -23,8 +23,5 @@ password: developer
 
 3- Click on your project to see the components.
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-detail.pn" width="600" />
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-detail.png" width="600" />
 
-
-
-Open
