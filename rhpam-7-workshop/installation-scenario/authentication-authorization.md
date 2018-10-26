@@ -14,7 +14,15 @@ Here we can see that this are not users but groups that the different user will 
 
 ***User Configuration***
 
-Since the design of the console uses the activity center approach all the tasks related to an activity will be grouped together in a high level menu, in the case of configuration, you will find it
+Since the design of the console uses the activity center approach all the tasks related to an activity will be grouped together in a high level menu, in the case of configuration, you will find it when you click on the engine to the left of the username on the right hand side upper menu.
+
+<img src="../../assets/middleware/rhpam-7-workshop/engine-settings-menu.png" width="600" />
+
+Once you click on it you will see all the different components that you can configure in your environment for this step will focus on the users and groups
+
+<img src="../../assets/middleware/rhpam-7-workshop/settings-menu.png" width="600" />
+
+
 
 
 
