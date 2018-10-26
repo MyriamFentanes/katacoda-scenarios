@@ -40,5 +40,5 @@ password: Red Hat
 
 And you should see the console as follows:
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-route.png" width="600" />
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-console.png" width="600" />
 
