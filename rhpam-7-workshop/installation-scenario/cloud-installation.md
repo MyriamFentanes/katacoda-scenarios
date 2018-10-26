@@ -38,22 +38,19 @@ When you click on the project you can see there are 2 deployments listed.
 
 Now what?
 ---------
+****Extra points****
+
 
 ****TEMPLATES****
 
 
- What is a template? Is an environments that follows a Red Hat prescriptive deployment architecture, to provide a fully working  platform for development, production, or SIT  to develop, integrate, test or run processes and other assets.
- The available templates are:
+ What is a template? Red Hat Process Automation new design is activity centered, so you have predefined environments available to deploy depending on what do you want to accomplish. the definition is modeled in form of templates which are environments that follow a Red Hat prescriptive deployment architecture, to provide a fully working  platform for development, production, or SIT  to develop, integrate, test or run processes and other assets.
+ Some examples of the available templates are:
 
-      -  rhpam70-authoring.yaml
-      -  rhpam70-kieserver-externaldb.yaml
-      -  rhpam70-kieserver-mysql.yaml
-      -  rhpam70-kieserver-postgresql.yaml
-      -  rhpam70-prod-immutable-kieserver.yaml
-      -  rhpam70-prod-immutable-monitor.yaml
-      -  rhpam70-prod.yaml
-      -  rhpam70-sit.yaml
-      -  rhpam70-trial-ephemeral.yaml
+      -  If you are a business user that will author business assets- rhpam70-authoring
+      -  If you are the administrator of the platform and you want a production like environment with immutable engines: rhpam70-prod-immutable-kieserver
+      -  If you are part of the operations team and you want to monitor your production environment: rhpam70-prod-immutable-monitor
+      -  If you want a quick demo environment to test the platform - rhpam70-trial-ephemeral
 
  The difference between them lies on what type of environment do you want?, what do you want it for?, with high availability or not? So for example if you want an environment to author rules and process, you have the rhpam70-authoring.yaml that contains all the components necessary to do so. See the image above.
  Quiz: From the previous step what components do you recognize in this template?
