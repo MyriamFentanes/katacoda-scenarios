@@ -56,7 +56,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="2411" />
-          <entry key="md" value="20991" />
+          <entry key="md" value="21004" />
           <entry key="sh" value="377" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -65,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2411" />
-          <entry key="Markdown" value="20042" />
+          <entry key="Markdown" value="20055" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -107,7 +107,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="277">
-                <caret line="19" lean-forward="true" selection-start-line="18" selection-end-line="19" />
+                <caret line="19" selection-start-line="18" selection-end-line="19" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -129,8 +129,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="772">
-                <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <first_editor relative-caret-position="328">
+                <caret line="45" column="377" selection-start-line="45" selection-start-column="377" selection-end-line="45" selection-end-column="377" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -320,7 +320,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540591358788" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540592329486" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -360,13 +360,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Creating the first step in the installation lab">
-      <created>1537880470816</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1537880470816</updated>
     </task>
     <task id="LOCAL-00026" summary="Creating the first step in the installation lab">
       <created>1537880581552</created>
@@ -704,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540583820358</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Adding content to the installation">
+      <created>1540592158867</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1540592158867</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TodoView">
@@ -993,7 +993,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="277">
-            <caret line="19" lean-forward="true" selection-start-line="18" selection-end-line="19" />
+            <caret line="19" selection-start-line="18" selection-end-line="19" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -1009,8 +1009,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="772">
-            <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <first_editor relative-caret-position="328">
+            <caret line="45" column="377" selection-start-line="45" selection-start-column="377" selection-end-line="45" selection-end-column="377" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

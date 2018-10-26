@@ -2,7 +2,7 @@
 Why a decision service?
 -----------------------
 
-The credit card dispute process is not a straightforward process, it involves different actors inside and outside of the company that need to have visibility at all time with what is happening.
+The credit card dispute process is not a straightforward process, it involves different actors inside and outside of the company that need to have visibility at all time of what  is happening.
 So everything starts with the customer disputing a transaction.
 
 The issuer of the credit card in this case Pecunia Corp. the actor outside of the corporation are:
@@ -43,7 +43,7 @@ Regulations
 
 
 You as business domain expert, need to define what is the domain model for the business capability you are trying to automate. Eric Evans coined the term Domain Driven Design that holds 3 main guiding principles: Focus on the core domain; explore models in a creative collaboration of domain practitioners and software practitioners; and speak a ubiquitous language within an explicitly bounded context. You can learn more about this design approach in his book.
-So the first and very important task to automate a core business capability is to create a definition of the business entities within the context of Credit Card Dispute, in this case the first entity is the Customer, the definition in the context of our use case maybe totally different from the definition inside Pecunia Corp. but it will be common  among the team of business experts and technology experts.
+So the first and very important task to automate a core business capability is to create a definition of the business entities within the context of Credit Card Dispute, in this case the first entity is the Customer, the definition in the context of our use case maybe totally different from the definition inside Pecunia Corp. but it will be common  among the team of business and technology experts.
 
 Creating the customer entity.
 
