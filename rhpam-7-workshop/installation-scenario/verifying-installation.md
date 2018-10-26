@@ -25,3 +25,9 @@ password: developer
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-detail.png" width="600" />
 
+You will see listed 2 components the cc-dispute-kieserver and the cc-dispute-rhpamcentr all you need to know is that the first one is for execution of your automation assets and the latter for authoring of your automation assets
+So at this point we are interested on the authoring environment.
+
+4- Select the cc-dispute-rhpamcentr an look at the details of the component
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-route.png" width="600" />
