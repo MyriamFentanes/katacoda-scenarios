@@ -32,6 +32,13 @@ So at this point we are interested on the authoring environment.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-route.png" width="600" />
 
-In the network segment you have the information of the location of your console. Click on the link that to the right that says Route to external traffic and in a new window the login page for your business central should open.
+5- In the network segment you have the information of the location of your console. Click on the link that to the right that says Route to external traffic and in a new window the login page for your business central should open.
+Use the credentials:
 
+user: userAdmin
+password: Red Hat
+
+And you should see the console as follows:
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-route.png" width="600" />
 
