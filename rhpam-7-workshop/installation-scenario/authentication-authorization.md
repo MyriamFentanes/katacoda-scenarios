@@ -37,12 +37,8 @@ After you type in the name of the group in this case customer select the adminUs
 
 <img src="../../assets/middleware/rhpam-7-workshop/user-groups-settings-menu.png" width="600" />
 
+You have successfully completed the installation of your environment.
 
-
-
-
-
-<img src="../../assets/middleware/rhpam-7-workshop/groups-menu.png" width="600" />
 
 
 
