@@ -31,3 +31,7 @@ So at this point we are interested on the authoring environment.
 4- Select the cc-dispute-rhpamcentr an look at the details of the component
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-route.png" width="600" />
+
+In the network segment you have the information of the location of your console. Click on the link that to the right that says Route to external traffic and in a new window the login page for your business central should open.
+
+
