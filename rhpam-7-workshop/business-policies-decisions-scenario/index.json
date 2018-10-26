@@ -1,0 +1,51 @@
+{
+    "title": "Introduction and Installation Scenario",
+    "description": "It's your first day at Pecunia Inc. a very large banking corporation. you need to understand the company policies and install your working environment to create a process driven application",
+    "difficulty": "beginner",
+    "time": "40 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Use Case Introduction",
+                "text": "use-case-overview.md"
+            },
+            {
+                "title": "Understanding the components and installation methods",
+                "text": "components-overview.md"
+            },
+            {
+                "title": "Cloud installation",
+                "text": "cloud-installation.md"
+            },
+            {
+                "title": "Verifying the installation",
+                "text": "verifying-installation.md"
+            },
+            {
+                "title": "Security of the platform console",
+                "text": "authentication-authorization.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "courseBase.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "files": [
+        "app.js"
+    ],
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [{"name": "Openshift Console", "port": 8443},{"name": "Business Central", "port": 8080}],
+        "uilayout": "terminal-iframe",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nConnect to OCP using oc client`\u001b[m\r\n"
+    },
+    "backend": {
+        "port": 8443,
+        "imageid": "openshift-middleware"
+    }
+}
