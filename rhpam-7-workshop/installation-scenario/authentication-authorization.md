@@ -10,6 +10,13 @@ You have 2 different type of users, platform users that are basically the ones t
 
 <img src="../../assets/middleware/rhpam-7-workshop/ccd-workshop-users.png" width="600" />
 
+Here we can see that this are not users but groups that the different user will belong to. So the bank has this 3 groups defined and the tasks for each group will be defined and configure as you automate the process.
+
+***User Configuration***
+
+Since the design of the console uses the activity center approach all the tasks related to an activity will be grouped together in a high level menu, in the case of configuration, you will find it
+
+
 
 
 
