@@ -27,11 +27,11 @@ Here we can see that this are not users but groups that the different user will 
 <img src="../../assets/middleware/rhpam-7-workshop/groups-menu.png" width="600" />
 
 4- Click on New Group and we will add the following new groups
-- customer
+- card-holder
 - agent
 - agent-manager
 
-After you type in the name of the group in this case customer select the adminUser and click on Add selected users to add it to the customer group. In a real world scenario all this groups will be associated to different personas but for simplicity the user you have will be part of all the groups needed so you can do your testing.
+After you type in the name of the group in this case customer select the adminUser and click on Add selected users to add it to the card-holder group. In a real world scenario all this groups will be associated to different personas but for simplicity the user you have will be part of all the groups needed so you can do your testing.
 
 5- Repeat for the group agent and agent-manager
 
