@@ -83,11 +83,11 @@ Once the creation of your project is complete you should see the following page 
 
 7- Click  in the window for New Field create a new property with the following values:
 
-     - Identifier: age
+     - Identifier: `age`{{copy}}
 
-     - Label: Age
+     - Label: `Age`{{copy}}
 
-     - Description: Age of the Credit Card Holder
+     - Description: `Age of the Credit Card Holder`{{copy}}
 
      - Type: Integer
 
