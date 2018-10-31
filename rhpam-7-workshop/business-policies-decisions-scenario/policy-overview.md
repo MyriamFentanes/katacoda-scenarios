@@ -85,13 +85,13 @@ Once the creation of your project is complete you should see the following page 
 
 Age `age`{{copy}}
 
-     - Identifier: `age`{{copy}}
+Identifier: `age`{{copy}}
 
-     - Label: `Age`{{copy}}
+Label: `Age`{{copy}}
 
-     - Description: `Age of the Credit Card Holder`{{copy}}
+Description: `Age of the Credit Card Holder`{{copy}}
 
-     - Type: Integer
+Type: Integer
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new-properties.png" width="600" />
 

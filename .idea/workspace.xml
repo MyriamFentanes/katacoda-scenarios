@@ -57,7 +57,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="2411" />
-          <entry key="md" value="22652" />
+          <entry key="md" value="22666" />
           <entry key="sh" value="377" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -66,7 +66,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2411" />
-          <entry key="Markdown" value="21703" />
+          <entry key="Markdown" value="21717" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -93,8 +93,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="382">
-                <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+              <first_editor relative-caret-position="440">
+                <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -333,20 +333,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Creating the first step in the installation lab">
-      <created>1537881195444</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1537881195444</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Creating the first step in the installation lab">
-      <created>1537881234450</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1537881234450</updated>
     </task>
     <task id="LOCAL-00031" summary="Creating the first step in the installation lab">
       <created>1537889874273</created>
@@ -677,7 +663,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540945458520</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Adding content to the installation">
+      <created>1540946285015</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1540946285015</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Adding content to the installation">
+      <created>1540946382705</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1540946382705</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1002,8 +1002,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="382">
-            <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <first_editor relative-caret-position="440">
+            <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
