@@ -82,7 +82,7 @@ Once the creation of your project is complete you should see the following page 
       - Asset Repository: To be collaborative all of the assets that you develelop will be stored in a git based asset repository, this will allow to version, index, search and share your work with the rest of your team.
 
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new.png" width="600" />
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new-properties.png" width="600" />
 
 
 
