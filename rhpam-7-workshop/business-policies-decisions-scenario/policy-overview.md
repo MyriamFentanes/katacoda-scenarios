@@ -76,7 +76,8 @@ Once the creation of your project is complete you should see the following page 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new.png" width="600" />
 
 6- You will see the new created object with no properties, lets click on the +add field button to start adding the properties to our CreditCardHolder.
-mv
+
+
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new-empty.png" width="600" />
 
 
