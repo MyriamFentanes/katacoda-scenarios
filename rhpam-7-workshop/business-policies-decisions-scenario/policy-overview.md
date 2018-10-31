@@ -75,12 +75,20 @@ Once the creation of your project is complete you should see the following page 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new.png" width="600" />
 
-6- You will see the new created object with no properties, lets click on the +add field button to start adding the properties to our CreditCardHolder, in the window for New Field create the following properties:
+6- You will see the new created object with no properties, lets click on the +add field button to start adding the properties to our CreditCardHolder.
+mv
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new-empty.png" width="600" />
 
-     - Business Central Authoring:  To author any of the assests available in RHPAM
 
-      - Asset Repository: To be collaborative all of the assets that you develelop will be stored in a git based asset repository, this will allow to version, index, search and share your work with the rest of your team.
+7- Click  in the window for New Field create a new property with the following values:
 
+     - Identifier: age
+
+     - Label: Age
+
+     - Description: Age of the Credit Card Holder
+
+     - Type: Integer
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new-properties.png" width="600" />
 
