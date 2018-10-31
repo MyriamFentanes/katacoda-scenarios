@@ -83,6 +83,8 @@ Once the creation of your project is complete you should see the following page 
 
 7- Click  in the window for New Field create a new property with the following values:
 
+Age `age`{{copy}}
+
      - Identifier: `age`{{copy}}
 
      - Label: `Age`{{copy}}
