@@ -27,20 +27,20 @@ Process Automation Manager 7 can come with pre-provisioned database-drivers for 
 4. In the *New driver* from, entering the following values and click on *Finish*:
   * Name: `PostgreSQL`{{copy}}
   * Driver Class Name: `org.postgresql.Driver`{{copy}}
-  * Group Id: `org.postgresql`
-  * Artifact Id: `postgresql`
-  * Version: 9.4.1212.jre7
+  * Group Id: `org.postgresql`{{copy}}
+  * Artifact Id: `postgresql` {{copy}}
+  * Version: `9.4.1212.jre7` {{copy}}
 
 Next, we can create the *DataSource* that connects to our PostgreSQL database.
 
 1. In the *Data Sources* screen, click on *+ Add DataSource* on the left-hand side of the screen, which will open the *New data source form*.
-4. Fill in the following values:
+2. Fill in the following values:
   * Name: `PAM-Workshop-Reporting`{{copy}}
-  * Connection URL: `jdbc:postgresql://postgres:5432/postgres`{{copy}}
+  * Connection URL: `jdbc:postgresql://postgresql:5432/postgres`{{copy}}
   * User: `postgres`{{copy}}
   * Password: `postgres`{{copy}}
   * Driver: `PostgreSQL`
-5. Click on “Test Connection” to test the setup and if the test is OK, click on “Finish”
+3. Click on “Test Connection” to test the setup and if the test is OK, click on “Finish”
 
 Now that we've created the DataSet, we can explore its content.
 
