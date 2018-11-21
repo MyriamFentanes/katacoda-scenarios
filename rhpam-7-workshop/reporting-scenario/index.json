@@ -9,8 +9,9 @@
       { "title": "Opening the Business Central workbench", "text": "opening-business-central.md" },
       { "title": "Create a DataSource", "text": "create-datasource.md" },
       { "title": "Create a DataSet", "text": "create-dataset.md" },
-      { "title": "Create a Report", "text": "create-report.md" },
-      { "title": "Add reporting page to the workbench", "text": "add-report-to-workbench.md" },
+      { "title": "Create a Tasks Report", "text": "create-report-tasks.md" },
+      { "title": "Create a Customer Satisfaction Report", "text": "create-report-customer-satisfaction.md" },
+      { "title": "Add reporting page to the workbench", "text": "publish-report-pages.md" },
     ],
     "intro": {
       "text": "intro.md",
