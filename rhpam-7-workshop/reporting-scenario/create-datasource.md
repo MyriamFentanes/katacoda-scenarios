@@ -28,8 +28,8 @@ Process Automation Manager 7 can come with pre-provisioned database-drivers for 
   * Name: `PostgreSQL`{{copy}}
   * Driver Class Name: `org.postgresql.Driver`{{copy}}
   * Group Id: `org.postgresql`{{copy}}
-  * Artifact Id: `postgresql` {{copy}}
-  * Version: `9.4.1212.jre7` {{copy}}
+  * Artifact Id: `postgresql`{{copy}}
+  * Version: `9.4.1212.jre7`{{copy}}
 
 Next, we can create the *DataSource* that connects to our PostgreSQL database.
 
