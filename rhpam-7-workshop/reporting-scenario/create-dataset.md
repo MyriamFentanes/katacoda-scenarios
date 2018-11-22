@@ -29,7 +29,7 @@ We will now create the DataSet of our customer satisfaction.
   * Data Source: `PAM-Workshop-Reporting`{{copy}}
   * Schema: (leave empty)
   * Source: enable *Query* and use the following SQL Query:
-          select *, (case
+          `select *, (case
                         when satisfactionscore <= 50 then '0-50'
                         when satisfactionscore > 50 and satisfactionscore <= 55 then '50-55'
                         when satisfactionscore > 55 and satisfactionscore <= 60 then '55-60'
@@ -44,7 +44,7 @@ We will now create the DataSet of our customer satisfaction.
                         else 'other'
                       end) as satisfactionscore_range
            from customer_satisfaction
-           order by satisfactionscore_range˜{{copy}}
+           order by satisfactionscore_range`{{copy}}
 
 6. Click on the *Test* button. This will execute the query and show a preview of the result.
 7. When the test is successful, click on the *Next* button and save the *Data Set*.
