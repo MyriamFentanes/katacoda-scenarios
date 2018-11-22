@@ -29,23 +29,24 @@ We will now create the DataSet of our customer satisfaction.
   * Data Source: `PAM-Workshop-Reporting`{{copy}}
   * Schema: (leave empty)
   * Source: enable *Query* and use the following SQL Query:
-          `select *, (case
-                        when satisfactionscore <= 50 then '0-50'
-                        when satisfactionscore > 50 and satisfactionscore <= 55 then '50-55'
-                        when satisfactionscore > 55 and satisfactionscore <= 60 then '55-60'
-                        when satisfactionscore > 60 and satisfactionscore <= 65 then '60-65'
-                        when satisfactionscore > 65 and satisfactionscore <= 70 then '65-70'
-                        when satisfactionscore > 70 and satisfactionscore <= 75 then '70-75'
-                        when satisfactionscore > 75 and satisfactionscore <= 80 then '75-80'
-                        when satisfactionscore > 80 and satisfactionscore <= 85 then '80-85'
-                        when satisfactionscore > 85 and satisfactionscore <= 90 then '85-90'
-                        when satisfactionscore > 90 and satisfactionscore <= 95 then '90-95'
-                        when satisfactionscore > 95 and satisfactionscore <= 100 then '95-100'
-                        else 'other'
-                      end) as satisfactionscore_range
-           from customer_satisfaction
-           order by satisfactionscore_range`{{copy}}
-
+<pre class="file" data-target="clipboard">
+select *, (case 
+                    when satisfactionscore <= 50 then '0-50' .        
+                    when satisfactionscore > 50 and satisfactionscore <= 55 then '50-55'
+                    when satisfactionscore > 55 and satisfactionscore <= 60 then '55-60'
+                    when satisfactionscore > 60 and satisfactionscore <= 65 then '60-65'
+                    when satisfactionscore > 65 and satisfactionscore <= 70 then '65-70'
+                    when satisfactionscore > 70 and satisfactionscore <= 75 then '70-75'
+                    when satisfactionscore > 75 and satisfactionscore <= 80 then '75-80'
+                    when satisfactionscore > 80 and satisfactionscore <= 85 then '80-85'
+                    when satisfactionscore > 85 and satisfactionscore <= 90 then '85-90'
+                    when satisfactionscore > 90 and satisfactionscore <= 95 then '90-95'
+                    when satisfactionscore > 95 and satisfactionscore <= 100 then '95-100'
+                    else 'other'
+              end) as satisfactionscore_range
+    from customer_satisfaction
+    order by satisfactionscore_range
+</pre>
 6. Click on the *Test* button. This will execute the query and show a preview of the result.
 7. When the test is successful, click on the *Next* button and save the *Data Set*.
 
