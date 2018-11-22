@@ -30,8 +30,8 @@ We will now create the DataSet of our customer satisfaction.
   * Schema: (leave empty)
   * Source: enable *Query* and use the following SQL Query:
 <pre class="file" data-target="clipboard">
-select *, (case 
-                    when satisfactionscore <= 50 then '0-50' .        
+select *, (case
+                    when satisfactionscore <= 50 then '0-50'        
                     when satisfactionscore > 50 and satisfactionscore <= 55 then '50-55'
                     when satisfactionscore > 55 and satisfactionscore <= 60 then '55-60'
                     when satisfactionscore > 60 and satisfactionscore <= 65 then '60-65'
