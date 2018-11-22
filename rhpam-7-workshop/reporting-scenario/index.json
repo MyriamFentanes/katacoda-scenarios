@@ -27,6 +27,20 @@
           "file": "init-scenario.sh",
           "target": "~/.init/",
           "chmod": "+x"
+        },
+        {
+          "file": "provision_data.sh",
+          "target": "~/.init/",
+          "chmod": "+x"
+        },
+        {
+          "file": "provision_test_data.sql",
+          "target": "~/.init/",
+        },
+        {
+          "file": "wait_for_postgres.sh",
+          "target": "~/.init/",
+          "chmod": "+x"
         }
       ]
     }
