@@ -10,6 +10,10 @@
                 "text": "use-case-overview.md"
             },
             {
+                "title": "Business Object Model.",
+                "text": "businessModel.md"
+            },
+            {
                 "title": "What is a policy, decision, rule and how can I define one.",
                 "text": "policy-overview.md"
             },
