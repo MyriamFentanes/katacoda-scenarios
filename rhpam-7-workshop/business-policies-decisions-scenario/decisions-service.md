@@ -71,3 +71,13 @@ You will see that the project is first build, meaning the assets are compiled an
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-deploy-container.png"  width="600" />
 
+
+**Executing**
+
+1- Go to the Main Menu and select Deploy>Execution Services
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-execution-services-detail.png"  width="600" />
+
+Click on the URL of the container and you will be able to see where is your service running as well as the configuration details.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-execution-services-info.png"  width="600" />

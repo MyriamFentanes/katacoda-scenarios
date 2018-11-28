@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-service.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-service.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,7 +57,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="2494" />
-          <entry key="md" value="35212" />
+          <entry key="md" value="35490" />
           <entry key="sh" value="377" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -67,7 +66,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2494" />
-          <entry key="Markdown" value="34263" />
+          <entry key="Markdown" value="34541" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -94,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -103,8 +102,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-service.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="660">
-                <caret line="71" column="105" selection-start-line="71" selection-start-column="105" selection-end-line="71" selection-end-column="105" />
+              <first_editor relative-caret-position="412">
+                <caret line="82" column="91" selection-start-line="82" selection-start-column="91" selection-end-line="82" selection-end-column="91" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -322,7 +321,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543432387691" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543432980481" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -722,7 +721,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2739628" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2739628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24969475" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -736,7 +735,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.28367347" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.38915664" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.38915664" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993895" visible="true" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -993,7 +992,7 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1029,8 +1028,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-service.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="660">
-            <caret line="71" column="105" selection-start-line="71" selection-start-column="105" selection-end-line="71" selection-end-column="105" />
+          <first_editor relative-caret-position="412">
+            <caret line="82" column="91" selection-start-line="82" selection-start-column="91" selection-end-line="82" selection-end-column="91" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
