@@ -6,7 +6,9 @@ You will learn in this section:
 
 
 1- How to use your Business Object Model to automate decisions and policies.
+
 2- The different types of authoring tools available to you.
+
 3- How to use your automated decisions and rules.
 
 
