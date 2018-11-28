@@ -80,7 +80,7 @@ Type: Integer
 8- Watch the video on how to import a repository into your workspace.
 
 
-9- Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
+9- Create the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
 https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
 

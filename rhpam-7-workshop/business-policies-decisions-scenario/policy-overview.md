@@ -3,6 +3,8 @@ Why a decision service?
 -----------------------
 
 You will learn in this section:
+
+
 1- How to use your Business Object Model to automate decisions and policies.
 2- The different types of authoring tools available to you.
 3- How to use your automated decisions and rules.
@@ -42,7 +44,9 @@ Regulations
 -----------------------------------
 
 We have defined the Business Object Model on the last lab, so you need to import the following repository. You can watch the video on how to import a repository into your workspace
+
 1- Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
+
 https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
 
 Now we will create the rules to process a Credit Card (CC) Dispute automatically, meaning without the need of any human intervention.
@@ -70,6 +74,9 @@ Package: `com.fsi_credit_dispute`{{copy}}
 5- Click ok. You should see a banner in green telling you that the Asset was succesfully created and the wizard to author your rule.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-wizard.png"  width="600" />
+
+***Guided Rules ***
+-----------------------------------
 
 Guided Rules are one of the type of rules you can create in Business Central, once you have defined the Business Object Model you can use it to create rule that check conditions on the properties of the object, for example a Credit Card Holder. If the condition or conditions are met you can define an action or a decision to take:
 In the case of the rules for automatic chargeback we are evaluating only the CC Holder. So lets create the rule:
