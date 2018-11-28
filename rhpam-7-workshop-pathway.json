@@ -13,6 +13,11 @@
       "title": "Defining business policies and decisions using Red Hat Process Automation Manager 7"
     },
     {
+      "external_link": "https://learn.openshift.com/rhpam-7-workshop/case-management-scenario/",
+      "course_id": "case-management-scenario",
+      "title": "Defining process and cases using Red Hat Process Automation Manager 7"
+    },
+    {
       "external_link": "https://learn.openshift.com/rhpam-7-workshop/reporting-scenario/",
       "course_id": "reporting-scenario",
       "title": "Creating Business Activity Monitoring (BAM) reports with the Process Automation Manager 7"
