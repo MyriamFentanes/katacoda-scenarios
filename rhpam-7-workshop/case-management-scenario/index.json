@@ -1,0 +1,51 @@
+{
+    "title": "Business Policies and Decisions as a service",
+    "description": "In the previous scenario you succesfully installed and configured your environment, including the necessary groups to automate the Credit Card Dispute Process, here you will learn how to define the Pecunia Corp. policies in standard format and how to make those assets available to your customers",
+    "difficulty": "beginner",
+    "time": "40 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Use Case Introduction",
+                "text": "use-case-overview.md"
+            },
+            {
+                "title": "Business Object Model.",
+                "text": "businessModel.md"
+            },
+            {
+                "title": "Decisions authoring",
+                "text": "decisions-authoring.md"
+            },
+            {
+                "title": "Decisions as a service",
+                "text": "decisions-service.md"
+            },
+            {
+                "title": "Versioning your services",
+                "text": "authentication-authorization.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "courseBase.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "files": [
+        "app.js"
+    ],
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [{"name": "Openshift Console", "port": 8443},{"name": "Business Central", "port": 8080}],
+        "uilayout": "terminal-iframe",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nConnect to OCP using oc client`\u001b[m\r\n"
+    },
+    "backend": {
+        "port": 8443,
+        "imageid": "openshift-middleware"
+    }
+}
