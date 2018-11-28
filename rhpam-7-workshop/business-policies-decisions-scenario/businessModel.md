@@ -5,7 +5,9 @@ Business Object Model
 In this section you will learn
 
 1- What is the Business Object Model.
+
 2- How to create it inside the Business Central Web Console.
+
 3- How to import a project into your space.
 
 The credit card dispute process is not  straightforward, it involves different actors inside and outside of the company, this actors  need to have visibility at all time of what  is happening during the execution.

@@ -23,7 +23,7 @@ The cost of processing a dispute for Pecunia Corp. is very high per dispute and 
 The rules defined for the process are:
 
 
-- Automatic process is only available to Platinum and Gold Credit Card Holders
+- Automatic chargeback is only available to Platinum and Gold Credit Card Holders
 
 
 - The risk of the transaction is determined by the type of user and the amount of the dispute
@@ -114,6 +114,38 @@ In order to match the criteria of the functional requirement we need to add anot
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-property-select-values.png"  width="600" />
 
+8- Complete the same procedure, to import the Fraud Data object, awe don't need to check any property of the Fraud Data just make sure that is there.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-check-fraud-data.png"  width="600" />
+
+9- When you want to modify the data in the objects of the Business Model or facts, you need to store the object of the case in a variable inside the rule. Click on the fact declaration There is FraudData, the wizard to modify the constraints will open.
+
+10- On the last field type data as the name of the variable that you want to use to store the Fraud Data object, click on the button Set
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-data.png"  width="600" />
+
+Now we are going to set the property of automated chargeback to true on the Fraud Data obeject so the dispute can be processed accordingly. Since this is the decision we are making based on the input we will define it as the WHEN clause a.k.a Left Hand Side (LHS) or Action section.
+All of the information of the CC dispute is stored in facts, this facts can live in a session that the engine will keep in memory so every time you evaluate a new fact or change something, you will have all of the Object in the session available and inteviening in the decision making. In the LHS or action section you can change the values of any property on the objects that you have stored in variables, or even add new objects to the session. Everytime a property in an object changes, all of teh decisions wil be reevaluated to make sure that no other rule needs to be applied.
+
+11- Click on the green arrow next to the WHEN keyword, when the Add new action wizard opens select Change field values of data, the variable that you created before and click on +ok.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-data-wizard.png"  width="600" />
+
+12- Now we are going to set teh value of the property automated to true, indicating that an automatic chargeback applies. Click on  the action Set value of Fraud Data and add the property automated. Click on the pencil icon to teh right and assign a literal value to the property.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-automated.png"  width="600" />
+
+13- select true as the value for the automated property. Note that since the type of data is boolean, you can only choose between true or false
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-automated-true.png"  width="600" />
+
+
+14- To validate that everything is correct click on the Validate button on the right and you should see a green "Item successfully validated!" message. Next click on Save.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-validate.png"  width="600" />
+
+
+You have created your first Business Rule using the Guided editor
 
 ***DMN ***
 -----------------------------------
@@ -123,8 +155,11 @@ You can also import your desicion models created in editors like Trisotech into 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-trisotech-dmn.png"  width="600" />
 
 DMN uses a language business friendly called FEEL or Friendly Enough Expression Language.
+
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-dmn-feel.png"  width="600" />
 
+***Decision Tables***
+-----------------------------------
 
 
 

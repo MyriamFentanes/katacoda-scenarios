@@ -14,16 +14,12 @@
                 "text": "businessModel.md"
             },
             {
-                "title": "What is a policy, decision, rule and how can I define one.",
-                "text": "policy-overview.md"
-            },
-            {
                 "title": "Decisions authoring",
-                "text": "cloud-installation.md"
+                "text": "decisions-authoring.md"
             },
             {
                 "title": "Decisions as a service",
-                "text": "verifying-installation.md"
+                "text": "decisions-service.md"
             },
             {
                 "title": "Versioning your services",

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-service.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-authoring.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +37,7 @@
         <counts>
           <entry key="iml" value="3" />
           <entry key="json" value="13" />
-          <entry key="md" value="34" />
+          <entry key="md" value="35" />
           <entry key="png" value="3" />
           <entry key="sh" value="10" />
           <entry key="snippet" value="1" />
@@ -47,7 +51,7 @@
           <entry key="IDEA_MODULE" value="3" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="13" />
-          <entry key="Markdown" value="19" />
+          <entry key="Markdown" value="20" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="1" />
@@ -56,8 +60,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="2468" />
-          <entry key="md" value="28386" />
+          <entry key="json" value="2494" />
+          <entry key="md" value="31497" />
           <entry key="sh" value="377" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -65,8 +69,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="2468" />
-          <entry key="Markdown" value="27437" />
+          <entry key="JSON" value="2494" />
+          <entry key="Markdown" value="30548" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -90,11 +94,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md">
+        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-authoring.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="163">
-                <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <first_editor relative-caret-position="555">
+                <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -107,8 +111,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="1213">
-                <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+              <first_editor relative-caret-position="163">
+                <caret line="12" selection-start-line="12" selection-end-line="12" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -120,8 +124,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="153">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-service.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="615">
+                <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -215,9 +233,10 @@
         <option value="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/intro.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop-pathway.json" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/authentication-authorization.md" />
-        <option value="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md" />
+        <option value="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json" />
+        <option value="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-authoring.md" />
       </list>
     </option>
   </component>
@@ -327,7 +346,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540944265616" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543411929716" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -727,7 +746,33 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2739628" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2739628" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24969475" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.28367347" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.38915664" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993895" visible="true" weight="0.32959184" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32967034" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2739628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24969475" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -751,7 +796,7 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32967034" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -983,25 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1213">
-            <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/components-overview.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -1019,11 +1045,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/policy-overview.md">
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="163">
-            <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <caret line="12" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-service.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="615">
+            <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-authoring.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="555">
+            <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
