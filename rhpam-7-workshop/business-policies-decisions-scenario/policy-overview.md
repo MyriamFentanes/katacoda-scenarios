@@ -98,12 +98,30 @@ First we need to tell the rule what object or collection of objects are we going
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-fact.png"  width="600" />
 
-5- Select the object CardHolder
+5- Select the object CardHolder, and click ok. We are now telling the rule engine that everytime there is a CreditCardHolder we will activate this rule.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-fact-select.png"  width="600" />
 
+In order to match the criteria of the functional requirement we need to add another restriction, automated chargeback is only approved for CC Holders that are of type Platinum or Gold.
+
+6- Click on the condition There is a Credit Card Holder, a new wizard opens, we aregoing to add a restriction to a field in this case the staus of the CC Holder
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-property-select.png"  width="600" />
+
+7- From the dropdown box we select that the status is contained in the list, and add the literal value of Gold and Platinum. TIP: You can also add enumerations containing this values to have them prepopulated for you.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-property-select-values.png"  width="600" />
 
 
+***DMN ***
+-----------------------------------
+
+You can also import your desicion models created in editors like Trisotech into Red Hat Process Automation Manager in the following image we can see and example of the tyoe of diagrams you can create to define the rules to calculate risk.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-trisotech-dmn.png"  width="600" />
+
+DMN uses a language business friendly called FEEL or Friendly Enough Expression Language.
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-dmn-feel.png"  width="600" />
 
 
 
