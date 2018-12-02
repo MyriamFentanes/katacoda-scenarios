@@ -23,7 +23,7 @@
             },
             {
                 "title": "Versioning your services",
-                "text": "authentication-authorization.md"
+                "text": "services-versioning.md"
             }
         ],
         "intro": {

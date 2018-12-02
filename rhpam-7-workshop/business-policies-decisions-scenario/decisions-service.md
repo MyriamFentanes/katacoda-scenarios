@@ -81,3 +81,4 @@ You will see that the project is first build, meaning the assets are compiled an
 Click on the URL of the container and you will be able to see where is your service running as well as the configuration details.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-execution-services-info.png"  width="600" />
+

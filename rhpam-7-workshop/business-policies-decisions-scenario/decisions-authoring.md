@@ -32,8 +32,8 @@ The rules defined for the process are:
 	     - Standard customer 100-500 medium
          - Standard customer anything above 500 high
          - Gold customer anything less than 500 low risk
-         - Gold customer anything more than 500 high risk
-         - Silver customer anything between 250-500 medium low risk
+         - Gold customer anything more than 800 high risk
+         - Silver customer anything between 250-500 medium risk
          - Silver customer anything below 250  low risk
 
 Regulations
@@ -147,10 +147,130 @@ All of the information of the CC dispute is stored in facts, this facts can live
 
 You have created your first Business Rule using the Guided editor
 
+***Decision Tables***
+-----------------------------------
+
+A very common way to define the logic behind the risk assessment is usually stored in spreadsheets, with Red Hat Process Automation Manager you can use the same spreadsheet and make it an executable asset in the engine. In this section we are going to create a Decision table to automate the risk assessment rules that were given to you.
+
+
+1- First we go back to the Library view and we click on the blue button Add Asset
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-add-asset.png"  width="600" />
+
+2- We select Guided Decison Table from the Catalog of assets
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-add-asset-guided.png"  width="600" />
+
+3- Type the following values on the Create New Decision Table wizard
+
+Name: `risk-evaluation`{{copy}}
+Package: `com.fsi_credit_dispute`{{copy}}
+Select the checkbox: Use Wizard
+
+Click ok and Finish
+
+4- You should see the Guided Decision Table Wizard with an empty table.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-new.png"  width="600" />
+
+There are 5 tabs in the wizard:
+
+Model: The model diagram of the Decison Table
+Columns: Wizard to Add, Edit or Delete columns in your table. Each column is a constraint in a property of a Business Model Object.
+Overview: Contains the metainformation of your asset: Version, Description, Last Modified, etc.
+Source: Is the actual source code that is generated from the Decision Table Model.
+Data Objects: Lists the Business Objects available to the wizard to be used as conditions or actions
+
+The properties evaluated to determine the risk scoring are:
+
+- Status of the Credit Card Holder
+- Total Amount disputed from the Fraud Data
+
+Lets add the Credit Card Holder condition column
+
+5- Go to the columns tab and click on the button Insert Column, Select Add Condition and click Next
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-add-condition.png"  width="600" />
+
+6- We need to define what is the object that is going to be evaluated. Click on Create new fact pattern, we select CreditCardHolder as the Fact type and we create a variable called holder and bind the object to it. Click next
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern.png"  width="600" />
+
+7- The calculation type is the type of evaluation that we are going to apply, in this case it will be against literal values. Select literal value and Click next
+
+8- Select the field status and Click Next
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field.png"  width="600" />
+
+9- Next we select the operation for the constraint, select equal to from the drop down menu and Click next
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-operator.png"  width="600" />
+
+10- Since there are only 3 possible status, we are going to configure the Value List with the following and then click Next
+
+`"Standard,Gold,Silver"`{{copy}}
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-values.png"  width="600" />
+
+11- We now configure the label of the column
+
+Header: `Status`{{copy}}
+
+Click Finish and hgo back to the tab model. Yoou should see the new created column.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-header.png"  width="600" />
+
+12- Repeat the same steps to add 2 more columns both for the object FraudData, property: totalFraudAmount operation: greater than for one column and less than for the second column. Note that for the second column you don't need to create a new fact pattern, you can reuse the existing one.
+
+
+At the end you should have something like this
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns.png"  width="600" />
+
+13- Next go to the Columns tab and Click on insert column, select Set the value of a field, this time we are adding an action that will be fired if the conditions are met. Click Next
+
+14- We want to determine the risk scoring property of the FraudData object, so in the dropdown menu select the object FraudData stored in teh variable data.Click Next
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns-action-data.png"  width="600" />
+
+15-  Select the field disputeRiskData and click Next , we don;t have a list of values so click Next, type Risk Scoring as the header for the column and click Finish
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns-action-data-finish.png"  width="600" />
+
+16- go back to your model tab and you should have something like this:
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns-action-data-finish-model.png"  width="600" />
+
+Now we are going to add the actual constraints, if we look back to our requirements the first decision is:
+
+Standard customer 0-100 risk low risk
+
+Click on the button Insert and select append row from the dropdown menu.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-append-row.png"  width="600" />
+
+Click on the Description cell of the new row and type Low risk standard costumer, repeat for the rest of teh columns with the following values
+
+Description:`Low risk standard costumer`{{copy}}
+Status:`Standard`{{copy}}
+Minimum Amount:`0`{{copy}}
+Max Amount:`100`{{copy}}
+Risk Scoring:`100`{{copy}}
+
+You shoud have something like the following at the end. Click Save.
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-first-row.png"  width="600" />
+
+Do the same procedure for the rest of the rules.
+
+
+
+
 ***DMN ***
 -----------------------------------
 
-You can also import your desicion models created in editors like Trisotech into Red Hat Process Automation Manager in the following image we can see and example of the tyoe of diagrams you can create to define the rules to calculate risk.
+You can also import decision models created in editors like Trisotech into Red Hat Process Automation Manager in the following image we can see and example of the tyoe of diagrams you can create to define the rules to calculate risk.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-trisotech-dmn.png"  width="600" />
 
@@ -158,8 +278,9 @@ DMN uses a language business friendly called FEEL or Friendly Enough Expression 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-dmn-feel.png"  width="600" />
 
-***Decision Tables***
------------------------------------
+DMN is outside the scope of this scenario, but as you see you have multiple tools available to automate the decisions of your process and in your business applications.
+
+
 
 
 

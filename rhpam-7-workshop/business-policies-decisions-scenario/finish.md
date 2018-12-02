@@ -1,1 +1,2 @@
-This scenario has explained how to launch a Kubernetes cluster. In future scenarios you'll learn more details about Kubernetes, starting with launching your first example application.
+This scenario has how to author, package, deploy and execute the assets to automate the decision making in your Credit Card Dispute process.
+

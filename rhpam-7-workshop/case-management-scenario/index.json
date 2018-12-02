@@ -10,20 +10,20 @@
                 "text": "use-case-overview.md"
             },
             {
-                "title": "Business Object Model.",
-                "text": "businessModel.md"
+              "title": "What is Case Management",
+                "text": "case-management-overview.md"
             },
             {
-                "title": "Decisions authoring",
-                "text": "decisions-authoring.md"
+                "title": "Case authoring",
+                "text": "case-authoring.md"
             },
             {
-                "title": "Decisions as a service",
-                "text": "decisions-service.md"
+                "title": "Integrating the case with Decisions and other services",
+                "text": "decisions-service-integration.md"
             },
             {
-                "title": "Versioning your services",
-                "text": "authentication-authorization.md"
+                "title": "Testing your case",
+                "text": "case-testing.md"
             }
         ],
         "intro": {
