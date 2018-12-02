@@ -61,7 +61,7 @@ Case Definition
 
 
 Case Roles
----------------
+----------
 
 - Case roles are generic participants that will be involved in case handling
 
@@ -74,5 +74,48 @@ Case Roles
 - Case roles are typically defined when a new case starts
 
 - Can be modified at any time as long as case instance is active though it will not have effect on tasks already created based on previous role assignment.
+
+Milestones
+----------
+
+Milestones are part of the case definition and keeps track of important achievement for a case instance
+
+- Milestone actually uses case file as condition to trigger
+
+- Only then milestone will be completed and will follow to next node
+
+- Initial milestones usually are marked to autostart, Adhoc Autostart set to true
+
+- Subsequent milestones must be triggered when a milestone ends
+
+- This is achieved using BPMN signals
+
+- Signal scope must be Process-Instance
+
+Case Stages
+------------
+
+- A stage encompasses a set of activities.
+
+- APIs to check the stage of a process.
+
+- A conditional expression define the completion logic.
+
+Dynamic Activities
+-------------------
+
+- Dynamic means process definition that is behind a case has no such node/activity
+- Cases are not structured, they are dynamic and provide room for dynamic tasks
+- Since dynamic tasks do not have data output definition there is only one way to put output from task/subprocess to the process instance - by name. This means the name of the returned output of a task must match by name process variable to be mapped.
+- Dynamic BPMN activities are
+
+   - user task
+   - service task
+   - sub process - reusable
+
+
+
+
+
 
 

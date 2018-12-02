@@ -58,7 +58,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="2691" />
-          <entry key="md" value="41281" />
+          <entry key="md" value="41346" />
           <entry key="sh" value="377" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -67,7 +67,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2691" />
-          <entry key="Markdown" value="40332" />
+          <entry key="Markdown" value="40397" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -98,8 +98,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-management-overview.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="427">
-                <caret line="71" selection-start-line="71" selection-end-line="71" />
+              <first_editor relative-caret-position="352">
+                <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -303,7 +303,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543771510444" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543771675361" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -343,13 +343,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Adding content to the component overview">
-      <created>1537900409483</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1537900409483</updated>
     </task>
     <task id="LOCAL-00037" summary="Adding content to the component overview">
       <created>1537901571120</created>
@@ -687,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543770159685</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Adding content to the installation">
+      <created>1543771515037</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1543771515038</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1113,8 +1113,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-management-overview.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="427">
-            <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <first_editor relative-caret-position="352">
+            <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
