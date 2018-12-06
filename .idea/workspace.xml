@@ -58,7 +58,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="2691" />
-          <entry key="md" value="43893" />
+          <entry key="md" value="46422" />
           <entry key="sh" value="377" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -67,7 +67,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2691" />
-          <entry key="Markdown" value="42944" />
+          <entry key="Markdown" value="45473" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -89,8 +89,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="213">
-                <caret line="26" column="410" selection-start-line="26" selection-start-column="410" selection-end-line="26" selection-end-column="410" />
+              <first_editor relative-caret-position="216">
+                <caret line="49" column="86" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -104,7 +104,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="266">
-                <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+                <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -241,7 +241,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544091026571" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544096186747" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -281,13 +281,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Adding content to the component overview">
-      <created>1538132493211</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1538132493212</updated>
     </task>
     <task id="LOCAL-00040" summary="Adding content to the component overview">
       <created>1538139375343</created>
@@ -625,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544089118569</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Adding content to the installation">
+      <created>1544091033820</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1544091033820</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TodoView">
@@ -657,7 +657,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.28367347" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.38915664" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993895" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1052,7 +1052,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="266">
-            <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -1063,8 +1063,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="213">
-            <caret line="26" column="410" selection-start-line="26" selection-start-column="410" selection-end-line="26" selection-end-column="410" />
+          <first_editor relative-caret-position="216">
+            <caret line="49" column="86" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

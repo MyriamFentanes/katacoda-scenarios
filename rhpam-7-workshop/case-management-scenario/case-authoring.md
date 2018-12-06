@@ -10,7 +10,7 @@ You will learn in this section:
 2- What are the authoring tools available to you.
 
 
-You are in charge of automating the decisions that need to be taken to solve a dispute, solving a credit card dispute depends on several variables like  the type of customer, the amount of the dispute etc. The knowledge of how to apply this rules and decisions is tacit, lives only in the head of other domain experts like you, in order to automate the process you have to first define what are the steps of the process.
+You are in charge of automating the whole process to solve a dispute, solving a credit card dispute depends on several variables like  the type of customer, the amount of the dispute etc. The knowledge of how to apply this rules and decisions is tacit, lives only in the head of other domain experts like you, in order to automate the process you have to first define what are the steps of the process.
 
 What happens when a Credit Card Holder starts a dispute?
 
@@ -28,7 +28,8 @@ Case management planning is typically concerned with determination of which Task
 
 NOTE: In real life the Issuer would deal with the Credit Card Processor and not the merchant directly but for the sake of simplicity we will just take the merchant into account.
 
-***Case Specification***
+
+***Case Notation Specification***
 
 CMMN is a standard mantained by the OMG that defines the specification to graphically express a case, as we saw earlier in the overview there are some key components that we will use, like the following:
 
@@ -44,14 +45,37 @@ CMMN is a standard mantained by the OMG that defines the specification to graphi
 
     - Milestone: Is a PlanItemDefinition that represents an achievable target, defined to enable evaluation of progress of the Case. No work is directly associated with a Milestone, but completion of set of tasks or the availability of key deliverables (information in the CaseFile) typically leads to achieving a Milestone.
 
+Another characteristic of a case, is that it has a more dynamic lifecycle, in a regular process the final state is: finalized it can be due to completeness, error, or abortion of the process instance but once the process is terminated you can't restart it, with a case is different if for some reason the CC Holder is not happy with the decision of the dispute the lifecycle of the case allows the owner to reopen it. In the following picture we can see the lifecycle of a case.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-case-lifecycle.png"  width="600" />
+
+
+Functional requirements of your Case
+------------------------------------
+
+There are several thing that could happen when you dispute a case, we will see 2 different scenarios
+
+Automated Chargeback
+A credit card dispute over billing errors has a good chance of being resolved in your favor thanks to the Fair Credit Billing Act, which regulates how credit card companies handle these disputes, or depending of the amount of the transaction or your status as a customer you can also qualify for an automated chargeback.
+The process would look like:
+
+1- CC Holder starts the dispute
+2- The information of the case is evaluated and the decision of an automated chargeback is taken.
+3- The issuer of the Credit Card (CC) will credit into your account the disputed amount.
+
+The next scenario involves a manual approval and further investigation to determine if the dispute is approved or rejected
+
+1- CC Holder starts the dispute
+2- The information of the case is evaluated and the decision of a non automated chargeback is taken.
+3- A knowledge worker from the issuer bank reviews tha case file and determines the documents needed from the Credit Card Holder to solve the dispute.
+4- The CC Holder submits the documents.
+5- A knowledge worker reviews the documentation and determines if the documents are complete or if more information and docs are required, you go back to step3
+6- If no more documents are needed from the CC Holder a knowledge worker has to determine if the Merchant needs tobe contacted tp request documents and then trigger again a review of the Merchant documentation
+7- In parallel you have to evaluate the information of the case to determine if a manual approval is needed or you can just solve the case automatically with the information available.
 
 
 
-----------------------------------------------------------------
 
-Regulations
-
-- If the customer billing address is in the state on Texas, California or Florida the dispute should be consider of higher risk.
 
 
 
