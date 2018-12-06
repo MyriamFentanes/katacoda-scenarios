@@ -10,6 +10,8 @@ You will learn in this section:
 2- What are the authoring tools available to you.
 
 
+Overview
+----------
 You are in charge of automating the whole process to solve a dispute, solving a credit card dispute depends on several variables like  the type of customer, the amount of the dispute etc. The knowledge of how to apply this rules and decisions is tacit, lives only in the head of other domain experts like you, in order to automate the process you have to first define what are the steps of the process.
 
 What happens when a Credit Card Holder starts a dispute?
@@ -57,7 +59,8 @@ Functional requirements of your Case
 
 There are several thing that could happen when you dispute a case, we will see 2 different scenarios
 
-Automated Chargeback
+***Automated Chargeback***
+
 A credit card dispute over billing errors has a good chance of being resolved in your favor thanks to the Fair Credit Billing Act, which regulates how credit card companies handle these disputes, or depending of the amount of the transaction or your status as a customer you can also qualify for an automated chargeback.
 The process would look like:
 
@@ -66,6 +69,8 @@ The process would look like:
 2- The information of the case is evaluated and the decision of an automated chargeback is taken.
 
 3- The issuer of the Credit Card (CC) will credit into your account the disputed amount.
+
+***Manual Approval***
 
 The next scenario involves a manual approval and further investigation to determine if the dispute is approved or rejected
 
