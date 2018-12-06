@@ -1,19 +1,22 @@
 
-How to author Decisions and rules?
-----------------------------------
+How to author a Case?
+---------------------
 
 You will learn in this section:
 
 
-1- How to use your Business Object Model to automate decisions and policies.
+1- How to author your first case.
 
-2- The different types of authoring tools available to you.
-
-3- How to use your automated decisions and rules.
+2- What are the authoring tools available to you.
 
 
-You are in charge of automating the decisions that need to be taken to solve a dispute, solving a credit card dispute depends on several variables like  the type of customer, the amount of the dispute etc. The knowledge of how to apply this rules and decisions is tacit, lives only in the head of other domain experts like you, in order to automate the process you will have to express it in teh form of rules.
-For this particular case 2 set of rules are defined for different stages on the process:
+You are in charge of automating the decisions that need to be taken to solve a dispute, solving a credit card dispute depends on several variables like  the type of customer, the amount of the dispute etc. The knowledge of how to apply this rules and decisions is tacit, lives only in the head of other domain experts like you, in order to automate the process you have to first define what are the steps of the process.
+
+What happens when a Credit Card Holder starts a dispute?
+
+A Credit Card Dispute process is not a straightforward process, you don't start at point A and then follow the path to point B, what happens is that depending on the decision made along the process, and most important the data of the case, you will jum back and forth different steps to be able to solve the dispute.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-diagram-users.png"  width="600" />
 
 
 ***Calculating the Risk***
@@ -150,7 +153,7 @@ You have created your first Business Rule using the Guided editor
 ***DMN ***
 -----------------------------------
 
-You can also import your desicion models created in editors like Trisotech into Red Hat Process Automation Manager in the following image we can see and example of the tyoe of diagrams you can create to define the rules to calculate risk.
+You can also import your decision models created in editors like Trisotech into Red Hat Process Automation Manager in the following image we can see and example of the tyoe of diagrams you can create to define the rules to calculate risk.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-trisotech-dmn.png"  width="600" />
 
