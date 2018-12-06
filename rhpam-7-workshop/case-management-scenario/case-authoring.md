@@ -98,10 +98,6 @@ Some of the previous steps depicted can be active in parallel or after you have 
 
 - Documentation received from CC Holder
 
-- Documentation received from the Merchant
-
-- Manual processing started
-
 - Automated Chargeback processing
 
 - Account credited
@@ -307,7 +303,8 @@ At the end you should have something like the following:
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-variables.png"  width="600" />
 
 
-***The roles**
+***Roles***
+
 People can have different roles in our case, the mapping to this roles is provided when the case instance is started, and can be changed afterwards.
 Defining the roles
 
@@ -324,7 +321,7 @@ Case Cardinality: 1
 Case Role: `owner`{{copy}}
 Case Cardinality: 1
 
-***The Milestones ***
+***Milestones ***
 -----------------------------------
 
 We have defined the case variables , if you want to skip to the next step you can import the following repository. You can watch the video on how to import a repository into your workspace
@@ -373,3 +370,18 @@ Select constant as the value and type
 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-docs-received.png"  width="600" />
+
+In here we are checking that the variable customerDocReviewed is true to trigger Milestone 2: Customer doc received and consider that target as achieved. We will repeat the same process for the other milestones we defined at the beginning.
+
+Name:  `Milestone 3: Automated Chargeback`{{copy}}
+Condition:`org.kie.api.runtime.process.CaseData(data.get("vendorDocReceived") == true)`{{copy}}
+
+This Milestones will be triggered by a signal
+
+Name:  `Milestone 4: Account credited`{{copy}}
+Condition:none
+
+
+Name:  `Milestone 5:  Dispute rejected`{{copy}}
+Condition:none
+
