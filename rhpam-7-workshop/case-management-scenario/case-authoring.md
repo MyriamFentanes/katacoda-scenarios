@@ -290,6 +290,10 @@ Package: `com.fsi_credit_dispute`{{copy}}
 
     KPI: false
 
+At the end you should have something like the following:
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-variables.png"  width="600" />
+
 
 
 ***The Authoring Tools ***
