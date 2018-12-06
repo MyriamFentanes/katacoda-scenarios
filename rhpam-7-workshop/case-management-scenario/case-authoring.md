@@ -62,7 +62,9 @@ A credit card dispute over billing errors has a good chance of being resolved in
 The process would look like:
 
 1- CC Holder starts the dispute
+
 2- The information of the case is evaluated and the decision of an automated chargeback is taken.
+
 3- The issuer of the Credit Card (CC) will credit into your account the disputed amount.
 
 The next scenario involves a manual approval and further investigation to determine if the dispute is approved or rejected
