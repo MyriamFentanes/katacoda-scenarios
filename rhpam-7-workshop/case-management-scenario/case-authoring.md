@@ -15,29 +15,39 @@ You are in charge of automating the decisions that need to be taken to solve a d
 What happens when a Credit Card Holder starts a dispute?
 
 A Credit Card Dispute process is not a straightforward process, you don't start at point A and then follow the path to point B, what happens is that depending on the decision made along the process, and most important the data of the case, you will jum back and forth different steps to be able to solve the dispute.
+We have 3 main entities involved in the dispute:
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-diagram-users.png"  width="600" />
+- Credit Card Holder
+- Bank that issues the Credit Card
+- Merchant that sales the products or services.
+
+As we saw earlier since this is a dynamic process, the best way to model it is as a Case, so we can have the flexibility to jump through the steps back and forth as we gather the information necessary to solve it.
+The Issuer will gather information from the Credit Card Holder and the merchant and store it in the Case File. This Case File can be accessed by all of the actors at any time, but you can also apply restrictions to the information.
+
+Case management planning is typically concerned with determination of which Tasks are applicable, or which follow-up Tasks are required, given the state of the Case. Cases are directed not just by explicit knowledge about the particular Case and its context represented in the CaseFile, but also by explicit knowledge encoded as rules by business analysts, the tacit knowledge of human participants, and tacit knowledge from the organization or community in which participants are members.
+
+NOTE: In real life the Issuer would deal with the Credit Card Processor and not the merchant directly but for the sake of simplicity we will just take the merchant into account.
+
+***Case Specification***
+
+CMMN is a standard mantained by the OMG that defines the specification to graphically express a case, as we saw earlier in the overview there are some key components that we will use, like the following:
+
+    - Case File: The Case information is represented by the CaseFile. It contains CaseFileItems that can be any type of data structure, CaseFile serves as context for raising events and evaluating Expressions as well as point of reference to guide the execution of the process, all the data including documents that we need to get to be bale to solve the dispute will be stored in the CaseFile.
+
+    - Human Task: Is a Task that is performed by a Case worker.
+
+    - Process Task: Can be used in the Case to call a Business Process.
+
+    - Decision Task: Can be used in the Case to invoke a Decision. A Decision in CMMN is an abstraction of Decisions as they are specified in various Decision Modeling specifications.
+
+    - Stages:  Stages may be considered “episodes” of a Case, though Case models allow for defining Stages that can be planned in parallel also. You would normally group tasks that logically belong together in a stage.
+
+    - Milestone: Is a PlanItemDefinition that represents an achievable target, defined to enable evaluation of progress of the Case. No work is directly associated with a Milestone, but completion of set of tasks or the availability of key deliverables (information in the CaseFile) typically leads to achieving a Milestone.
 
 
-***Calculating the Risk***
-
-The cost of processing a dispute for Pecunia Corp. is very high per dispute and totally independent of the amount that is been disputed, that is why its very important to have flexible rules that are compliant on one hand but also that take into acco time unt the profile and loyalty of Pecunia Corp. customers to solve a dispute.Right now all the process is manual, so there is a group of agents dedicated to make decisions based on the data of the dispute, this is not only expensive but also very prone to error and inconsistent.
-
-The rules defined for the process are:
 
 
-- Automatic chargeback is only available to Platinum and Gold Credit Card Holders
-
-
-- The risk of the transaction is determined by the type of user and the amount of the dispute
-
-         - Standard customer 0-100 risk low risk
-	     - Standard customer 100-500 medium
-         - Standard customer anything above 500 high
-         - Gold customer anything less than 500 low risk
-         - Gold customer anything more than 500 high risk
-         - Silver customer anything between 250-500 medium low risk
-         - Silver customer anything below 250  low risk
+----------------------------------------------------------------
 
 Regulations
 
