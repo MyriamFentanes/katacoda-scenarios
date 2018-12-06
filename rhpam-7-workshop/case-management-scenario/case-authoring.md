@@ -372,3 +372,4 @@ Select constant as the value and type
 `org.kie.api.runtime.process.CaseData(data.get("customerDocReviewed") == true)`{{copy}}
 
 
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-docs-received.png"  width="600" />
