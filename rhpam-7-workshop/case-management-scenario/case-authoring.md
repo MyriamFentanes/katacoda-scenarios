@@ -68,16 +68,22 @@ The process would look like:
 The next scenario involves a manual approval and further investigation to determine if the dispute is approved or rejected
 
 1- CC Holder starts the dispute
+
 2- The information of the case is evaluated and the decision of a non automated chargeback is taken.
+
 3- A knowledge worker from the issuer bank reviews tha case file and determines the documents needed from the Credit Card Holder to solve the dispute.
+
 4- The CC Holder submits the documents.
+
 5- A knowledge worker reviews the documentation and determines if the documents are complete or if more information and docs are required, you go back to step3
+
 6- If no more documents are needed from the CC Holder a knowledge worker has to determine if the Merchant needs tobe contacted tp request documents and then trigger again a review of the Merchant documentation
+
 7- In parallel you have to evaluate the information of the case to determine if a manual approval is needed or you can just solve the case automatically with the information available.
 
 
-
-
+Milestones of the Case
+----------------------
 
 
 
