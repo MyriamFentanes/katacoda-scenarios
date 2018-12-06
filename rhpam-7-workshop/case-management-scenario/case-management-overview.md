@@ -8,7 +8,8 @@ Red Hat Process Automation Manager enables you to automate different pieces of y
 BPM and Case Management
 -----------------------
 
-
+BPM
+----
 BPM is a management practice that views the "process" as the most important organizing theme. It can be used only when processes are repeatable. A practitioner of BPM talks about "optimizing a process".
 
 In order to optimize a process, there must be a concrete representation of a given process; it must be useful for many individual instances of the process; you must be able to measure how good this process is in abstract from a given case. BPM is a practice of perfecting that process is for the purpose of supporting of future cases.
@@ -16,6 +17,9 @@ In order to optimize a process, there must be a concrete representation of a giv
 This only works if you have confidence that future cases will be like the cases of the past that you are measuring the process against.
 
 In short, the process must be predictable. BPM is based on mass production principles: the up front investment that you make in perfecting the process, is paid back in a increase in efficiency over many instances of the process.
+
+Case Management
+---------------
 
 Case Management is a technique that is useful when processes are not repeatable. A case represents a situation without necessarily requiring a process.
 
