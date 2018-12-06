@@ -152,7 +152,7 @@ Package: `com.fsi_credit_dispute`{{copy}}
 
 
 
-    Name:  `customerStatus`{{copy}}
+Name:  `customerStatus`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -162,7 +162,7 @@ Package: `com.fsi_credit_dispute`{{copy}}
 
     KPI: false
 
-    Name:  `totalFraudAmount`{{copy}}
+Name:  `totalFraudAmount`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -172,7 +172,7 @@ Package: `com.fsi_credit_dispute`{{copy}}
 
     KPI: false
 
-    Name:  `fraudData`{{copy}}
+Name:  `fraudData`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -181,7 +181,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `approveChargeback`{{copy}}
+
+Name:  `approveChargeback`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -190,7 +191,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `customerAge`{{copy}}
+
+Name:  `customerAge`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -199,7 +201,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `incidentCount`{{copy}}
+
+Name:  `incidentCount`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -208,7 +211,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `cardholder`{{copy}}
+
+Name:  `cardholder`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -217,7 +221,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `cardholderRiskRating`{{copy}}
+
+Name:  `cardholderRiskRating`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -226,7 +231,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `caseType`{{copy}}
+
+Name:  `caseType`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -235,7 +241,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `managerApprovalRequired`{{copy}}
+
+Name:  `managerApprovalRequired`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -244,7 +251,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `managerReason`{{copy}}
+
+Name:  `managerReason`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -253,7 +261,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `vendorDoc`{{copy}}
+
+Name:  `vendorDoc`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -262,7 +271,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `vendorDocRequired`{{copy}}
+
+Name:  `vendorDocRequired`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -271,7 +281,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `vendorDocReviewed`{{copy}}
+
+Name:  `vendorDocReviewed`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
@@ -280,7 +291,8 @@ Package: `com.fsi_credit_dispute`{{copy}}
     Case File: true
 
     KPI: false
-    Name:  `customerDocReviewed`{{copy}}
+
+Name:  `customerDocReviewed`{{copy}}
 
     Defined Types: Client (this is the type we created earlier)
 
