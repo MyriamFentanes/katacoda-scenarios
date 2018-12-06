@@ -28,6 +28,8 @@ Case management planning is typically concerned with determination of which Task
 
 NOTE: In real life the Issuer would deal with the Credit Card Processor and not the merchant directly but for the sake of simplicity we will just take the merchant into account.
 
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-diagram-users.png"  width="600" />
+
 
 ***Case Notation Specification***
 
