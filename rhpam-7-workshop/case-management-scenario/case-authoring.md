@@ -92,6 +92,204 @@ The next scenario involves a manual approval and further investigation to determ
 Milestones of the Case
 ----------------------
 
+Some of the previous steps depicted can be active in parallel or after you have completed them you can go back to the same step if necessary, also some of the steps are discretionary so they might never be triggered. In order to follow the progress of the case we have Milestones, here we will define the milestones or the tragets that the dispute has to achieve to be solved.
+
+- Dispute started
+
+- Documentation received from CC Holder
+
+- Documentation received from the Merchant
+
+- Manual processing started
+
+- Automated Chargeback processing
+
+- Account credited
+
+- Dispute rejected
+
+
+
+This are the achievable targets to help us track the progress of teh dispute, they don't have any particular order, so you can come back to any of them if something in the Case File data changes
+
+
+Modeling the Milestones of the Case
+-----------------------------------
+
+We have defined the Business Object Model and the Business Decisions on the last lab, so you need to import the following repository. You can watch the video about how to import a repository into your workspace
+
+1- Import the rest of the Domain Model and Decisions by importing the project Domain Model and Rules CC Dispute  from the following repository:
+
+https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
+
+1- Go to your library view and click on Add Asset, from the asset catalog select Business Process Legacy, configure the following values:
+
+Name: `ChargeDispute`{{copy}}
+Package: `com.fsi_credit_dispute`{{copy}}
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-asset-business-legacy.png"  width="600" />
+
+*** The Modeler***
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-explained.png"  width="600" />
+
+1- Modelling Canvas - this is your process drawing board. After dropping different shapes onto the canvas, you can move them around, connect them, etc. Clicking on a shape on the canvas allows you to set its properties in the expandable Properties Window (3) (as well as create connecting shapes and morph the shape into other shapes).
+
+2- Toolbar - the toolbar contains a vast number of functions offered by Designer (described later). These includes operations that can be performed on shapes present on the Canvas. Individual operations are disabled or enabled depending on what is selected. For example, if no shapes are selected, the Cut/Paste/Delete operations are disabled, and become enabled once you select a shape. Hovering over the icons in the Toolbar displays the description text of the operation.
+
+3-  Properties Panel - this expandable section on the right side of Designer allows you to set both process and shape properties. It is divided into four sections, namely "Core properties", "Extra Properties, "Graphical Settings" and "Simulation Properties". After clicking on a shape in the Canvas, this panel is reloaded to show properties specific to that shape type. If you click on the canvas itself (not on a shape) the panel displays general process properties.
+
+4-  Object Library Panel - the expandable section on the left side of Designer shows the jBPM BPMN2 (default) shape repository tree. It includes all shapes of the jBPM BPMN2 stencil set which can be used to assemble your processes. If you expand each section sub-group you can see the BPMN2 elements that can be placed onto the Designer Canvas (1) by dragging and dropping the shape onto it.
+
+5- View Tabs - currently Designer offers three tabs for Process Modelling, Simulation and Documentation. Process Modelling is the default tab. When users run process simulation, its results are presented in the Simulation tab. Process Documentation tab displays documentation generated from process definition.
+
+6- Info Tabs - there are two additional tabs at the top of Designer. The Editor tab includes the process modeling while the Overview tab displays the process metadata such as version history, creation date, last modification date etc.
+
+*** Defining Case Variables***
+
+1- On the properties panel, In the Variable Definitions property field, click on the v icon to open the variable definitions editor, add the following values
+
+
+
+    Name:  `customerStatus`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+
+    Name:  `totalFraudAmount`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+
+    Name:  `fraudData`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `approveChargeback`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `customerAge`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `incidentCount`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `cardholder`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `cardholderRiskRating`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `caseType`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `managerApprovalRequired`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `managerReason`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `vendorDoc`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type: org.jbpm.document.Document
+
+    Case File: true
+
+    KPI: false
+    Name:  `vendorDocRequired`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `vendorDocReviewed`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+    Name:  `customerDocReviewed`{{copy}}
+
+    Defined Types: Client (this is the type we created earlier)
+
+    Custom Type:
+
+    Case File: true
+
+    KPI: false
+
 
 
 ***The Authoring Tools ***
