@@ -18,6 +18,10 @@
                 "text": "cloud-installation.md"
             },
             {
+                "title": "Cloud installation continued",
+                "text": "cloud-installation-continued.md"
+            },
+            {
                 "title": "Verifying the installation",
                 "text": "verifying-installation.md"
             },
