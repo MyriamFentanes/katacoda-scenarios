@@ -1,66 +1,67 @@
-Red Hat Process Automation Manager is part of a rich set of tools to develop enterprise solution with multiple capabilities, thought to support multidisciplinary teams with teh right tool for every task a hand.
+Red Hat Process Automation Manager is part of a rich set of tools to develop enterprise solution with multiple capabilities, thought to support multidisciplinary teams with the right tools for the tasks at hand.
 
-The native cloud environment was already provisioned for you, you can access it either using a terminal y you are a developer:
-Login
------
+The cloud native OpenShift environment has already been provisioned for you. You can access it either via a terminal command line (for example if you're an IT professional) or via a web-based console.
 
-***Command line***
+## Login
 
-So for example you can log in as developer from the command line tool `oc login -u developer -p developer`{{execute}}
+### Command Line
 
-As you can see the IT engineers have already provision an environment for you, in a project called credit-card-dispute.
+If you want to login to the OpenShift system via the command line interface, you can do so by executing the following command in the terminal: `oc login -u developer -p developer`{{execute}}
 
-
-***Web Console***
-
-If you don't want to interact with the platform from a command line terminal, you can also access the Web Console. The OCP Console is available on one of the tabs in your screen.
-
-    - Login using the same credentials that you used before.
-
-    - You will see a list of the projects that you have access to. In this case is only Credit Card Dispute.
-
-** Red Hat Process Automation Platform **
-
-When you click on the project you can see there are 2 deployments listed.
-
-     - cc-dispute-kieserver
-     - cc-dispute-rhpamcentr
-
- If you look at the diagram,this comprises your working environment.
- But what if you have special needs of tools and components? Or you simply want to know what you are working on.
- Lets go ahead and delete the whole project and start a new deployment based on your requirements.
-
-     - Go back to your home page by clicking the home icon on the top left hand side.
-     - Click on the kebab on the right hand side of your project name
-     - Select Delete Project.
-     - Type in `credit-card-dispute`{{copy}}
-     - Click on Delete.
-
-Now what?
----------
-****Extra points****
+As you can see, the IT engineers have already provisioned an environment for you in a project called _credit-card-dispute_.
 
 
-****TEMPLATES****
+### Web Console
+
+You can also interact with the OpenShift Container Platform via the Web Console. The OCP Console is available on one of the tabs on the right side of your screen.
+
+- Click on the _OpenShift Console_ tab to open the web-console's login screen
+- Login with username `developer`{{copy}} and password `developer`{{copy}}
+- You will see a list of the projects that you have access to. In this case is only Credit Card Dispute. Click on the project to open the project page.
+
+## Red Hat Process Automation Platform
+
+When you click on the project you can see there are 2 deployments listed:
+- cc-dispute-kieserver
+- cc-dispute-rhpamcentr
+
+The overview page shows you your working environment. But what if you have special needs of tools and components? Or you simply want to know what you are working on. Lets go ahead and delete the whole project and start a new deployment based on your requirements.
+
+1. Go back to your home page by clicking the home icon on the top left hand side.
+2. Click on the kebab on the right hand side of your project name
+3. Select Delete Project.
+4. Type in `credit-card-dispute`{{copy}}
+5. Click on Delete.
+
+## Now what?
+
+### Extra points
 
 
- What is a template? Red Hat Process Automation new design is activity centered, so you have predefined environments available to deploy depending on what do you want to accomplish. the definition is modeled in form of templates which are environments that follow a Red Hat prescriptive deployment architecture, to provide a fully working  platform for development, production, or SIT  to develop, integrate, test or run processes and other assets.
+#### Templates
+
+What is a template? Red Hat Process Automation Manager's new design is activity focussed. This means that you have predefined environments available for you to deploy depending on what you want to accomplish. The definitions are modelled in the form of templates. A template describes an environment that follows a Red Hat prescriptive deployment architecture. Templates are provided that define and deploya fully working  platform for development, test, production, etc. Depending on whether you want to develop, integrate, test or run processes and other assets, you can choose your environment of choice.
  Some examples of the available templates are:
 
-      -  If you are a business user that will author business assets- rhpam70-authoring
-      -  If you are the administrator of the platform and you want a production like environment with immutable engines: rhpam70-prod-immutable-kieserver
-      -  If you are part of the operations team and you want to monitor your production environment: rhpam70-prod-immutable-monitor
-      -  If you want a quick demo environment to test the platform - rhpam70-trial-ephemeral
+- `rhpam70-authoring`: The environment of choice if you are a business user or developer that wants to author business automation projects, assets and applications. Provides an authoring environment including the workbench and an execution server.
+- `rhpam70-prod-immutable-kieserver`: If you are the administrator of the platform and you want a production like environment with immutable execution engines.
+- `rhpam70-prod-immutable-monitor`: If you are part of the operations team and you want to monitor your production environment.
+- `rhpam70-trial-ephemeral`: If you want a quick demo environment to test the platform. Provides the same environment as the `authoring` template but without persistent storage.
 
- The difference between them lies on what type of environment do you want?, what do you want it for?, with high availability or not? So for example if you want an environment to author rules and process, you have the rhpam70-authoring.yaml that contains all the components necessary to do so. See the image above.
- Quiz: From the previous step what components do you recognize in this template?
+What kind of environment is right for your you depends on your requirements:
+- what type of environment do you want?
+- what do you want it for?
+- do you need high availability or not?
 
- In this particular case because you need a complete authoring environment with a process server where you can test your assets we could deploy the authoring environment, however due to the restrictions on this environment we will use the ephemera template instead.
+For example, if you want an environment to author rules and processes, you can use the `rhpam70-authoring.yaml` that contains all the components necessary to do so. See the image below.
 
 <img src="../../assets/middleware/rhpam-7-workshop/rhpam70-authoring.png" width="600" />
 
-You will be working in a development version of the Credit Card Dispute project, you need an environment that has no security restrictions, one of the new features in the Red Hat Process Automation Manager is the ability to just order a complete environment with just the components needed for your daily tasks.
+-----------
+
+Quiz: From the previous step what components do you recognize in this template?
+
+-----------
+In the case of this workshop, because you need a complete authoring environment with a process server where you can test your assets, we could (or should) deploy the authoring environment. However due to the restrictions of this environment (the platform does not provide persistent storage), we will use the ephemeral template instead.
 
 <img src="../../assets/middleware/rhpam-7-workshop/rhpam70-ephimeral-template.png" width="600" />
-
-

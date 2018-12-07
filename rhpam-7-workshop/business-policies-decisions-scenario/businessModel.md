@@ -1,6 +1,5 @@
 
-Business Object Model
----------------------
+# Business Object Model
 
 In this section you will learn
 
@@ -28,9 +27,7 @@ So far we can identify 3 major entities:
 - Additional Information
 
 
-***The Business Domain Context ***
------------------------------------
-
+## The Business Domain Context
 
 You as business domain expert, need to define what is the domain model for the business capability you are trying to automate. Eric Evans coined the term Domain Driven Design that holds 3 main guiding principles: Focus on the core domain; explore models in a creative collaboration of domain practitioners and software practitioners; and speak a ubiquitous language within an explicitly bounded context. You can learn more about this design approach in his book.
 So the first and very important task to automate a core business capability is to create a definition of the business entities within the context of Credit Card Dispute, in this case the first entity is the Customer, the definition in the context of our use case maybe totally different from the definition inside Pecunia Corp. but it will be common  among the team of business and technology experts.
@@ -85,9 +82,3 @@ Type: Integer
 9- Create the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
 https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
-
-
-
-
-
-
