@@ -14,7 +14,11 @@
                 "text": "case-management-overview.md"
             },
             {
-                "title": "Case authoring",
+                "title": "Case authoring introduction",
+                "text": "case-authoring-introduction.md"
+            },
+            {
+                "title": "Case authoring Milestones and Stages",
                 "text": "case-authoring.md"
             },
             {

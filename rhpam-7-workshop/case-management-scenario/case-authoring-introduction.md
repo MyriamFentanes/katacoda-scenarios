@@ -7,7 +7,7 @@ You will learn in this section:
 
 1- How to author your first case.
 
-2- What are the authoring tools available to you.
+2- What are roles and variables.
 
 
 Overview
@@ -33,25 +33,6 @@ NOTE: In real life the Issuer would deal with the Credit Card Processor and not 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-diagram-users.png"  width="600" />
 
 
-***Case Notation Specification***
-
-CMMN is a standard mantained by the OMG that defines the specification to graphically express a case, as we saw earlier in the overview there are some key components that we will use, like the following:
-
-    - Case File: The Case information is represented by the CaseFile. It contains CaseFileItems that can be any type of data structure, CaseFile serves as context for raising events and evaluating Expressions as well as point of reference to guide the execution of the process, all the data including documents that we need to get to be bale to solve the dispute will be stored in the CaseFile.
-
-    - Human Task: Is a Task that is performed by a Case worker.
-
-    - Process Task: Can be used in the Case to call a Business Process.
-
-    - Decision Task: Can be used in the Case to invoke a Decision. A Decision in CMMN is an abstraction of Decisions as they are specified in various Decision Modeling specifications.
-
-    - Stages:  Stages may be considered “episodes” of a Case, though Case models allow for defining Stages that can be planned in parallel also. You would normally group tasks that logically belong together in a stage.
-
-    - Milestone: Is a PlanItemDefinition that represents an achievable target, defined to enable evaluation of progress of the Case. No work is directly associated with a Milestone, but completion of set of tasks or the availability of key deliverables (information in the CaseFile) typically leads to achieving a Milestone.
-
-Another characteristic of a case, is that it has a more dynamic lifecycle, in a regular process the final state is: finalized it can be due to completeness, error, or abortion of the process instance but once the process is terminated you can't restart it, with a case is different if for some reason the CC Holder is not happy with the decision of the dispute the lifecycle of the case allows the owner to reopen it. In the following picture we can see the lifecycle of a case.
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-case-lifecycle.png"  width="600" />
 
 
 Functional requirements of your Case
@@ -88,25 +69,25 @@ The next scenario involves a manual approval and further investigation to determ
 
 7- In parallel you have to evaluate the information of the case to determine if a manual approval is needed or you can just solve the case automatically with the information available.
 
+*** The Modeler***
+-------------------
 
-Milestones of the Case
-----------------------
+To model cases and processes we have 2 modelers available, the layout of both follows the same pattern explained below:
 
-Some of the previous steps depicted can be active in parallel or after you have completed them you can go back to the same step if necessary, also some of the steps are discretionary so they might never be triggered. In order to follow the progress of the case we have Milestones, here we will define the milestones or the tragets that the dispute has to achieve to be solved.
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-explained.png"  width="600" />
 
-- Dispute started
+1- Modelling Canvas - this is your process drawing board. After dropping different shapes onto the canvas, you can move them around, connect them, etc. Clicking on a shape on the canvas allows you to set its properties in the expandable Properties Window (3) (as well as create connecting shapes and morph the shape into other shapes).
 
-- Documentation received from CC Holder
+2- Toolbar - the toolbar contains a vast number of functions offered by Designer (described later). These includes operations that can be performed on shapes present on the Canvas. Individual operations are disabled or enabled depending on what is selected. For example, if no shapes are selected, the Cut/Paste/Delete operations are disabled, and become enabled once you select a shape. Hovering over the icons in the Toolbar displays the description text of the operation.
 
-- Automated Chargeback processing
+3-  Properties Panel - this expandable section on the right side of Designer allows you to set both process and shape properties. It is divided into four sections, namely "Core properties", "Extra Properties, "Graphical Settings" and "Simulation Properties". After clicking on a shape in the Canvas, this panel is reloaded to show properties specific to that shape type. If you click on the canvas itself (not on a shape) the panel displays general process properties.
 
-- Account credited
+4-  Object Library Panel - the expandable section on the left side of Designer shows the jBPM BPMN2 (default) shape repository tree. It includes all shapes of the jBPM BPMN2 stencil set which can be used to assemble your processes. If you expand each section sub-group you can see the BPMN2 elements that can be placed onto the Designer Canvas (1) by dragging and dropping the shape onto it.
 
-- Dispute rejected
+5- View Tabs - currently Designer offers three tabs for Process Modelling, Simulation and Documentation. Process Modelling is the default tab. When users run process simulation, its results are presented in the Simulation tab. Process Documentation tab displays documentation generated from process definition.
 
+6- Info Tabs - there are two additional tabs at the top of Designer. The Editor tab includes the process modeling while the Overview tab displays the process metadata such as version history, creation date, last modification date etc.
 
-
-This are the achievable targets to help us track the progress of teh dispute, they don't have any particular order, so you can come back to any of them if something in the Case File data changes
 
 
 Case Variables and Roles
@@ -126,21 +107,6 @@ Package: `com.fsi_credit_dispute`{{copy}}
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-asset-business-legacy.png"  width="600" />
 
-*** The Modeler***
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-explained.png"  width="600" />
-
-1- Modelling Canvas - this is your process drawing board. After dropping different shapes onto the canvas, you can move them around, connect them, etc. Clicking on a shape on the canvas allows you to set its properties in the expandable Properties Window (3) (as well as create connecting shapes and morph the shape into other shapes).
-
-2- Toolbar - the toolbar contains a vast number of functions offered by Designer (described later). These includes operations that can be performed on shapes present on the Canvas. Individual operations are disabled or enabled depending on what is selected. For example, if no shapes are selected, the Cut/Paste/Delete operations are disabled, and become enabled once you select a shape. Hovering over the icons in the Toolbar displays the description text of the operation.
-
-3-  Properties Panel - this expandable section on the right side of Designer allows you to set both process and shape properties. It is divided into four sections, namely "Core properties", "Extra Properties, "Graphical Settings" and "Simulation Properties". After clicking on a shape in the Canvas, this panel is reloaded to show properties specific to that shape type. If you click on the canvas itself (not on a shape) the panel displays general process properties.
-
-4-  Object Library Panel - the expandable section on the left side of Designer shows the jBPM BPMN2 (default) shape repository tree. It includes all shapes of the jBPM BPMN2 stencil set which can be used to assemble your processes. If you expand each section sub-group you can see the BPMN2 elements that can be placed onto the Designer Canvas (1) by dragging and dropping the shape onto it.
-
-5- View Tabs - currently Designer offers three tabs for Process Modelling, Simulation and Documentation. Process Modelling is the default tab. When users run process simulation, its results are presented in the Simulation tab. Process Documentation tab displays documentation generated from process definition.
-
-6- Info Tabs - there are two additional tabs at the top of Designer. The Editor tab includes the process modeling while the Overview tab displays the process metadata such as version history, creation date, last modification date etc.
 
 *** Defining Case Variables***
 
@@ -321,67 +287,12 @@ Case Cardinality: 1
 Case Role: `owner`{{copy}}
 Case Cardinality: 1
 
-***Milestones ***
------------------------------------
-
-We have defined the case variables , if you want to skip to the next step you can import the following repository. You can watch the video on how to import a repository into your workspace
-
-1- Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
-
-https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
+The cardinality refers to the number of actors that can be mapped to a role.
 
 
-To model the milestones of the case:
-
-1- Select from the Object Library Panel a Node of type  Start event then add a Script node connected to this start event. On the properties panel for the Script node enter the following:
-
-Name: `Log Case Started`{{copy}}
-Script  `System.out.println("Case started");`{{copy}}
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-script-task.png"  width="600" />
-
-Add and end event of type signal the name of the signal should be the same as the Milestone, so once you've completed Logging that the case has started the signal will trigger a Milestone called Dispute Received.
-
-Signal Ref:  `Milestone 1: Dispute received`{{copy}}
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-script-task-end-event.png"  width="600" />
-
-2- Add a milestone node
-
-Name:  `Milestone 1: Dispute received`{{copy}}
-Ad hoc autostart: false
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-dispute-received.png"  width="600" />
-
-3- Save your process.
 
 
-In this example we saw that Milestone can be triggered by signals, you can add logic after a milestone that will execute when the node is triggered. Another way to trigger a Milestone is when a condition on the data of the CaseFile is met.
-
-4- Add a second Milestone
-
-Name:  `Milestone 2: Customer doc received`{{copy}}
-Ad hoc autostart: false
-
-5- Look in the properties panel for the assignments section and click on the V icon, select the source property on the input assignment condition.
-Select constant as the value and type
-
-`org.kie.api.runtime.process.CaseData(data.get("customerDocReviewed") == true)`{{copy}}
+We have completed the setup of your case. The solution for this lab can be found in the following repo:
 
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-docs-received.png"  width="600" />
-
-In here we are checking that the variable customerDocReviewed is true to trigger Milestone 2: Customer doc received and consider that target as achieved. We will repeat the same process for the other milestones we defined at the beginning.
-
-Name:  `Milestone 3: Automated Chargeback`{{copy}}
-Condition:`org.kie.api.runtime.process.CaseData(data.get("vendorDocReceived") == true)`{{copy}}
-
-This Milestones will be triggered by a signal
-
-Name:  `Milestone 4: Account credited`{{copy}}
-Condition:none
-
-
-Name:  `Milestone 5:  Dispute rejected`{{copy}}
-Condition:none
-
+https://github.com/MyriamFentanes/katacoda-scenarios
