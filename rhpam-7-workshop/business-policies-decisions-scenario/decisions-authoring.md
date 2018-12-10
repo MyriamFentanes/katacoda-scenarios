@@ -1,9 +1,7 @@
 
-How to author Decisions and rules?
-----------------------------------
+# Authoring Decisions and Rules
 
-You will learn in this section:
-
+In this section you will learn:
 
 1. How to use your Business Object Model to automate decisions and policies.
 
@@ -11,57 +9,58 @@ You will learn in this section:
 
 3. How to use your automated decisions and rules.
 
+You are in charge of automating the decisions that need to be taken to solve a dispute. Solving a credit card dispute depends on several variables, like:
+- the type of customer
+- the amount of the dispute
+- etc.
 
-You are in charge of automating the decisions that need to be taken to solve a dispute, solving a credit card dispute depends on several variables like  the type of customer, the amount of the dispute etc. The knowledge of how to apply this rules and decisions is tacit, lives only in the head of other domain experts like you, in order to automate the process you will have to express it in teh form of rules.
-For this particular case 2 set of rules are defined for different stages on the process:
+The knowledge of how to apply these rules and decisions is tacit and lives only in the head of other domain experts like you. In order to automate the process, you will have to express it in the form of rules.
 
+For this particular case, 2 sets of rules are defined for different stages on the process:
 
-***Calculating the Risk***
+## Calculating the Risk
 
-The cost of processing a dispute for Pecunia Corp. is very high per dispute and totally independent of the amount that is been disputed, that is why its very important to have flexible rules that are compliant on one hand but also that take into acco time unt the profile and loyalty of Pecunia Corp. customers to solve a dispute.Right now all the process is manual, so there is a group of agents dedicated to make decisions based on the data of the dispute, this is not only expensive but also very prone to error and inconsistent.
+The cost of processing a dispute for Pecunia Corp. is very high per dispute and totally independent of the amount that is been disputed. That is why it's very important to have flexible rules that are no only compliant, but that also reduce the processing cost and reduce the processing time. Apart from reducing cost, this will at the same time improve customer wellbeing due to consistent processing and reduced processing time.
+
+At the moment, all processing is manual. There is a group of agents dedicated to making decisions based on the data of the dispute. This is not only expensive, but also very prone to error and inconsistent.
 
 The rules defined for the process are:
 
-
 - Automatic chargeback is only available to Platinum and Gold Credit Card Holders
-
 
 - The risk of the transaction is determined by the type of user and the amount of the dispute
 
-         - Standard customer 0-100 risk low risk
-	     - Standard customer 100-500 medium
-         - Standard customer anything above 500 high
-         - Gold customer anything less than 500 low risk
-         - Gold customer anything more than 800 high risk
-         - Silver customer anything between 250-500 medium risk
-         - Silver customer anything below 250  low risk
+      - Standard customer 0-100 risk low risk
+      - Standard customer 100-500 medium
+      - Standard customer anything above 500 high
+      - Gold customer anything less than 500 low risk
+      - Gold customer anything more than 800 high risk
+      - Silver customer anything between 250-500 medium risk
+      - Silver customer anything below 250  low risk
 
-Regulations
+One additional regulation that needs to be implemented is:
 
 - If the customer billing address is in the state on Texas, California or Florida the dispute should be consider of higher risk.
 
+## The Authoring Tools
 
-
-***The Authoring Tools ***
------------------------------------
-
-We have defined the Business Object Model in the previous lab, so you need to import the following repository. You can watch the video on how to import a repository into your workspace
+We have defined the Business Object Model in the previous lab. As the workshop platform does not support persistence between modules, you need to import the following repository to retrieve a project that contains the model. If you don't know how to import an existing project, you can watch the video on how to import a repository into your workspace
 
 1. Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
 https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
 
-Now we will create the rules to process a Credit Card (CC) Dispute automatically, meaning without the need of any human intervention.
+We will now create the rules to process a Credit Card (CC) Dispute automatically, meaning, processing a dispute without the need of any human intervention.
 
 1. Select the project credit-card-dispute in the space MySpace
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-asset-ccd-project.png"  width="600" />
 
-2. You will see the Domain Object Model as the only assets listed, click on the blue button Add Asset on the right upper corner of the Library View.
+2. You will see the Domain Object Model as the only assets listed, click on the blue button `Add Asset` on the right upper corner of the Library View.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-ccd-bom-project.png"  width="600" />
 
-3. Select Guided Rule from the catalog of Wizards
+3. Select `Guided Rule` from the catalog of Wizards.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule.png"  width="600" />
 
@@ -77,10 +76,10 @@ Package: `com.fsi_credit_dispute`{{copy}}
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-wizard.png"  width="600" />
 
-***Guided Rules ***
------------------------------------
+## Guided Rules
 
-Guided Rules are one of the type of rules you can create in Business Central, once you have defined the Business Object Model you can use it to create rule that check conditions on the properties of the object, for example a Credit Card Holder. If the condition or conditions are met you can define an action or a decision to take:
+Guided Rules are one of the various types of rules you can create in Business Central. Once you have defined the Business Object Model, you can use it to create rules that check conditions on the properties of these object. For example, you can define a rule with a constraint on the
+For example a Credit Card Holder. If the condition or conditions are met you can define an action or a decision to take:
 In the case of the rules for automatic chargeback we are evaluating only the CC Holder. So lets create the rule:
 First we need to tell the rule what object or collection of objects are we going to evaluate. Rules have a very basic syntax, you have the When section a.k.a teh Right Hand Side (RHS) or Conditional, here is where you put the discrimination criteria that you need to apply to CC Holders that quialify for an automated chargeback.
 
@@ -118,20 +117,20 @@ In order to match the criteria of the functional requirement we need to add anot
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-check-fraud-data.png"  width="600" />
 
-9. When you want to modify the data in the objects of the Business Model or facts, you need to store the object of the case in a variable inside the rule. Click on the fact declaration There is FraudData, the wizard to modify the constraints will open.
+9. When you want to modify the data in the objects of the Business Model or facts, you need to bind the object of the case to a variable inside the rule. Click on the fact declaration There is FraudData, the wizard to modify the constraints will open.
 
-10. On the last field type data as the name of the variable that you want to use to store the Fraud Data object, click on the button Set
+10. On the last field type `data`{{copy}} as the name of the variable that you want to bind the Fraud Data object to. Click on the `Set` button.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-data.png"  width="600" />
 
-Now we are going to set the property of automated chargeback to true on the Fraud Data obeject so the dispute can be processed accordingly. Since this is the decision we are making based on the input we will define it as the WHEN clause a.k.a Left Hand Side (LHS) or Action section.
-All of the information of the CC dispute is stored in facts, this facts can live in a session that the engine will keep in memory so every time you evaluate a new fact or change something, you will have all of the Object in the session available and inteviening in the decision making. In the LHS or action section you can change the values of any property on the objects that you have stored in variables, or even add new objects to the session. Everytime a property in an object changes, all of teh decisions wil be reevaluated to make sure that no other rule needs to be applied.
+Now we are going to set the property of automated chargeback to true on the `FraudData` object so the dispute can be processed accordingly. Since this is the decision we are making based on the input we will define it as the THEN clause a.k.a Right Hand Side (RHS) or Action section of our rule.
+All of the information of the CC dispute is stored in facts, these facts can live in a session that the engine will keep in memory so every time you evaluate a new fact or change something, you will have all of the Object in the session available and intervening in the decision making. In the RHS or action section you can change the values of any property on the objects that you can reference via the variables, or even create and add new objects/facts to the session (this is usually referred to as _inferring_ new data or information). Every time a property in an object changes, all of the decisions in which this property is used will be reevaluated to make sure that no other rule needs to be applied (or need to be cancelled in the case of more advanced cases that use the engine's truth maintenance system or, for example, accumulate constructs).
 
-11. Click on the green arrow next to the WHEN keyword, when the Add new action wizard opens select Change field values of data, the variable that you created before and click on +ok.
+11. Click on the green arrow next to the WHEN keyword. When the `Add new action` wizard opens select `Change field values of data`, select the variable that you created before,  and click on `+ok`.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-data-wizard.png"  width="600" />
 
-12. Now we are going to set teh value of the property automated to true, indicating that an automatic chargeback applies. Click on  the action Set value of Fraud Data and add the property automated. Click on the pencil icon to teh right and assign a literal value to the property.
+12. Now we are going to set the value of the property automated to true, indicating that an automatic chargeback applies. Click on  the action Set value of Fraud Data and add the property automated. Click on the pencil icon to the right and assign a literal value to the property.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-automated.png"  width="600" />
 
@@ -147,21 +146,19 @@ All of the information of the CC dispute is stored in facts, this facts can live
 
 You have created your first Business Rule using the Guided editor
 
-***Decision Tables***
------------------------------------
+### Decision Tables
 
-A very common way to define the logic behind the risk assessment is usually stored in spreadsheets, with Red Hat Process Automation Manager you can use the same spreadsheet and make it an executable asset in the engine. In this section we are going to create a Decision table to automate the risk assessment rules that were given to you.
+A very common way to define the logic behind risk assessment is to store this information in spreadsheets. With Red Hat Process Automation Manager you can use the same spreadsheet approach and make it an executable asset (i.e. a set of rules) in the engine. In this section we are going to create a _Decision Table_ to automate the risk assessment rules that were given to you.
 
-
-1. First we go back to the Library view and we click on the blue button Add Asset
+1. First we go back to the Library view and we click on the blue button `Add Asset`.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-add-asset.png"  width="600" />
 
-2. We select Guided Decison Table from the Catalog of assets
+2. We select `Guided Decision Table` from the Catalog of assets
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-add-asset-guided.png"  width="600" />
 
-3. Type the following values on the Create New Decision Table wizard
+3. Type the following values on the `Create New Decision Table` wizard
 
 Name: `risk-evaluation`{{copy}}
 Package: `com.fsi_credit_dispute`{{copy}}
@@ -169,17 +166,17 @@ Select the checkbox: Use Wizard
 
 Click ok and Finish
 
-4. You should see the Guided Decision Table Wizard with an empty table.
+4. You should see the `Guided Decision Table` wizard with an empty table.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-new.png"  width="600" />
 
 There are 5 tabs in the wizard:
 
-Model: The model diagram of the Decison Table
-Columns: Wizard to Add, Edit or Delete columns in your table. Each column is a constraint in a property of a Business Model Object.
-Overview: Contains the metainformation of your asset: Version, Description, Last Modified, etc.
-Source: Is the actual source code that is generated from the Decision Table Model.
-Data Objects: Lists the Business Objects available to the wizard to be used as conditions or actions
+- Model: The model diagram of the Decision Table
+- Columns: Wizard to Add, Edit or Delete columns in your table. Each column is a constraint in a property of a Business Model Object.
+- Overview: Contains the metainformation of your asset: Version, Description, Last Modified, etc.
+- Source: Is the actual source code that is generated from the Decision Table Model.
+- Data Objects: Lists the Business Objects available to the wizard to be used as conditions or actions
 
 The properties evaluated to determine the risk scoring are:
 
@@ -188,21 +185,21 @@ The properties evaluated to determine the risk scoring are:
 
 Lets add the Credit Card Holder condition column
 
-5. Go to the columns tab and click on the button Insert Column, Select Add Condition and click Next
+5. Go to the columns tab and click on the button `Insert Column`, Select `Add Condition` and click Next
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-add-condition.png"  width="600" />
 
-6. We need to define what is the object that is going to be evaluated. Click on Create new fact pattern, we select CreditCardHolder as the Fact type and we create a variable called holder and bind the object to it. Click next
+6. We need to define which object is going to be evaluated. Click on Create new fact pattern, we select `CreditCardHolder` as the Fact type and we create a variable called `holder`{{copy}} and bind the object to it. Click next.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern.png"  width="600" />
 
-7. The calculation type is the type of evaluation that we are going to apply, in this case it will be against literal values. Select literal value and Click next
+7. The calculation type is the type of evaluation that we are going to apply. In this case it will be against literal values. Select `literal value` and click next
 
 8. Select the field status and Click Next
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field.png"  width="600" />
 
-9. Next we select the operation for the constraint, select equal to from the drop down menu and Click next
+9. Next we select the operation for the constraint. Select `equal to` from the drop down menu and Click next
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-operator.png"  width="600" />
 
@@ -212,36 +209,42 @@ Lets add the Credit Card Holder condition column
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-values.png"  width="600" />
 
-11. We now configure the label of the column
+11. We can now configure the label of the column
 
 Header: `Status`{{copy}}
 
-Click Finish and hgo back to the tab model. Yoou should see the new created column.
+Click Finish and go back to the `Model` tab in the editor. You should see the newly created column.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-header.png"  width="600" />
 
-12. Repeat the same steps to add 2 more columns both for the object FraudData, property: totalFraudAmount operation: greater than for one column and less than for the second column. Note that for the second column you don't need to create a new fact pattern, you can reuse the existing one.
+12. Repeat the same steps to add 2 more columns:
+  - object `FraudData`
+  - property: `totalFraudAmount`{{copy}}
+  - operation:
+    - `greater than` for one column
+    - `less than` for the second column
 
+Note that for the second column you don't need to create a new fact pattern, you can reuse the existing one.
 
-At the end you should have something like this
+At the end your decision table should look like this:
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns.png"  width="600" />
 
-13. Next go to the Columns tab and Click on insert column, select Set the value of a field, this time we are adding an action that will be fired if the conditions are met. Click Next
+13. Next go to the `Columns` tab and Click on `insert column`. This time we are adding an action, the Right-Hand-Side of a rule, that will be fired if the conditions are met. Select `Set the value of a field` and click next.
 
-14. We want to determine the risk scoring property of the FraudData object, so in the dropdown menu select the object FraudData stored in th3 variable data.Click Next
+14. We want to determine the risk scoring property of the `FraudData` object. So in the dropdown menu select the object `FraudData` bound to the variable `data`.Click Next.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns-action-data.png"  width="600" />
 
-15.  Select the field disputeRiskData and click Next , we don;t have a list of values so click Next, type Risk Scoring as the header for the column and click Finish
+15.  Select the field `disputeRiskData` and click Next. We don't have a list of values so click Next. Type `Risk Scoring`{{copy}} as the header for the column and click Finish.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns-action-data-finish.png"  width="600" />
 
-16. go back to your model tab and you should have something like this:
+16. Go back to your `Model` tab, which should show the following decision table.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns-action-data-finish-model.png"  width="600" />
 
-Now we are going to add the actual constraints, if we look back to our requirements the first decision is:
+We are now going to add the actual constraints and actions, i.e. the actual rules. Looking at our requirements, the first constraint is defined as:
 
 Standard customer 0-100 risk low risk
 
@@ -257,7 +260,7 @@ Minimum Amount:`0`{{copy}}
 Max Amount:`100`{{copy}}
 Risk Scoring:`100`{{copy}}
 
-You shoud have something like the following at the end. Click Save.
+You should have something like the following at the end. Click Save.
 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-first-row.png"  width="600" />
