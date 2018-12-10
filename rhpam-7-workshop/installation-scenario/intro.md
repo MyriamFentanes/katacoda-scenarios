@@ -1,5 +1,4 @@
-****THE BUSINESS BACKGROUND****
--------------------------------
+# The Business Background
 
 It is your first day working at Pecunia Corp. One of the divisions of the company is the Issuer, and one of the most common, yet expensive, tasks is the dispute of a credit card transaction.
 In this scenario we will look at the installation process of Red Hat Process Automation Manager (RHPAM) 7, as well as some of the tasks that a production installation will require.
