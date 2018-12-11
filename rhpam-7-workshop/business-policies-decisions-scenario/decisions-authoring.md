@@ -99,8 +99,8 @@ First we need to tell the rule what object or collection of objects are we going
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-fact.png"  width="600" />
 
-5. Select the object CardHolder, and click ok. We are now telling the rule engine that everytime there is a CreditCardHolder we will activate this rule.
-
+5. Select the object `CardHolder`, and click ok. We are now telling the rule engine that everytime there is a CreditCardHolder we will activate this rule.
+µ
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-fact-select.png"  width="600" />
 
 In order to match the criteria of the functional requirement we need to add another restriction, automated chargeback is only approved for CC Holders that are of type Platinum or Gold.
@@ -265,13 +265,11 @@ You should have something like the following at the end. Click Save.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-first-row.png"  width="600" />
 
-Do the same procedure for the rest of the rules.
+Apply the same procedure for the rest of the rules.
 
+## Decision Model & Notation (DMN)
 
-***DMN ***
------------------------------------
-
-You can also import decision models created in editors like Trisotech into Red Hat Process Automation Manager in the following image we can see and example of the tyoe of diagrams you can create to define the rules to calculate risk.
+Red Hat Process Automation Manager 7 supports the Decision Model & Notation (DMN) v1.2 standard. This means that models created in the DMN v1.1 or v1.2 specification can be imported into, and executed on, RHPAM. This allows you to create DMN decision models in other DMN editors, for example Trisotech's Digital Enterprise Suite, and execute then in RHPAM. In the following image we can see some examples of the types of diagrams you can create to define , in this case, the rules to calculate risk.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-trisotech-dmn.png"  width="600" />
 
@@ -279,4 +277,4 @@ DMN uses a language business friendly called FEEL or Friendly Enough Expression 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-dmn-feel.png"  width="600" />
 
-DMN is outside the scope of this scenario, but as you see you have multiple tools available to automate the decisions of your process and in your business applications.
+DMN is out of scope for this workshop. However, the specification provides and additional, interesting, and standard way to model and execute decisions in your business applications.
