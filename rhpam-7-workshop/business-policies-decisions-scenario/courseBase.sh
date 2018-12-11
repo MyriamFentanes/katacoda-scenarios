@@ -9,4 +9,4 @@ ssh root@host01 'for i in {1..200}; do oc login -u developer -p developer && bre
 ssh root@host01 'echo "Creating new credit-card-dispute project in OpenShift." >> script.log'
 ssh root@host01 'for i in {1..200}; do oc new-project credit-card-dispute --display-name="Credit Card Dispute" --description="Red Hat Process Manager 7 - Credit Card Dispute" && break || sleep 2; done'
 ssh root@host01 'echo "Creating Business Central and Kie Server containers in OpenShift." >> script.log'
-ssh root@host01 'for i in {1..200}; do oc new-app --template=rhpam70-trial-ephemeral -p APPLICATION_NAME="cc-dispute" -p IMAGE_STREAM_NAMESPACE="openshift"  && break || sleep 2; done'
+ssh root@host01 'for i in {1..200}; do oc new-app --template=rhpam70-trial-ephemeral -p APPLICATION_NAME="cc-dispute" -p KIE_ADMIN_USER=developer -p DEFAULT_PASSWORD=-developer -p IMAGE_STREAM_NAMESPACE="openshift"  && break || sleep 2; done'
