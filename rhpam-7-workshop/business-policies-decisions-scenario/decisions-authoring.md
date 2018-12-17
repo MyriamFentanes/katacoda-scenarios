@@ -171,39 +171,39 @@ Click ok and Finish
 There are 5 tabs in the wizard:
 
 - Model: The model diagram of the Decision Table
-- Columns: Wizard to Add, Edit or Delete columns in your table. Each column is a constraint in a property of a Business Model Object.
-- Overview: Contains the metainformation of your asset: Version, Description, Last Modified, etc.
-- Source: Is the actual source code that is generated from the Decision Table Model.
-- Data Objects: Lists the Business Objects available to the wizard to be used as conditions or actions
+- Columns: Wizard to Add, Edit or Delete columns in your table. Each column is a constraint (LHS) on a property of a Business Model Object, or an action (RHS).
+- Overview: Contains the meta-information of your asset: Version, Description, Last Modified, etc.
+- Source: Is the actual source code that is generated from the Decision Table Model. In the runtime engine, decision tables are translated into native DRL (Drools Rule Language), where each row in the table is translated into a rule.
+- Data Objects: Lists the Business Objects available to the wizard to be used as conditions and/or actions
 
-The properties evaluated to determine the risk scoring are:
+In our system, the properties evaluated to determine the risk scoring are:
 
 - Status of the Credit Card Holder
 - Total Amount disputed from the Fraud Data
 
-Lets add the Credit Card Holder condition column
+Let's add the Credit Card Holder condition column
 
-5. Go to the columns tab and click on the button `Insert Column`, Select `Add Condition` and click Next
+5. Go to the columns tab and click on the button `Insert Column`, Select `Add Condition` and click Next.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-add-condition.png"  width="600" />
 
-6. We need to define which object is going to be evaluated. Click on Create new fact pattern, we select `CreditCardHolder` as the Fact type and we create a variable called `holder`{{copy}} and bind the object to it. Click next.
+6. We need to define which object is going to be evaluated. Click on `Create new Fact Pattern`. Select `CreditCardHolder` as the Fact type and define a variable called `holder`{{copy}} as the _Binding_. Click _Next_.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern.png"  width="600" />
 
-7. The calculation type is the type of evaluation that we are going to apply. In this case it will be against literal values. Select `literal value` and click next
+7. The calculation type is the type of evaluation that we are going to apply. In this case it will be against literal values. Select `Literal value` and click _Next_.
 
-8. Select the field status and Click Next
+8. Select the field `status` and click _Next_.  
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field.png"  width="600" />
 
-9. Next we select the operation for the constraint. Select `equal to` from the drop down menu and Click next
+9. Next we select the operator for the constraint. Select `equal to` from the drop down menu and click _Next_.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-operator.png"  width="600" />
 
-10. Since there are only 3 possible status, we are going to configure the Value List with the following and then click Next
+10. Since there are only 3 possible status, we are going to configure the _Value list_ with the following values, set the _Default value_ to `Standard` and then click Next.
 
-`"Standard,Gold,Silver"`{{copy}}
+`"Standard,Silver,Gold"`{{copy}}
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-values.png"  width="600" />
 
@@ -216,11 +216,12 @@ Click Finish and go back to the `Model` tab in the editor. You should see the ne
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-create-pattern-field-header.png"  width="600" />
 
 12. Repeat the same steps to add 2 more columns:
-  - object `FraudData`
+  - Pattern: `FraudData`
+  - Calculation Type: Literal value
   - property: `totalFraudAmount`{{copy}}
   - operation:
-    - `greater than` for one column
-    - `less than` for the second column
+    - `greater than` for one column. Use header name: "Minimum Amount"
+    - `less than or equal to` for the second column. Use header nam "Maximum Amount"
 
 Note that for the second column you don't need to create a new fact pattern, you can reuse the existing one.
 
@@ -228,9 +229,9 @@ At the end your decision table should look like this:
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns.png"  width="600" />
 
-13. Next go to the `Columns` tab and Click on `insert column`. This time we are adding an action, the Right-Hand-Side of a rule, that will be fired if the conditions are met. Select `Set the value of a field` and click next.
+13. Next go to the `Columns` tab and Click on `Insert Column`. This time we are adding an action, the Right-Hand-Side of a rule, that will be fired if the conditions are met. Select `Set the value of a field` and click next.
 
-14. We want to determine the risk scoring property of the `FraudData` object. So in the dropdown menu select the object `FraudData` bound to the variable `data`.Click Next.
+14. We want to set the risk scoring property of the `FraudData` object. So in the dropdown menu select the object `FraudData` bound to the variable `data`.Click Next.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-columns-action-data.png"  width="600" />
 
