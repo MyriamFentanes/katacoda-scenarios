@@ -20,7 +20,7 @@ For this particular case, 2 sets of rules are defined for different stages on th
 
 ## Calculating the Risk
 
-The cost of processing a dispute for Pecunia Corp. is very high per dispute and totally independent of the amount that is been disputed. That is why it's very important to have flexible rules that are no only compliant, but that also reduce the processing cost and reduce the processing time. Apart from reducing cost, this will at the same time improve customer wellbeing due to consistent processing and reduced processing time.
+The cost of processing a dispute for Pecunia Corp. is very high per dispute and totally independent of the amount that is being disputed. That is why it's very important to have flexible rules that are no only compliant, but that also reduce the processing cost and reduce the processing time. Apart from reducing cost, this will at the same time improve customer wellbeing due to consistent processing and reduced processing time.
 
 At the moment, all processing is manual. There is a group of agents dedicated to making decisions based on the data of the dispute. This is not only expensive, but also very prone to error and inconsistent.
 
@@ -48,98 +48,96 @@ We have defined the Business Object Model in the previous lab. As the workshop p
 
 1. Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
-https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
+https://github.com/MyriamFentanes/business-policies-decisions-scenario-step2
 
 We will now create the rules to process a Credit Card (CC) Dispute automatically, meaning, processing a dispute without the need of any human intervention.
 
-1. Select the project credit-card-dispute in the space MySpace
+1. Select the project ccd-project in the space MySpace
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-asset-ccd-project.png"  width="600" />
 
-2. You will see the Domain Object Model as the only assets listed, click on the blue button `Add Asset` on the right upper corner of the Library View.
+2. You will see the Domain Object Model as the only assets listed. Click on the blue button `Add Asset` on the right upper corner of the Library View.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-ccd-bom-project.png"  width="600" />
 
-3. Select `Guided Rule` from the catalog of Wizards.
+3. Int the "Add Asset" screen, select "Decision" from the drop-down filter menu to filter on decision assets.
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule.png"  width="600" />
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-add-assets-filter.png"  width="600" />
 
-4. Set the following data in the creation wizard:
+4. Select `Guided Rule` from the filtered catalog of Wizards.
+
+5. Set the following data in the creation wizard:
 
 Name: `automated-chargeback`{{copy}}
 
-Package: `com.fsi_credit_dispute`{{copy}}
+Package: `com.myspace.ccd_project`{{copy}}
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new.png"  width="600" />
 
-5. Click ok. You should see a banner in green telling you that the Asset was succesfully created and the wizard to author your rule.
+6. Click ok. You should see a banner in green telling you that the asset was success fully created. The UI will display the wizard that allows you to author your rule.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-wizard.png"  width="600" />
 
 ## Guided Rules
 
-Guided Rules are one of the various types of rules you can create in Business Central. Once you have defined the Business Object Model, you can use it to create rules that check conditions on the properties of these object. For example, you can define a rule with a constraint on the
-For example a Credit Card Holder. If the condition or conditions are met you can define an action or a decision to take:
-In the case of the rules for automatic chargeback we are evaluating only the CC Holder. So lets create the rule:
-First we need to tell the rule what object or collection of objects are we going to evaluate. Rules have a very basic syntax, you have the When section a.k.a teh Right Hand Side (RHS) or Conditional, here is where you put the discrimination criteria that you need to apply to CC Holders that quialify for an automated chargeback.
+Guided Rules are one of the various types of rules you can create in Business Central. Once you have defined the Business Object Model, you can create rules that check conditions on the properties of these objects, rules that define conditions on combinations of objects, etc. For example, you can define a rule with a constraint on a Credit Card Holder's age, his/her status, riskRating, etc. If the condition or conditions are met, the rule is set to be _matched_ and becomes eligible for _firing_. When the rule fires, it executes the action defined in the rule. The action is the _THEN_ part of the rule, or what is also called the rule's Right-Hand-Side (RHS).
 
-1. You will see 4 tabs in the wizard panel, select the tab that says Data Object
+In the case of the rules for automatic chargeback we are evaluating only the Credit Card Holder. So lets create the rule.
+First we need to tell the rule what object or collection of objects is going to be evaluated. Rules have a very basic syntax, and basically consist of 3 parts. You have the _WHEN_ section, also known as the Left Hand Side (LHS) or Constraint. This is the part of the rule in which you define the discrimination criteria that is applied to the Credit Card Holders objects to discriminate the card holders that qualify for an automated chargeback.
+
+1. You will see 4 tabs in the wizard panel. Select the tab that says "Data Objects"
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-import-data-object.png"  width="600" />
 
-2. Click on the blue button New Item
+2. You should see 4 items listed: `AdditionalInformation`, `CreditCardHolder`, `FraudData`, and `Number`. These are shown by default as the rule is created in the same folder/package as these data objects. If `CreditCardHolder` is not lister, click on the blue _New Item_ button to import it.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-import-data-object-new.png"  width="600" />
 
-3. Choose CardHolder as the type and click ok
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-import-data-object-type.png"  width="600" />
-
-4. Return to the model tab and Click on the green cross to the right of the word When.
+3. Return to the _Model_ tab and Click on the green cross to the right of the word _WHEN_.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-fact.png"  width="600" />
 
-5. Select the object `CardHolder`, and click ok. We are now telling the rule engine that everytime there is a CreditCardHolder we will activate this rule.
-µ
+4. Select the object `CreditCardHolder`, and click ok. We are now telling the rule engine that every time there is a CreditCardHolder we will activate this rule.
+
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-fact-select.png"  width="600" />
 
-In order to match the criteria of the functional requirement we need to add another restriction, automated chargeback is only approved for CC Holders that are of type Platinum or Gold.
+In order to match the criteria of the functional requirement, we need to add a restriction on one the card holder's properties. Automated chargeback is only approved for CC Holders that have the `status` _Gold_ or _Platinum_.
 
-6. Click on the condition There is a Credit Card Holder, a new wizard opens, we aregoing to add a restriction to a field in this case the staus of the CC Holder
+5. Click on the condition `There is a Credit Card Holder`, a new wizard will open. We are now going to add a restriction on a field, in this case the `status` of the CC Holder
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-property-select.png"  width="600" />
 
-7. From the dropdown box we select that the status is contained in the list, and add the literal value of Gold and Platinum. TIP: You can also add enumerations containing this values to have them prepopulated for you.
+6. From the dropdown box we select that the status `is contained in the list`, and add the literal value of _Gold_ and _Platinum_, separated by a comma. TIP: You can also add enumerations containing these values to have them pre-populated for you.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-property-select-values.png"  width="600" />
 
-8. Complete the same procedure, to import the Fraud Data object, awe don't need to check any property of the Fraud Data just make sure that is there.
+7. Go back to the _Data Objects_ tab. If the `FraudData` data object has not been imported yet, complete the same procedure, to import it. Go back to the _Model_ tab and add a constraint on the `FraudData` object the same way as we did before. We don't need to put a constraint on any property of the `FraudData`, we just need to make sure that it's there.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-check-fraud-data.png"  width="600" />
 
-9. When you want to modify the data in the objects of the Business Model or facts, you need to bind the object of the case to a variable inside the rule. Click on the fact declaration There is FraudData, the wizard to modify the constraints will open.
+8. When you want to modify the data in the objects of the Business Model or facts, you need to be able to reference the matched object from within the rule. To allow this, the object needs to be bound to a variable inside the rule. This makes the object accessible in both the left-hand-side (LHS) and  right-hand-side (RHS) through the variable. Click on the fact declaration `There is FraudData`, the wizard to modify the constraints will open.
 
-10. On the last field type `data`{{copy}} as the name of the variable that you want to bind the Fraud Data object to. Click on the `Set` button.
+9. In the "Variable name" field at the bottom of the form, type `data`{{copy}} as the name of the variable that you want to bind the `FraudData` object to. Click on the _Set_ button.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-data.png"  width="600" />
 
-Now we are going to set the property of automated chargeback to true on the `FraudData` object so the dispute can be processed accordingly. Since this is the decision we are making based on the input we will define it as the THEN clause a.k.a Right Hand Side (RHS) or Action section of our rule.
-All of the information of the CC dispute is stored in facts, these facts can live in a session that the engine will keep in memory so every time you evaluate a new fact or change something, you will have all of the Object in the session available and intervening in the decision making. In the RHS or action section you can change the values of any property on the objects that you can reference via the variables, or even create and add new objects/facts to the session (this is usually referred to as _inferring_ new data or information). Every time a property in an object changes, all of the decisions in which this property is used will be reevaluated to make sure that no other rule needs to be applied (or need to be cancelled in the case of more advanced cases that use the engine's truth maintenance system or, for example, accumulate constructs).
+Now we are going to set the property of automated chargeback to true on the `FraudData` object, so the dispute can be processed accordingly. Since this is the decision we are making, and thus the _action_ of the rule, we will define this as the THEN clause,  also known as the Right Hand Side (RHS) or Action section of our rule.
 
-11. Click on the green arrow next to the WHEN keyword. When the `Add new action` wizard opens select `Change field values of data`, select the variable that you created before,  and click on `+ok`.
+All of the information of the CC dispute is stored in facts. These facts can live in a session that the engine will keep in memory. So every time you evaluate a new fact, or change something to an existing fact, you will have all of the Objects in the session available in the process of decision making. In the RHS, or action, part of the rule you can change the values of any property on the objects that you can reference via the variables, or even create and add new objects/facts to the session (this is usually referred to as _inferring_ new data or information). Every time a property in an object changes, all of the decisions in which this property is used will be reevaluated to make sure that no other rule needs to be applied (or need to be cancelled in the case of more advanced cases that use the engine's truth maintenance system or, for example, accumulate constructs).
+
+10. Click on the green arrow next to the _WHEN_ keyword. When the `Add new action` wizard opens select `Change field values of data`, select the variable that you created before, and click on `+ok`.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-data-wizard.png"  width="600" />
 
-12. Now we are going to set the value of the property automated to true, indicating that an automatic chargeback applies. Click on  the action Set value of Fraud Data and add the property automated. Click on the pencil icon to the right and assign a literal value to the property.
+11. Now we are going to set the value of the property `automated` to `true`, indicating that an automatic chargeback applies. Click on  the action `Set value of FraudData [data]` and select the field `automated`. Click on the pencil icon to the right and assign a literal value to the property.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-automated.png"  width="600" />
 
-13. select true as the value for the automated property. Note that since the type of data is boolean, you can only choose between true or false
+12. select `true` as the value for the automated property (this is the default value for booleans, so the property is probably already set to `true`). Note that since the type of data is boolean, you can only choose between `true` and `false`.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-automated-true.png"  width="600" />
 
-
-14. To validate that everything is correct click on the Validate button on the right and you should see a green "Item successfully validated!" message. Next click on Save.
+13. To validate that everything is correct, click on the _Validate_ button on the right and you should see a green "Item successfully validated!" message. Next, click on "Save" to save the rule.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-validate.png"  width="600" />
 
@@ -154,14 +152,14 @@ A very common way to define the logic behind risk assessment is to store this in
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-add-asset.png"  width="600" />
 
-2. We select `Guided Decision Table` from the Catalog of assets
+2. We select `Guided Decision Table` from the catalog of assets
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-add-asset-guided.png"  width="600" />
 
 3. Type the following values on the `Create New Decision Table` wizard
 
 Name: `risk-evaluation`{{copy}}
-Package: `com.fsi_credit_dispute`{{copy}}
+Package: `com.myspace.ccd_project`{{copy}}
 Select the checkbox: Use Wizard
 
 Click ok and Finish
