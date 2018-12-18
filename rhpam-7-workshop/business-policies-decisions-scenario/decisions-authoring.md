@@ -245,7 +245,9 @@ At the end your decision table should look like this:
 
 We are now going to add the actual constraints and actions, i.e. the actual rules. Looking at our requirements, the first constraint is defined as:
 
-Standard customer 0-100 risk low risk
+_For a standard customer, and a dispute amount between 0 and 100, the risk is low._
+
+There are 4 levels of risk: low, medium, high and very-high. We will defined these risk-levels as integers: 1,2,3, and 4. 
 
 Click on the button Insert and select append row from the dropdown menu.
 
@@ -257,10 +259,9 @@ Description:`Low risk standard costumer`{{copy}}
 Status:`Standard`{{copy}}
 Minimum Amount:`0`{{copy}}
 Max Amount:`100`{{copy}}
-Risk Scoring:`100`{{copy}}
+Risk Scoring:`1`{{copy}}
 
 You should have something like the following at the end. Click Save.
-
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-first-row.png"  width="600" />
 
