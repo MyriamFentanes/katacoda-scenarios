@@ -99,9 +99,69 @@ SignalRef: `Milestone 4: Account Acredited`{{copy}}
 4- Click save.
 
 
-You have just integrated rules in your case, to modify the execution flow by triggering Milestones.
-It's important to remember that the Case instance is constantly listening to changes in the Object Model or case variables if they are marked as CaseFile variables. If a variable changes, this will automatically trigger Milestones giving your case a Data driven type of execution.
+
+***Milestones ***
+-----------------------------------
+
+We have defined the case variables , if you want to skip to the next step you can import the following repository. You can watch the video on how to import a repository into your workspace
+
+1- Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
+
+https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
 
 
+To model the milestones of the case:
+
+1- Select from the Object Library Panel a Node of type  Start event then add a Script node connected to this start event. On the properties panel for the Script node enter the following:
+
+Name: `Log Case Started`{{copy}}
+Script  `System.out.println("Case started");`{{copy}}
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-script-task.png"  width="600" />
+
+Add and end event of type signal the name of the signal should be the same as the Milestone, so once you've completed Logging that the case has started the signal will trigger a Milestone called Dispute Received.
+
+Signal Ref:  `Milestone 1: Dispute received`{{copy}}
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-script-task-end-event.png"  width="600" />
+
+2- Add a milestone node
+
+Name:  `Milestone 1: Dispute received`{{copy}}
+Ad hoc autostart: false
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-dispute-received.png"  width="600" />
+
+3- Save your process.
+
+
+In this example we saw that Milestone can be triggered by signals, you can add logic after a milestone that will execute when the node is triggered. Another way to trigger a Milestone is when a condition on the data of the CaseFile is met.
+
+4- Add a second Milestone
+
+Name:  `Milestone 2: Customer doc received`{{copy}}
+Ad hoc autostart: false
+
+5- Look in the properties panel for the assignments section and click on the V icon, select the source property on the input assignment condition.
+Select constant as the value and type
+
+`org.kie.api.runtime.process.CaseData(data.get("customerDocReviewed") == true)`{{copy}}
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-docs-received.png"  width="600" />
+
+In here we are checking that the variable customerDocReviewed is true to trigger Milestone 2: Customer doc received and consider that target as achieved. We will repeat the same process for the other milestones we defined at the beginning.
+
+Name:  `Milestone 3: Automated Chargeback`{{copy}}
+Condition:`org.kie.api.runtime.process.CaseData(data.get("vendorDocReceived") == true)`{{copy}}
+
+This Milestones will be triggered by a signal
+
+Name:  `Milestone 4: Account credited`{{copy}}
+Condition:none
+
+
+Name:  `Milestone 5:  Dispute rejected`{{copy}}
+Condition:none
 
 
