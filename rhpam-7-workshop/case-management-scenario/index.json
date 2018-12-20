@@ -22,12 +22,12 @@
                 "text": "case-authoring.md"
             },
             {
-                "title": "Integrating the case with Decisions and other services",
+                "title": "Integrating the case with Decisions ",
                 "text": "decisions-service-integration.md"
             },
             {
-                "title": "Testing your case",
-                "text": "case-testing.md"
+                "title": "Integrating the case with Human Tasks ",
+                "text": "human-task-integration.md"
             }
         ],
         "intro": {
