@@ -143,7 +143,7 @@ Select constant as the value and type
 In here we are checking that the variable customerDocReviewed is true to trigger Milestone 2: Customer doc received and consider that target as achieved. We will repeat the same process for the other milestones we defined at the beginning.
 
 Name:  `Milestone 3: Automated Chargeback`{{copy}}
-Condition:`org.kie.api.runtime.process.CaseData(data.get("vendorDocReceived") == true)`{{copy}}
+Condition:`org.kie.api.runtime.process.CaseData(data.get("automated") == true)`{{copy}}
 
 This Milestones will be triggered by a signal
 
