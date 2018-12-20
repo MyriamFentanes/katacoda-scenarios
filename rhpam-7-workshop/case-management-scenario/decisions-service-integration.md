@@ -1,83 +1,133 @@
 
-Why a decision service?
------------------------
+Decisions Integration.
+----------------------
 
 You will learn in this section:
 
 
-1- How to use the rules that you author on the last section.
+1- How to further enhance your Case Model.
 
-2- How can you expose your decisions as a service.
+2- Integrating Decisions in the Case Model.
 
-3- How to use your automated decisions and rules.
+The Credit Card dispute case
+----------------------------
 
-
-You have automated some of  the decisions involved in the solving a CC dispute case,
-
-
-***Deploying your decisions***
-
-Once you have completed the definition of your rules, is time to make them available to your partners and customers.
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-diagram-users.png"  width="600" />
 
 
+There are several thing that could happen when you dispute a case, we will see 2 different scenarios
 
-***Understanding the deployment process ***
+***Automated Chargeback***
+
+A credit card dispute over billing errors has a good chance of being resolved in your favor thanks to the Fair Credit Billing Act, which regulates how credit card companies handle these disputes, or depending of the amount of the transaction or your status as a customer you can also qualify for an automated chargeback.
+The process would look like:
+
+1- CC Holder starts the dispute
+
+2- The information of the case is evaluated and the decision of an automated chargeback is taken.
+
+3- The issuer of the Credit Card (CC) will credit into your account the disputed amount.
+
+
+Using Business Decisions in a Case
+----------------------------------
+
+In the previous step we defined the Milestones of the case, import the Case Model from the following repository:
+
+https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
+
+To be able to decide the type of processing of the Credit Card Dispute we need to apply the rules for automatic chargeback processing that we automated in the previous scenario. The rules look something like this:
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-modify-fraud-automated-true.png"  width="600" />
+
+If you open the asset you will notice that we have added a extra property called rule-flow-group, this property is a meta-attribute that enables us to modify the execution of the rules, in this case we are grouping a set of rules to use them later on.
+
+The evaluation to decide if a chargeback should be automatic is the first step after the Dispute is started, so we are going to add the step right after the Milestone: Dispute started is triggered. Remember that Milestones don't perform any actions are just to mark a target of the case as achieved, but we can link functionality to it. This nodes will start after the Milestones is triggered.
+
+1-  Add a node of type Business Rule to the Milestone: Dispute started. In the properties panel add the following information:
+
+Name:  `Check for automated chargeback`{{copy}}
+Task Type: Business Rule
+Rule Flow Group:
+
+2- Add and end event node after the Business Rule "Check for automated chargeback"
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-case-first-business-rule-node.png"  width="600" />
+
+You have just learned how to leverage the Desicions and Rules you author in the previous scenario, when a new case is started you will receive the data to process the Dispute. When you reach a Business Rule node in the Case Model this data stored in the Case variables. The variables can be of primitive type or reference the Object Model will be passed to the rules.
+
+The evaluation of the rules can produce more data or modify the existing one, and all thsi will be stored in the case variables.
+
+
+
+
+
+
+
+
+***Milestones ***
 -----------------------------------
 
-In previous labs we have defined the Business Object Model and the rules and decisions that operate on the model, to import all of the assets back in your space you need to import the following repository. You can watch the video on how to import a repository into your workspace
+We have defined the case variables , if you want to skip to the next step you can import the following repository. You can watch the video on how to import a repository into your workspace
 
 1- Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
 https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
 
-Now we will deploy the rules to process a Credit Card (CC) Dispute.
 
-**Background**
+To model the milestones of the case:
 
-In previous sections we learned that Red Hat Process Automation Manager is a modular platform to develop and run decisions and process in teh diagram below you can see that the component were you as a Business DDomain Expert have been authoring your rules is Business Central for authoring, this is the web console with all the tooling for the different types of user, all the assets that you created are stored in a repository where they are versioned.
+1- Select from the Object Library Panel a Node of type  Start event then add a Script node connected to this start event. On the properties panel for the Script node enter the following:
 
-<img src="../../assets/middleware/rhpam-7-workshop/rhpam-7-architecture.png" width="600" />
+Name: `Log Case Started`{{copy}}
+Script  `System.out.println("Case started");`{{copy}}
 
-1- Go to your project library view and select the automated-chargeback rules, 1- once the editor opens click on the button Latest Version.
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-script-task.png"  width="600" />
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-chargeback-versions.png"  width="600" />
+Add and end event of type signal the name of the signal should be the same as the Milestone, so once you've completed Logging that the case has started the signal will trigger a Milestone called Dispute Received.
 
-2- There is also more metadata store on the repository about your assets, like the name of the user that created the asset, the time and data when it was last modified, etc.
+Signal Ref:  `Milestone 1: Dispute received`{{copy}}
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-chargeback-versions-detail.png"  width="600" />
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-script-task-end-event.png"  width="600" />
 
-3- Click on any of the versions in the dropdown box and you will see the version of the asset tagged.
+2- Add a milestone node
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-chargeback-version.png"  width="600" />
+Name:  `Milestone 1: Dispute received`{{copy}}
+Ad hoc autostart: false
 
-**Packaging**
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-dispute-received.png"  width="600" />
 
-After your project is developed, you can build the project in Business Central and deploy it to the configured Process Server, this is were the rules and process execute, it's a completely different component which allows things like distributed execution, if for example the execution of the case rules will be performed at the bank branches, you can deploy as many Process Servers as you need all connected to your Business Central Authoring console receiving in realtime all the updates on the assets in the project.
-
-
-1- Return to Home and select Deploy, you will see your server configurations, a server configuration is the template that holds the configuration of a group of Process Servers, there are 2 things that you configure through the template:
-
-   - Capabilities: What can you execute in your Process Server (Process, Decisions, Planner rules) they are not mutually exclusive.
-   - Deployment unit: what package of assets do you want to execute.
-
-The services in a project are consumed at run time through an instantiated KIE container, or deployment unit, on a configured Process Server. When you build and deploy a project in Business Central, the deployment unit is created automatically in the configured server. You can start, stop, or remove deployment units in Business Central as needed. You can also create additional deployment units from previously built projects and start them on existing or new Process Servers configured in Business Central.
+3- Save your process.
 
 
-2- Return to Home and select Design select your project credit-card-dispute the Library view will open with a list of all your assets. This assets will be compiled and packaged inside a kjar wich is the name of the format of the package. Click on Deploy
+In this example we saw that Milestone can be triggered by signals, you can add logic after a milestone that will execute when the node is triggered. Another way to trigger a Milestone is when a condition on the data of the CaseFile is met.
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-deploy.png"  width="600" />
+4- Add a second Milestone
 
-You will see that the project is first build, meaning the assets are compiled and packaged and then deployed to a container. Go back to Home and then select Deploy you will see now a container running with your new created decisions.
+Name:  `Milestone 2: Customer doc received`{{copy}}
+Ad hoc autostart: false
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-deploy-container.png"  width="600" />
+5- Look in the properties panel for the assignments section and click on the V icon, select the source property on the input assignment condition.
+Select constant as the value and type
+
+`org.kie.api.runtime.process.CaseData(data.get("customerDocReviewed") == true)`{{copy}}
 
 
-**Executing**
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-docs-received.png"  width="600" />
 
-1- Go to the Main Menu and select Deploy>Execution Services
+In here we are checking that the variable customerDocReviewed is true to trigger Milestone 2: Customer doc received and consider that target as achieved. We will repeat the same process for the other milestones we defined at the beginning.
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-execution-services-detail.png"  width="600" />
+Name:  `Milestone 3: Automated Chargeback`{{copy}}
+Condition:`org.kie.api.runtime.process.CaseData(data.get("vendorDocReceived") == true)`{{copy}}
 
-Click on the URL of the container and you will be able to see where is your service running as well as the configuration details.
+This Milestones will be triggered by a signal
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-execution-services-info.png"  width="600" />
+Name:  `Milestone 4: Account credited`{{copy}}
+Condition:none
+
+
+Name:  `Milestone 5:  Dispute rejected`{{copy}}
+Condition:none
+
+
