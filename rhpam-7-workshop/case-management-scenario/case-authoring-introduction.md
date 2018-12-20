@@ -284,7 +284,7 @@ Case Role: `owner`{{copy}}
 Case Cardinality: 1
 
 
-Case Role: `owner`{{copy}}
+Case Role: `approval-manager`{{copy}}
 Case Cardinality: 1
 
 The cardinality refers to the number of actors that can be mapped to a role.
