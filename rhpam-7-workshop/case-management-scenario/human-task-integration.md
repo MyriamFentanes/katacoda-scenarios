@@ -113,3 +113,7 @@ group: `dispute-manager `{{copy}}
 
 7- Add and End Event and  Click save.
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-manual-processing-dispute-end.png"  width="600" />
+
+Your finished process should look something like this:
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-manual-processing-dispute-finished.png"  width="600" />
