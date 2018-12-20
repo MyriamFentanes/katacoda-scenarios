@@ -7,7 +7,7 @@ You will learn in this section:
 
 1- How to further enhance your Case Model.
 
-2- Integrating Decisions in the Case Model.
+2- Integrating Human Interaction in the Case Model.
 
 The Credit Card dispute case
 ----------------------------
@@ -17,18 +17,23 @@ The Credit Card dispute case
 
 There are several thing that could happen when you dispute a case, we will see 2 different scenarios
 
-***Automated Chargeback***
-----------------------------------
+***Manual Approval***
 
-
-A credit card dispute over billing errors has a good chance of being resolved in your favor thanks to the Fair Credit Billing Act, which regulates how credit card companies handle these disputes, or depending of the amount of the transaction or your status as a customer you can also qualify for an automated chargeback.
-The process would look like:
+The next scenario involves a manual approval and further investigation to determine if the dispute is approved or rejected
 
 1- CC Holder starts the dispute
 
-2- The information of the case is evaluated and the decision of an automated chargeback is taken.
+2- The information of the case is evaluated and the decision of a non automated chargeback is taken.
 
-3- The issuer of the Credit Card (CC) will credit into your account the disputed amount.
+3- A knowledge worker from the issuer bank reviews tha case file and determines the documents needed from the Credit Card Holder to solve the dispute.
+
+4- The CC Holder submits the documents.
+
+5- A knowledge worker reviews the documentation and determines if the documents are complete or if more information and docs are required, you go back to step3
+
+6- If no more documents are needed from the CC Holder a knowledge worker has to determine if the Merchant needs tobe contacted tp request documents and then trigger again a review of the Merchant documentation
+
+7- In parallel you have to evaluate the information of the case to determine if a manual approval is needed or you can just solve the case automatically with the information available.
 
 
 ***Using Business Decisions in a Case***
