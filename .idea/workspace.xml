@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="Adding content to the installation">
+    <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/authentication-authorization.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/authentication-authorization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/businessModel.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/businessModel.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/case-authoring-introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-authoring-introduction.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/case-authoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-authoring.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/case-management-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-management-overview.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/case-testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-testing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/courseBase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/courseBase.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/decisions-service-integration.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/decisions-service-integration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/finish.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/finish.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/human-task-integration.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/human-task-integration.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/intro.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/intro.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/application builder-scenario/use-case-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/use-case-overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-management-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-management-overview.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +34,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="5" />
-          <entry key="json" value="17" />
-          <entry key="md" value="55" />
+          <entry key="json" value="18" />
+          <entry key="md" value="56" />
           <entry key="png" value="3" />
           <entry key="sh" value="10" />
           <entry key="snippet" value="1" />
@@ -60,8 +48,8 @@
         <counts>
           <entry key="IDEA_MODULE" value="5" />
           <entry key="Image" value="3" />
-          <entry key="JSON" value="17" />
-          <entry key="Markdown" value="40" />
+          <entry key="JSON" value="18" />
+          <entry key="Markdown" value="41" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="1" />
@@ -110,11 +98,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop-pathway.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/index.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-management-overview.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="4015">
+                <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -209,6 +216,7 @@
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/human-task-integration.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop-pathway.json" />
+        <option value="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-management-overview.md" />
       </list>
     </option>
   </component>
@@ -238,6 +246,12 @@
               <item name="katacoda-scenarios" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="katacoda-scenarios" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="rhpam-7-workshop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="katacoda-scenarios" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="katacoda-scenarios" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="rhpam-7-workshop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app-builder-scenario" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -295,7 +309,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545319108455" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545319406034" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -335,13 +349,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Adding content to the installation">
-      <created>1540572198967</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1540572198967</updated>
     </task>
     <task id="LOCAL-00061" summary="Adding content to the installation">
       <created>1540573295938</created>
@@ -679,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545318386010</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Adding content to the installation">
+      <created>1545319115667</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1545319115667</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TodoView">
@@ -764,7 +778,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adding content to the installation" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/installation-scenario/index.json" />
     <entry file="file://$PROJECT_DIR$/rhpam-fis-scenario/step3.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1169,6 +1182,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/index.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-management-overview.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="4015">
+            <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
