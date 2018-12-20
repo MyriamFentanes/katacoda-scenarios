@@ -86,6 +86,9 @@ Copyright 2018 Entando
 6
 ENTANDO + RED HAT PAM CASE MANAGEMENT
 
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-entando1.png"  width="600" />
+
+
   <sketch x1="6" y1="3" x2="11" y2="6" /> <defaultWidget code="bpm-case-file">
 <properties>
 <property key="channel">1</property>

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-management-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/app-builder-scenario/case-management-overview.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +116,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="4015">
-                <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
+                <caret line="287" selection-start-line="287" selection-end-line="287" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -309,7 +308,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545319406034" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545319558275" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -349,13 +348,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Adding content to the installation">
-      <created>1540573295938</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1540573295938</updated>
     </task>
     <task id="LOCAL-00062" summary="Adding content to the installation">
       <created>1540574903513</created>
@@ -693,7 +685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545319115667</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Adding content to the installation">
+      <created>1545319410924</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1545319410924</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1192,7 +1191,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="4015">
-            <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
+            <caret line="287" selection-start-line="287" selection-end-line="287" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
