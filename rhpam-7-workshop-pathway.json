@@ -21,6 +21,11 @@
       "external_link": "https://learn.openshift.com/rhpam-7-workshop/reporting-scenario/",
       "course_id": "reporting-scenario",
       "title": "Creating Business Activity Monitoring (BAM) reports with the Process Automation Manager 7"
+    },
+    {
+      "external_link": "https://learn.openshift.com/rhpam-7-workshop/app-builder-scenario/",
+      "course_id": "app-builder-scenario",
+      "title": "Process Driven Applications using Red Hat Process Automation Manager 7"
     }
   ]
 }
