@@ -81,6 +81,8 @@ Some of the previous steps depicted can be active in parallel or after you have 
 
 - Automated Chargeback processing
 
+- Manual processing
+
 - Account credited
 
 - Dispute rejected
