@@ -17,7 +17,7 @@ You can also interact with the OpenShift Container Platform via the Web Console.
 
 - Click on the _OpenShift Console_ tab to open the web-console's login screen
 - Login with username `developer`{{copy}} and password `developer`{{copy}}
-- You will see a list of the projects that you have access to. In this case is only Credit Card Dispute. Click on the project to open the project page.
+- You will see a list of the projects that you have access to. In this case this is only the Credit Card Dispute project. Click on the project to open the project page.
 
 ## Red Hat Process Automation Platform
 
@@ -33,25 +33,26 @@ The overview page shows you your working environment. But what if you have speci
 4. Type in `credit-card-dispute`{{copy}}
 5. Click on Delete.
 
-## Now what?
-
-### Extra points
-
-
 #### Templates
 
 What is a template? Red Hat Process Automation Manager's new design is activity focussed. This means that you have predefined environments available for you to deploy depending on what you want to accomplish. The definitions are modelled in the form of templates. A template describes an environment that follows a Red Hat prescriptive deployment architecture. Templates are provided that define and deploya fully working  platform for development, test, production, etc. Depending on whether you want to develop, integrate, test or run processes and other assets, you can choose your environment of choice.
  Some examples of the available templates are:
 
 - `rhpam70-authoring`: The environment of choice if you are a business user or developer that wants to author business automation projects, assets and applications. Provides an authoring environment including the workbench and an execution server.
-- `rhpam70-prod-immutable-kieserver`: If you are the administrator of the platform and you want a production like environment with immutable execution engines.
-- `rhpam70-prod-immutable-monitor`: If you are part of the operations team and you want to monitor your production environment.
+- `rhpam70-authoring-ha`: Same as the previous environment, but with high availability features. This implies that there are multiple (by default 2) instances of workbench and execution server deployed.
 - `rhpam70-trial-ephemeral`: If you want a quick demo environment to test the platform. Provides the same environment as the `authoring` template but without persistent storage.
+- `rhpam70-prod`: If you are the administrator of the platform and you want a production like environment. The template provisions a monitoring and management environment, a smart router and 2 execution server groups.
 
 What kind of environment is right for your you depends on your requirements:
-- what type of environment do you want?
-- what do you want it for?
-- do you need high availability or not?
+- In which deployment environment is the platform going to be provisioned?
+  - Is the environment to be used for process and/or rules development
+  - Is the environment used for integration testing
+  - Is the environment intended to be used in production?
+- What kind of deployment architecture and methodology do you use?
+  - Do you want to be able to install and update process definitions and rules via the management console?
+  - Do you use the concept of immutable containers, and thus don't allow the provisioning of applications through the management console?
+- Do you have a requirement for high availability of the platform?
+- What kind of database do you want to integrate with?
 
 For example, if you want an environment to author rules and processes, you can use the `rhpam70-authoring.yaml` that contains all the components necessary to do so. See the image below.
 
