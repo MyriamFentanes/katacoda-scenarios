@@ -63,6 +63,6 @@ For example, if you want an environment to author rules and processes, you can u
 Quiz: From the previous step what components do you recognize in this template?
 
 -----------
-In the case of this workshop, because you need a complete authoring environment with a process server where you can test your assets, we could (or should) deploy the authoring environment. However due to the restrictions of this environment (the platform does not provide persistent storage), we will use the ephemeral template instead.
+In the case of this workshop, because you need a complete authoring environment with a process server where you can test your assets, we could (or should) deploy the authoring environment. However due to the restrictions of this environment (the Katacoda platform does not provide persistent storage), we will use the ephemeral template instead.
 
 <img src="../../assets/middleware/rhpam-7-workshop/rhpam70-ephimeral-template.png" width="600" />
