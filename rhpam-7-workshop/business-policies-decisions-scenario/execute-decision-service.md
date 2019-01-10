@@ -1,3 +1,2 @@
-Versioning your services.
+Calling your decision service
 -------------------------
-

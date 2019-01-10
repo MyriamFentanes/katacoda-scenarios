@@ -1,7 +1,7 @@
 # Setting up your work environment
 
 Red Hat Process Automation Manager enables you to automate different pieces of your requirements, you can automate the decision making, the flow of the decision making, the interaction between the people and systems, etc.
-You need to become familiar with the environment to author, deploy, execute and manage your process instances, and take advantage of the cloud native environment available. Things such as OpenShift self-service console will allow you to provision, recreate, destroy  your working environment and be autonomous from other users .
+In order to be able to correctly install and provision the environment, you need to be familiar with the various platform components and the various ways the product can be configured to support different use cases. Tools like the OpenShift self-service console will allow you to provision, recreate, destroy  your working environment and be autonomous from other users .
 
 The following diagram depicts the main components of Red Hat Process Automation Platform.
 

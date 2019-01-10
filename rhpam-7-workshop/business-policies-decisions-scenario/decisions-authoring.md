@@ -247,13 +247,13 @@ We are now going to add the actual constraints and actions, i.e. the actual rule
 
 _For a standard customer, and a dispute amount between 0 and 100, the risk is low._
 
-There are 4 levels of risk: low, medium, high and very-high. We will defined these risk-levels as integers: 1,2,3, and 4. 
+There are 4 levels of risk: low, medium, high and very-high. We will defined these risk-levels as integers: 1,2,3, and 4.
 
 Click on the button Insert and select append row from the dropdown menu.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-append-row.png"  width="600" />
 
-Click on the Description cell of the new row and type Low risk standard costumer, repeat for the rest of teh columns with the following values
+Click on the Description cell of the new row and type "_Low risk standard costumer_". Use the following values for the other columns:
 
 Description:`Low risk standard costumer`{{copy}}
 Status:`Standard`{{copy}}
@@ -261,11 +261,13 @@ Minimum Amount:`0`{{copy}}
 Max Amount:`100`{{copy}}
 Risk Scoring:`1`{{copy}}
 
-You should have something like the following at the end. Click Save.
+Your decision table should look like this. Click Save.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-first-row.png"  width="600" />
 
 Apply the same procedure for the rest of the rules.
+
+
 
 ## Decision Model & Notation (DMN)
 
