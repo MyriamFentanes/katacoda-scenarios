@@ -9,7 +9,7 @@ For business experts, the platform provides the Business Central console, a web-
 
 ## Business Central
 
-1- Go to your Openshift console tab and login using the same credentials as before:
+1- Go to your Openshift console tab. Go to step 2 if you're already logged in. If you're not yet logged in, or have been logged out, login using the same credentials as before:
 - user: `developer`{{copy}}
 - password: `developer`{{copy}}
 

@@ -1,5 +1,4 @@
-Our next step is to create a new project and provision the RHPAM Trial Ep
-Ephemeral environment.
+Our next step is to create a new project and provision the RHPAM Trial Ephemeral environment.
 
 1. If you are not already logged in into the OpenShift Web Console, open it on using the tab on the upper right side of your screen. Login with username `developer` {{copy}} and password `developer`{{copy}}
 2. Click on the `+ Create Project` button to create a new project. Use the following values for your project
