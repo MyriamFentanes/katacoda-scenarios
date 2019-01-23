@@ -28,7 +28,7 @@ In previous labs we have defined the Business Object Model and the rules and dec
 
 1- Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
-https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
+https://github.com/MyriamFentanes/business-policies-decisions-scenario-step3.git
 
 Now we will deploy the rules to process a Credit Card (CC) Dispute.
 
