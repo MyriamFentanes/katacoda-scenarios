@@ -69,8 +69,6 @@ The services in a project are consumed at run time through an instantiated KIE c
 
 You will see that the project is first build, meaning the assets are compiled and packaged and then deployed to a container. Go back to Home and then select Deploy you will see now a container running with your new created decisions.
 
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-deploy-container.png"  width="600" />
-
 
 **Executing**
 
