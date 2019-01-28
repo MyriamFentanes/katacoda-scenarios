@@ -13,19 +13,19 @@ A lot of the complexity with the CC Dispute process comes from the fact that is 
 The actors that we can identify are:
 
 - Credit Card Holder: aka Customer
----------------------
+
 
 - Credit Card Issuer: In this case Pecunia corp.
----------------------
+
 
 - Card processing network:  The organization that oversees the process. As noted below, some differ in their procedures than others.
---------------------------
+
 
 - Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf.
------------------------
+
 
 - Merchant: Seller of the goods and must either fight or accept the chargeback
-----------
+
 
 
 We can resume the process in the following diagram:
