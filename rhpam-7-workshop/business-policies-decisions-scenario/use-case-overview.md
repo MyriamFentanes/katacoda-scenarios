@@ -87,7 +87,7 @@ The second use case has the decisions to determine the risk of the transaction a
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-manual-standard-processing.png"  width="600" />
 
-In step 4 of the processing, based on the case information we need too determine if a dispute needs a manual approval, to such effect  we have the following rule:
+Once that is decided that the dispute will be processed in a standard way, by contacting all the chain of CC transaction processing (3) we have the next bifurcation in step 4 of the processing, based on the case information we need too determine if a dispute needs a manual approval, to such effect  we have the following rule:
 
 _Every amount larger than 1000 should be manually approved._
 
