@@ -14,19 +14,19 @@ Most of the complexity with the CC Dispute process comes from the fact that is a
 
 The actors that we can identify are:
 
-- Credit Card Holder: aka Customer
+- _Credit Card Holder: aka Customer_
 
 
-- Credit Card Issuer: In this case Pecunia corp.
+- _Credit Card Issuer: In this case Pecunia corp._
 
 
-- Card processing network:  The organization that oversees the process. Some differ in their procedures than others.
+- _Card processing network:  The organization that oversees the process. Some differ in their procedures than others._
 
 
-- Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf.
+- _Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf._
 
 
-- Merchant: Seller of the goods and must either fight or accept the chargeback
+- _Merchant: Seller of the goods and must either fight or accept the chargeback._
 
 
 
@@ -39,27 +39,27 @@ We can resume the process in the following diagram:
 
 The basic steps are:
 
-1- The Credit Card Holder starts a dispute with the CC Issuer.
+1- _The Credit Card Holder starts a dispute with the CC Issuer._
 
-2- The CC Issuer needs to decide what type of processing is required y the dispute (automated chargeack or normal processing).Jump to step 3.1. or 3.2.
+2- _The CC Issuer needs to decide what type of processing is required y the dispute (automated chargeack or normal processing).Jump to step 3.1. or 3.2._
 
-3.1- The CC Issuer process the automated chargeback. Jump  to step 5.1.
+3.1- _The CC Issuer process the automated chargeback. Jump  to step 5.1._
 
-3.2 - The CC Issuer needs to do standard processing, contact the Card Processing network to start the dispute, the Credit Processing Network then contacts the CC Acquirer that requests evidence to the merchant and a formal response to the dispute.
+3.2 - _The CC Issuer needs to do standard processing, contact the Card Processing network to start the dispute, the Credit Processing Network then contacts the CC Acquirer that requests evidence to the merchant and a formal response to the dispute._
 
-3.3 - The Merchant send the evidence and response to the CC Issuer
+3.3 - _The Merchant send the evidence and response to the CC Issuer_
 
-4- The CC Issuer assess the risk of the dispute.
+4- _The CC Issuer assess the risk of the dispute._
 
-4.1- The CC Issuer requests a manual approval for the dispute from a knowledge worker. Jump to step 5.1. or 5.2
+4.1- _The CC Issuer requests a manual approval for the dispute from a knowledge worker. Jump to step 5.1. or 5.2_
 
-4.2- The CC Issuer based on the data resolves the case. Jump to step 5.1. or 5.2
+4.2- _The CC Issuer based on the data resolves the case. Jump to step 5.1. or 5.2_
 
-5.1- The dispute is accepted and the money reimbursed to the CC Holder and the backoffice chargeback for fee transactions started
+5.1- _The dispute is accepted and the money reimbursed to the CC Holder and the backoffice chargeback for fee transactions started_
 
-5.2- The dispute is rejected
+5.2- _The dispute is rejected_
 
-6- The CC Issuer informs the CC Holder of the result.
+6- _The CC Issuer informs the CC Holder of the result._
 
 
 --------------------------------------------------
@@ -78,8 +78,6 @@ For the first scenario, going back and forth in the whole processing chain is co
 
 So the first bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost, this scenario is Automatic vs Standard Processing. The requirement for automatic chargeback qualification is:
 
-
-- _Automatic processing is only available to customers with a Gold or Platinum status._
 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-automated-chargeback.png"  width="600" />
