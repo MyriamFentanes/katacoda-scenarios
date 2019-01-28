@@ -25,17 +25,17 @@
                 "title": "Execute a decision service",
                 "text": "execute-decision-service.md"
             }
-        ],
-        "intro": {
-            "text": "intro.md",
-            "code": "set-env.sh",
-            "courseData": "courseBase.sh",
-            "credits": ""
-        },
-        "finish": {
-            "text": "finish.md"
-        }
+    ],
+    "intro": {
+        "text": "intro.md",
+        "code": "set-env.sh",
+        "courseData": "courseBase.sh",
+        "credits": ""
     },
+    "finish": {
+        "text": "finish.md"
+    }
+},
     "files": [
         "app.js"
     ],

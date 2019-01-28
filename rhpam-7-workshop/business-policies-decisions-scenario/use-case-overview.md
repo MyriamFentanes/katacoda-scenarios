@@ -41,7 +41,7 @@ The basic steps are:
 
 1- _The Credit Card Holder starts a dispute with the CC Issuer._
 
-2- _The CC Issuer needs to decide what type of processing is required y the dispute (automated chargeack or normal processing).Jump to step 3.1. or 3.2._
+2- _The CC Issuer needs to decide what type of processing is required for the dispute (automated chargeack or normal processing).Jump to step 3.1. or 3.2._
 
 3.1- _The CC Issuer process the automated chargeback. Jump  to step 5.1._
 
@@ -73,6 +73,7 @@ Hence there are two decision's sets that change the overall processing making: O
 
 For the first scenario, going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
 
+
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-backoffice-processing.png"  width="600" />
 
 
@@ -82,7 +83,9 @@ So the first bifurcation point gives Pecunia corp the ability to gain loyalty wi
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-automated-chargeback.png"  width="600" />
 
+The second use case has the decisions to determine the risk of the transaction and if a manual approval is required.
 
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-manual-standard-processing.png"  width="600" />
 
 The risk of the transaction is determined by the status of customer and the amount of the dispute:
 
