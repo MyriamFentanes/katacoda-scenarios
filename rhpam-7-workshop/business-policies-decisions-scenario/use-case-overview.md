@@ -28,15 +28,25 @@ We are going to focus on the process from the perspective of the Issuer, since i
 In a simplified version the process is:
 
 1- The Credit Card Holder starts a dispute with the CC Issuer.
+
 2- The CC Issuer needs to decide what type of processing is required y the dispute (automated chargeack or normal processing).Jump to step 3.1. or 3.2.
+
 3.1- The CC Issuer process the automated chargeback. Jump  to step 5.1.
+
 3.2 - The CC Issuer needs to do standard processing, contact the Card Processing network to start the dispute, the Credit Processing Network then contacts the CC Acquirer that requests evidence to the merchant and a formal response to the dispute.
+
 3.3 - The Merchant send the evidence and response to the CC Issuer
+
 4- The CC Issuer assess the risk of the dispute.
+
 4.1- The CC Issuer requests a manual approval for the dispute from a knowledge worker. Jump to step 5.1. or 5.2
+
 4.2- The CC Issuer based on the data resolves the case. Jump to step 5.1. or 5.2
+
 5.1- The dispute is accepted and the money reimbursed to the CC Holder and the backoffice chargeback for fee transactions started
+
 5.2- The dispute is rejected
+
 6- The CC Issuer informs the CC Holder of the result.
 
 
