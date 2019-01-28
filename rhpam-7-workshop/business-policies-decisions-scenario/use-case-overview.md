@@ -8,7 +8,7 @@ These requirements are the policies of Pecunia Corp. to handle a credit card tra
 
 The cost of processing a credit card dispute is very high, and also critical from the customer experience perspective. Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the most critical aspects of the interaction with the dispute system is the constant feedback to the customer, informing constantly the latest status of the dispute. E.g., what is currently happening with the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
 
-A lot of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of the actions of different actors and the actual processing flow is also flexible. On top of that the information regarding the case, has to be the input and output of every interaction between the actors, all need to look at the same data and be observers of changes in it.
+A lot of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of the interactions of different actors and the decision logic. On top of that, the information regarding the case, has to be the input and output of every interaction between the actors, all need to look at the same data and be observers of changes in it.
 
 We can resume the process in the following diagram:
 
@@ -17,13 +17,27 @@ We can resume the process in the following diagram:
 
 The actors that we can identify are:
 
-- Credit Card Holder aka Customer
-- Credit Card Issuer in this case Pecunia corp.
-- Card processing network
-- Credit Card Acquirer
-- Merchant
+- Credit Card Holder: aka Customer
+- Credit Card Issuer: In this case Pecunia corp.
+- Card processing network:  The organization that oversees the process. As noted below, some differ in their procedures than others.
+- Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf.
+- Merchant: Seller of the goods and must either fight or accept the chargeback
 
 We are going to focus on the process from the perspective of the Issuer, since is the one that has the direct communication with the CC Holder and resolves the dispute.
+
+In a simplified version the process is:
+
+1- The Credit Card Holder starts a dispute with the CC Issuer.
+2- The CC Issuer needs to decide what type of processing is required y the dispute (automated chargeack or normal processing).Jump to step 3.1. or 3.2.
+3.1- The CC Issuer process the automated chargeback. Jump  to step 5.1.
+3.2 - The CC Issuer needs to do standard processing, contact the Card Processing network to start the dispute, the Credit Processing Network then contacts the CC Acquirer that requests evidence to the merchant and a formal response to the dispute.
+3.3 - The Merchant send the evidence and response to the CC Issuer
+4- The CC Issuer assess the risk of the dispute.
+4.1- The CC Issuer requests a manual approval for the dispute from a knowledge worker. Jump to step 5.1. or 5.2
+4.2- The CC Issuer based on the data resolves the case. Jump to step 5.1. or 5.2
+5.1- The dispute is accepted and the money reimbursed to the CC Holder and the backoffice chargeback for fee transactions started
+5.2- The dispute is rejected
+6- The CC Issuer informs the CC Holder of the result.
 
 
 --------------------------------------------------
