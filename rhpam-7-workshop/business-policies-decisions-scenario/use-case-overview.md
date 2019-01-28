@@ -37,7 +37,7 @@ We can resume the process in the following diagram:
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing.png"  width="600" />
 
 
-The basic step are:
+The basic steps are:
 
 1- The Credit Card Holder starts a dispute with the CC Issuer.
 
