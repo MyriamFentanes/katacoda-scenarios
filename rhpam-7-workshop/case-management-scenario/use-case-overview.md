@@ -1,7 +1,7 @@
 # Use Case Overview
 
 The requirements that are handed to you:
-These requirements are the policies of Pecunia Corp. to handle a Credit Card Dispute.
+These requirements are the policies of Pecunia Corp. to solve a Credit Card Dispute.
 
 
 ## Background
