@@ -87,7 +87,7 @@ The second use case has the decisions to determine the risk of the transaction a
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-manual-standard-processing.png"  width="600" />
 
-In the step 4 of the processing based on the case information we need too determine if a dispute needs a manual approval, to such effect  we have the following rule:
+In step 4 of the processing, based on the case information we need too determine if a dispute needs a manual approval, to such effect  we have the following rule:
 
 _Every amount larger than 1000 should be manually approved._
 
@@ -108,9 +108,9 @@ The risk of the transaction is determined by the status of customer and the amou
 
 ### Functional Solution:
 
-Have business rules that will take into account the criteria defined to assess risk and automate processing. The business user can change these criteria anytime if needed, and apply the changes immediately. 
+Have business rules that will take into account consistent criteria defined to assess risk and automate processing. The business user must have the ability to change these criteria anytime if needed, and apply the changes according to the release process of Pecunia corp.. 
 
 
 ### Non Functional:
 
-Allow the user to change the criteria without technical assistance. Have the tooling for the user to update the rules but using standard spreadsheet-like decision tables.
+Allow the user to change the criteria without technical assistance. Have the tooling for the user to update the rules but using standard spreadsheet-like decision tables or cuasi natural language.
