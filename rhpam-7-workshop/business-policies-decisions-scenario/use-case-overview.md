@@ -87,6 +87,12 @@ The second use case has the decisions to determine the risk of the transaction a
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-manual-standard-processing.png"  width="600" />
 
+In the step 4 of the processing based on the case information we need too determine if a dispute needs a manual approval, to such effect  we have the following rule:
+
+_Every amount larger than 1000 should be manually approved._
+
+An also at this point we need to determine the risk profile of the dispute, this risk scoring will be part of the input for both the manual approval path and the automated resolution.
+
 The risk of the transaction is determined by the status of customer and the amount of the dispute:
 
 - _For a standard customer, and a dispute amount between 0 and 100, the risk is low._
@@ -99,9 +105,6 @@ The risk of the transaction is determined by the status of customer and the amou
 - _For a gold customer, and a dispute amount over 500, the risk is medium._
 
 
-Plus to determine if a dispute needs a manual approval we have the following rule:
-
-_Every amount larger than 1000 should be manually approved._
 
 ### Functional Solution:
 
@@ -111,41 +114,3 @@ Have business rules that will take into account the criteria defined to assess r
 ### Non Functional:
 
 Allow the user to change the criteria without technical assistance. Have the tooling for the user to update the rules but using standard spreadsheet-like decision tables.
-
-------------------------------------------------------------------------------------------------------------------------------
-
-### Business:
-
-Every amount larger than 1000 should be manually approved.
-
-### Stakeholder
-
-Process a credit card dispute
-
-### Functional Solution:
-
-Have a rule in the system that makes sure that every time you get a transaction with an amount > 1000 it triggers a user task to review the dispute.
-
-### Non Functional:
-
-Allow the user to change the amount.
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### Business:
-
-The type of security questions that the customers needs to answer depend on the merchant and the use case, this is very important as some of the information is necessary for the Payment gateway to process the refund or chargeback with the merchant. These questions are also susceptible to continuous change, as the regulations may change with short notice. And, as new type of credit card products come out this also need to be updated and maintained by the business user.
-
-### Stakeholder
-
-Process a credit card dispute
-
-### Functional Solution:
-
-Have a dynamic questionnaire that has subordinated questions and answers based on previous questions answers. This will be implemented in a decision table that the business user can download as a spreadsheet, change any given question or add new ones and then upload the spreadsheet or save directly on the platform wizard.
-
-### Non Functional:
-
-Allow the user to change the questions without technical assistance. Have the tooling for the user to update the questions online and offline using standard spreadsheets.
-
-------------------------------------------------------------------------------------------------------------------------------
