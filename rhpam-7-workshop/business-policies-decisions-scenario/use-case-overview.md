@@ -63,13 +63,24 @@ We can resume the process in the following diagram:
 
 ### Business:
 
-A risk assessment must be performed based on the customer's profile, the type of dispute, and the amount. This could lead to automatic processing of the dispute or to a manual approval step to solve the dispute.
 
-We define 2 sets of rules, one set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute.
+There are two points in the process where depending on a business decision, the processing path bifurcates. The decision making is right now subjective, as a human - in this case a CC Issuer agent- is responsible  to reach a conclusion based on his/her individual knowledge.
+
+There are two decision's set that change the overall processing making: One set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute for manual approval.
+Going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-backoffice-processing.png"  width="600" />
+
 
 The requirement for automatic chargeback qualification is:
 
+
 - _Automatic processing is only available to customers with a Gold or Platinum status._
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-automated-chargeback.png"  width="600" />
+
+
 
 The risk of the transaction is determined by the status of customer and the amount of the dispute:
 
