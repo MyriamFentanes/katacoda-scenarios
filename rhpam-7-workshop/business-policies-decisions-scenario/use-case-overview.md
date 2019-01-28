@@ -6,10 +6,20 @@ These requirements are the policies of Pecunia Corp. to handle a credit card tra
 
 ## Requirements
 
-The cost of processing a credit card dispute is very high, and also critical from the customer experience perspective. Usually the credit card holder is stressed to protect the assets trusted to the bank,therefore one of the most critical aspects of the interaction with the dispute system is the constant feedback to the customer, i.e. the system and the process for disputing a transaction has to constantly inform the credit card holder on the status of the dispute. E.g., what is currently happening with the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
+The cost of processing a credit card dispute is very high, and also critical from the customer experience perspective. Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the most critical aspects of the interaction with the dispute system is the constant feedback to the customer, informing constantly the latest status of the dispute. E.g., what is currently happening with the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
 These are all considerations that need to be taken into account when automating the process.
 
------------------
+Part of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute comes from the actions of different actors and the actual processing flow is also flexible.
+
+
+We can resume the process in the following diagram:
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing.png"  width="600" />
+
+
+
+--------------------------------------------------
 
 ### Business:
 
