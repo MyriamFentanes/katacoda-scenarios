@@ -1,16 +1,16 @@
 # Use Case Overview
 
 The requirements that are handed to you:
-These requirements are the policies of Pecunia Corp. to handle a credit card transaction.
+These requirements are the policies of Pecunia Corp. to handle a Credit Card Dispute.
 
 
 ## Requirements
 
 The cost of processing a credit card dispute is very high, and also critical from the customer experience perspective.
 
-Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the requirements for the interaction with the dispute system is the constant feedback to the customer, informing constantly the latest status of the dispute. E.g., what is currently happening with the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
+Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the requirements for the interaction with the dispute system is the constant feedback to the customer, informing constantly the latest status of the dispute. E.g., who is currently processing the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
 
-A lot of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of the interactions of different actors and the decision logic. On top of that, the information regarding the case, has to be the input and output of every interaction between the actors, all need to look at the same data and be observers of changes in it.
+Most of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of  the interactions between the different actors and the decision logic. On top of that, the information regarding the case, has to be the input and output of every interaction, everybody need to look at the same data and be observers of changes in it.
 
 The actors that we can identify are:
 
@@ -20,7 +20,7 @@ The actors that we can identify are:
 - Credit Card Issuer: In this case Pecunia corp.
 
 
-- Card processing network:  The organization that oversees the process. As noted below, some differ in their procedures than others.
+- Card processing network:  The organization that oversees the process. Some differ in their procedures than others.
 
 
 - Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf.
@@ -69,13 +69,14 @@ The basic steps are:
 
 There are two points in the process where depending on a business decision, the processing path bifurcates. The decision making is right now subjective, as a human - in this case a CC Issuer agent- is responsible  to reach a conclusion based on his/her individual knowledge.
 
-There are two decision's set that change the overall processing making: One set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute for manual approval.
+Hence there are two decision's sets that change the overall processing making: One set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute for manual approval.
+
 Going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-backoffice-processing.png"  width="600" />
 
 
-The requirement for automatic chargeback qualification is:
+So the first bifurcation point to gain loyalty with strategic customers and avoid cost is Automatic vs Standard Processing. The requirement for automatic chargeback qualification is:
 
 
 - _Automatic processing is only available to customers with a Gold or Platinum status._
