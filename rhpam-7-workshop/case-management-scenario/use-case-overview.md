@@ -1,25 +1,97 @@
 # Use Case Overview
 
 The requirements that are handed to you:
-These requirements are the policies of Pecunia Corp. to solve a credit card transaction.
+These requirements are the policies of Pecunia Corp. to handle a Credit Card Dispute.
 
 
-## Requirements
+## Background
 
-The cost of processing a credit card dispute is very high, and also very critical from the customer experience perspective. Usually the credit card holder is stressed to protect the assets trusted to the bank. One of the most critical aspects of the interaction with the dispute system is the constant feedback to the customer, i.e. the system and the process for disputing a transaction has to constantly inform the credit card holder on the status of the dispute. E.g., what is currently happening with the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
-These are all considerations that need to be taken into account when automating the process.
+The cost of processing a credit card dispute is very high, and also critical from the customer experience perspective.
 
------------------
+Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the requirements for the interaction with the dispute system is the constant feedback to the customer, informing the latest status of the dispute. E.g., who is currently processing the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
 
-### Business:
+Most of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of  the interactions between the different actors and the decision logic. On top of that, the information regarding the case, has to be the input and output of every interaction, everybody need to look at the same data and be observers of changes in it.
 
-A risk assessment must be performed based on the customer's profile, the type of dispute, and the amount. This could lead to automatic processing of the dispute or to a manual approval step to solve the dispute.
+The actors that we can identify are:
 
-We define 2 sets of rules, one set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute.
+- _Credit Card Holder: aka Customer_
 
-The requirement for automatic chargeback qualification is:
 
-- _Automatic processing is only available to customers with a Gold or Platinum status._
+- _Credit Card Issuer: In this case Pecunia corp._
+
+
+- _Card processing network:  The organization that oversees the process. Some differ in their procedures than others._
+
+
+- _Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf._
+
+
+- _Merchant: Seller of the goods and must either fight or accept the chargeback._
+
+
+
+We can resume the process in the following diagram:
+
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing.png"  width="600" />
+
+
+The basic steps are:
+
+1- _The Credit Card Holder starts a dispute with the CC Issuer._
+
+2- _The CC Issuer needs to decide what type of processing is required for the dispute (automated chargeack or normal processing).Jump to step 3.1. or 3.2._
+
+3.1- _The CC Issuer process the automated chargeback. Jump  to step 5.1._
+
+3.2 - _The CC Issuer needs to do standard processing, contact the Card Processing network to start the dispute, the Credit Processing Network then contacts the CC Acquirer that requests evidence to the merchant and a formal response to the dispute._
+
+3.3 - _The Merchant send the evidence and response to the CC Issuer_
+
+4- _The CC Issuer assess the risk of the dispute._
+
+4.1- _The CC Issuer requests a manual approval for the dispute from a knowledge worker. Jump to step 5.1. or 5.2_
+
+4.2- _The CC Issuer based on the data resolves the case. Jump to step 5.1. or 5.2_
+
+5.1- _The dispute is accepted and the money reimbursed to the CC Holder and the backoffice chargeback for fee transactions started_
+
+5.2- _The dispute is rejected_
+
+6- _The CC Issuer informs the CC Holder of the result._
+
+
+--------------------------------------------------
+
+### Business Requirements:
+
+
+There are two points in the process where depending on a business decision, the processing path bifurcates. The decision making is right now subjective, as a human - in this case a CC Issuer agent- is responsible  to reach a conclusion based on his/her individual knowledge.
+
+Hence there are two decision's sets that change the overall processing making: One set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute for manual approval and resolution.
+
+For the first scenario, going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-backoffice-processing.png"  width="600" />
+
+
+So the first bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost, this scenario is Automatic vs Standard Processing. The following diagram describes the scenario:
+
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-automated-chargeback.png"  width="600" />
+
+The second use case has the decisions to determine the risk of the transaction and if a manual approval is required.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-manual-standard-processing.png"  width="600" />
+
+Once that is decided that the dispute will be processed in a standard way, by contacting all the chain of CC transaction processing (3) we have the next bifurcation in step 4 of the processing, based on the case information we need too determine if a dispute needs a manual approval, to such effect  we have the following rule:
+
+_Every amount larger than 1000 should be manually approved._
+
+An also at this point we need to determine the risk profile of the dispute, this risk scoring will be part of the input for both the manual approval path and the automated resolution.
 
 The risk of the transaction is determined by the status of customer and the amount of the dispute:
 
@@ -33,53 +105,12 @@ The risk of the transaction is determined by the status of customer and the amou
 - _For a gold customer, and a dispute amount over 500, the risk is medium._
 
 
-### Stakeholder
-
-Customer/Process a credit card dispute
 
 ### Functional Solution:
 
-Have business rules that will take into account the criteria defined to assess risk and automate processing. The business user can change these criteria anytime if needed, and apply the changes immediately. 
+Have business rules that will take into account consistent criteria defined to assess risk and automate processing. The business user must have the ability to change these criteria anytime if needed, and apply the changes according to the release process of Pecunia corp.. 
 
 
 ### Non Functional:
 
-Allow the user to change the criteria without technical assistance. Have the tooling for the user to update the rules but using standard spreadsheet-like decision tables.
-
-------------------------------------------------------------------------------------------------------------------------------
-
-### Business:
-
-Every amount larger than 1000 should be manually approved.
-
-### Stakeholder
-
-Process a credit card dispute
-
-### Functional Solution:
-
-Have a rule in the system that makes sure that every time you get a transaction with an amount > 1000 it triggers a user task to review the dispute.
-
-### Non Functional:
-
-Allow the user to change the amount.
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-### Business:
-
-The type of security questions that the customers needs to answer depend on the merchant and the use case, this is very important as some of the information is necessary for the Payment gateway to process the refund or chargeback with the merchant. These questions are also susceptible to continuous change, as the regulations may change with short notice. And, as new type of credit card products come out this also need to be updated and maintained by the business user.
-
-### Stakeholder
-
-Process a credit card dispute
-
-### Functional Solution:
-
-Have a dynamic questionnaire that has subordinated questions and answers based on previous questions answers. This will be implemented in a decision table that the business user can download as a spreadsheet, change any given question or add new ones and then upload the spreadsheet or save directly on the platform wizard.
-
-### Non Functional:
-
-Allow the user to change the questions without technical assistance. Have the tooling for the user to update the questions online and offline using standard spreadsheets.
-
-------------------------------------------------------------------------------------------------------------------------------
+Allow the user to change the criteria without technical assistance. Have the tooling for the user to update the rules but using standard spreadsheet-like decision tables or cuasi natural language.
