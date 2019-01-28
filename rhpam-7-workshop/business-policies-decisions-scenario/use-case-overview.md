@@ -10,18 +10,25 @@ The cost of processing a credit card dispute is very high, and also critical fro
 
 A lot of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of the interactions of different actors and the decision logic. On top of that, the information regarding the case, has to be the input and output of every interaction between the actors, all need to look at the same data and be observers of changes in it.
 
+The actors that we can identify are:
+
+- Credit Card Holder: aka Customer
+
+- Credit Card Issuer: In this case Pecunia corp.
+
+- Card processing network:  The organization that oversees the process. As noted below, some differ in their procedures than others.
+
+- Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf.
+
+- Merchant: Seller of the goods and must either fight or accept the chargeback
+
 We can resume the process in the following diagram:
+
 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing.png"  width="600" />
 
-The actors that we can identify are:
 
-- Credit Card Holder: aka Customer
-- Credit Card Issuer: In this case Pecunia corp.
-- Card processing network:  The organization that oversees the process. As noted below, some differ in their procedures than others.
-- Credit Card Acquirer: A financial institution that obtains the rights to the merchant’s account and tasked with getting payment on the merchant’s behalf.
-- Merchant: Seller of the goods and must either fight or accept the chargeback
 
 We are going to focus on the process from the perspective of the Issuer, since is the one that has the direct communication with the CC Holder and resolves the dispute.
 
