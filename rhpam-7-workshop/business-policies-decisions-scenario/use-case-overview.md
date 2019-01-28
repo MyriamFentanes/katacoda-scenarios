@@ -4,7 +4,7 @@ The requirements that are handed to you:
 These requirements are the policies of Pecunia Corp. to handle a Credit Card Dispute.
 
 
-## Requirements
+## Background
 
 The cost of processing a credit card dispute is very high, and also critical from the customer experience perspective.
 
@@ -64,7 +64,7 @@ The basic steps are:
 
 --------------------------------------------------
 
-### Business:
+### Business Requirements:
 
 
 There are two points in the process where depending on a business decision, the processing path bifurcates. The decision making is right now subjective, as a human - in this case a CC Issuer agent- is responsible  to reach a conclusion based on his/her individual knowledge.
