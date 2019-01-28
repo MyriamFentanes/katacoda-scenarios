@@ -61,7 +61,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="2886" />
-          <entry key="md" value="62516" />
+          <entry key="md" value="62598" />
           <entry key="sh" value="377" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -70,7 +70,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2886" />
-          <entry key="Markdown" value="61567" />
+          <entry key="Markdown" value="61649" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -189,8 +189,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/use-case-overview.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="249">
-                <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+              <first_editor relative-caret-position="149">
+                <caret line="78" column="133" selection-start-line="78" selection-start-column="133" selection-end-line="78" selection-end-column="133" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -334,7 +334,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548706986483" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548707162285" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -374,20 +374,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Adding content to the installation">
-      <created>1543433162949</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1543433162949</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Adding content to the installation">
-      <created>1543433239716</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1543433239716</updated>
     </task>
     <task id="LOCAL-00084" summary="Adding content to the installation">
       <created>1543770159685</created>
@@ -718,7 +704,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548706864234</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Adding content to the installation">
+      <created>1548706988681</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1548706988681</updated>
+    </task>
+    <task id="LOCAL-00132" summary="Adding content to the installation">
+      <created>1548706992025</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1548706992025</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1269,8 +1269,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/use-case-overview.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="249">
-            <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <first_editor relative-caret-position="149">
+            <caret line="78" column="133" selection-start-line="78" selection-start-column="133" selection-end-line="78" selection-end-column="133" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

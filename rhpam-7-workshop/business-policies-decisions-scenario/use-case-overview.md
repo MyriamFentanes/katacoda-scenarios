@@ -71,12 +71,12 @@ There are two points in the process where depending on a business decision, the 
 
 Hence there are two decision's sets that change the overall processing making: One set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute for manual approval.
 
-Going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
+For the first scenario, going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-backoffice-processing.png"  width="600" />
 
 
-So the first bifurcation point to gain loyalty with strategic customers and avoid cost is Automatic vs Standard Processing. The requirement for automatic chargeback qualification is:
+So the first bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost, this scenario is Automatic vs Standard Processing. The requirement for automatic chargeback qualification is:
 
 
 - _Automatic processing is only available to customers with a Gold or Platinum status._
