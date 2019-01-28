@@ -99,9 +99,9 @@ The risk of the transaction is determined by the status of customer and the amou
 - _For a gold customer, and a dispute amount over 500, the risk is medium._
 
 
-### Stakeholder
+Plus to determine if a dispute needs a manual approval we have the following rule:
 
-Customer/Process a credit card dispute
+_Every amount larger than 1000 should be manually approved._
 
 ### Functional Solution:
 
