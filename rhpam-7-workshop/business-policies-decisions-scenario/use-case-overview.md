@@ -8,7 +8,7 @@ These requirements are the policies of Pecunia Corp. to handle a Credit Card Dis
 
 The cost of processing a credit card dispute is very high, and also critical from the customer experience perspective.
 
-Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the requirements for the interaction with the dispute system is the constant feedback to the customer, informing constantly the latest status of the dispute. E.g., who is currently processing the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
+Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the requirements for the interaction with the dispute system is the constant feedback to the customer, informing the latest status of the dispute. E.g., who is currently processing the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
 
 Most of the complexity with the CC Dispute process comes from the fact that is a multi-step process where every dispute is a one-off situation, the actual outcome of the dispute is a result of  the interactions between the different actors and the decision logic. On top of that, the information regarding the case, has to be the input and output of every interaction, everybody need to look at the same data and be observers of changes in it.
 
@@ -69,7 +69,7 @@ The basic steps are:
 
 There are two points in the process where depending on a business decision, the processing path bifurcates. The decision making is right now subjective, as a human - in this case a CC Issuer agent- is responsible  to reach a conclusion based on his/her individual knowledge.
 
-Hence there are two decision's sets that change the overall processing making: One set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute for manual approval.
+Hence there are two decision's sets that change the overall processing making: One set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute for manual approval and resolution.
 
 For the first scenario, going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
 
@@ -77,7 +77,7 @@ For the first scenario, going back and forth in the whole processing chain is co
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-backoffice-processing.png"  width="600" />
 
 
-So the first bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost, this scenario is Automatic vs Standard Processing. The requirement for automatic chargeback qualification is:
+So the first bifurcation point gives Pecunia corp the ability to gain loyalty with strategic customers and avoid cost, this scenario is Automatic vs Standard Processing. The following diagram describes the scenario:
 
 
 
