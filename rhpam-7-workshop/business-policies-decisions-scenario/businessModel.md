@@ -24,10 +24,7 @@ So far we can identify 3 major entities:
 - Fraud Data
 - Additional Information
 
-The difference between these entities and the Actors is that this entities are the ones that contain data that is relevant to process the dispute. This data will come from the different actors and then it will be stored in process variables.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
+_The difference between these entities and the Actors is that this entities are the ones that contain data that is relevant to process the dispute. This data will come from the different actors and then it will be stored in process variables._
 
 ## The Business Domain Context
 

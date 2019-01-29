@@ -4,7 +4,6 @@
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/use-case-overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/use-case-overview.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +61,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="3143" />
-          <entry key="md" value="65638" />
+          <entry key="md" value="65641" />
           <entry key="sh" value="377" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -71,7 +70,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="3143" />
-          <entry key="Markdown" value="64689" />
+          <entry key="Markdown" value="64692" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -84,8 +83,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="183">
-                <caret line="14" column="321" selection-start-line="14" selection-start-column="321" selection-end-line="14" selection-end-column="321" />
+              <first_editor relative-caret-position="224">
+                <caret line="18" column="139" selection-start-line="18" selection-start-column="139" selection-end-line="18" selection-end-column="139" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -262,7 +261,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548783360561" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548783465674" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -302,20 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00099" summary="Adding content to the installation">
-      <created>1544116665459</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1544116665459</updated>
-    </task>
-    <task id="LOCAL-00100" summary="Adding content to the installation">
-      <created>1544117852783</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1544117852783</updated>
     </task>
     <task id="LOCAL-00101" summary="Adding content to the installation">
       <created>1544182643517</created>
@@ -646,7 +631,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548782576878</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="Adding content to the installation">
+      <created>1548783236767</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1548783236767</updated>
+    </task>
+    <task id="LOCAL-00149" summary="Adding content to the installation">
+      <created>1548783366561</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1548783366561</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1197,8 +1196,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="183">
-            <caret line="14" column="321" selection-start-line="14" selection-start-column="321" selection-end-line="14" selection-end-column="321" />
+          <first_editor relative-caret-position="224">
+            <caret line="18" column="139" selection-start-line="18" selection-start-column="139" selection-end-line="18" selection-end-column="139" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
