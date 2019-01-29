@@ -12,7 +12,7 @@ In this section you will learn
 The credit card dispute process is not  straightforward, it involves different actors inside and outside of the company. These actors need to have visibility at all times into what  is happening during the processing of each dispute.
 
 
-We have identified the actors involved in the overall CC Dispute process, these actors are outside of the corporation and we can think of them as  the external entities, that we will connect to, to get information, but do not participate in the dispute resolution, we will see more of that in the service integration step.
+We have identified the actors involved in the overall CC Dispute process, these actors are outside of the corporation and we can think of them as  the external entities, that we will connect to, to get information, but do not participate in the dispute resolution, we will see more of that in the Case Management Scenario.
 
 Note: To get a reminder of the actors look into the Use Case overview or step 1 of this scenario.
 
@@ -24,7 +24,9 @@ So far we can identify 3 major entities:
 - Fraud Data
 - Additional Information
 
-## The difference between these entities and the Actors is that this entities are the ones that contain data that is relevant to process the dispute. This data will come from the different actors and then it will be stored in process variables.
+The difference between these entities and the Actors is that this entities are the ones that contain data that is relevant to process the dispute. This data will come from the different actors and then it will be stored in process variables.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 ## The Business Domain Context

@@ -71,7 +71,7 @@ There are two points in the process where depending on a business decision, the 
 
 Hence there are two decision's sets that change the overall processing making: One set that determines whether the dispute can be qualified for automated chargeback, and a set that determines the risk of the dispute for manual approval and resolution.
 
-For the first scenario, going back and forth in the whole processing chain is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
+For the first scenario, going back and forth in the whole processing chain as shown in the picture, is costly for all the parties involved, plus the amount of the dispute can be less than the cost of processing the dispute, in addition to that the CC Issuer can offer automated chargeback to it's highly loyal customers.
 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-processing-backoffice-processing.png"  width="600" />
