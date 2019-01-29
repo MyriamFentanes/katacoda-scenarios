@@ -14,9 +14,9 @@ The credit card dispute process is not  straightforward, it involves different a
 
 We have identified the actors involved in the overall CC Dispute process, these actors are outside of the corporation and we can think of them as  the external entities, that we will connect to, to get information, but do not participate in the dispute resolution, we will see more of that in the service integration step.
 
-Note: To get a reminder of the actors look into the Use Case overview or step 1 od this scenario.
+Note: To get a reminder of the actors look into the Use Case overview or step 1 of this scenario.
 
-One of the requirements to successfully process a dispute is that all of the parties involved are aware of the dispute status at all times. Since they can all influence the final resolution of the dispute. Because different parties will have visibility and sometimes control over the process we need a domain model that clearly describes the objects that describe the data and the actors that do interact in the resolution of the Credit Card Dispute process.
+One of the requirements to successfully process a dispute is that all of the parties involved are aware of the dispute status at all times. Since they can all influence the final resolution of the dispute. Because different parties will have visibility and sometimes control over the process we need a domain model that clearly depicts the objects that describe the data and the actors that do interact in the resolution of the Credit Card Dispute process.
 
 So far we can identify 3 major entities:
 
@@ -24,7 +24,7 @@ So far we can identify 3 major entities:
 - Fraud Data
 - Additional Information
 
-##The difference between these and the Actors is that this entities are the ones that contain data that is relevant to process the dispute. This data will come from the different actors and then stored in process variables.
+## The difference between these entities and the Actors is that this entities are the ones that contain data that is relevant to process the dispute. This data will come from the different actors and then it will be stored in process variables.
 
 
 ## The Business Domain Context
@@ -76,7 +76,12 @@ Type: Integer
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new-properties.png" width="600" />
 
+The first step to automate a process or decision is to define and specify ypu Business Object Model, here you just created the Entity Credit Card Holder, these entities will be used to store the information that you need to make decisions.
+
+Now you will import the rest of the Business Object Model from a predefined repository, once you had successfully imported it, examine the other entities in your project.
+
 8- Watch the video on how to import a repository into your workspace.
+
 
 9- Create the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
