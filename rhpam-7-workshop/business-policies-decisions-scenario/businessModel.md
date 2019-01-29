@@ -75,7 +75,7 @@ Type: Integer
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-CCD-object-new-properties.png" width="600" />
 
-The first step to automate a process or decision is to define and specify ypu Business Object Model, here you just created the Entity Credit Card Holder, these entities will be used to store the information that you need to make decisions.
+The first step to automate a process or decision is to define and specify the Business Object Model, here you just created the Entity Credit Card Holder, these entities will be used to store the information that you need to make decisions.
 
 Now you will import the rest of the Business Object Model from a predefined repository, once you had successfully imported it, examine the other entities in your project.
 
