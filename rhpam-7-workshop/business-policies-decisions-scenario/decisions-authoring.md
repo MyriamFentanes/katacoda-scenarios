@@ -81,7 +81,7 @@ Package: `com.myspace.ccd_project`{{copy}}
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-wizard.png"  width="600" />
 
 
-    ### Decision Tables
+### Decision Tables
 
 A very common way to define the logic behind risk assessment is to store this information in spreadsheets. With Red Hat Process Automation Manager you can use the same spreadsheet approach and make it an executable asset (i.e. a set of rules) in the engine. In this section we are going to create a _Decision Table_ to automate the risk assessment rules that were given to you.
 
