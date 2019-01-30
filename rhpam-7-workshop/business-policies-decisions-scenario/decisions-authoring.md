@@ -9,7 +9,8 @@ In this section you will learn:
 
 3. How to use your automated decisions and rules.
 
- Solving a credit card dispute depends on several variables, like:
+
+Solving a credit card dispute depends on several variables, like:
 
 - The type of customer
 - The amount of the dispute
