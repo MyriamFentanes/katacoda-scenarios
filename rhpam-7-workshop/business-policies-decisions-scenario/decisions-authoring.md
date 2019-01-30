@@ -14,6 +14,7 @@ In this section you will learn:
 - The type of customer
 - The amount of the dispute
 
+
 The knowledge of how to apply these rules and decisions is tacit and lives only in the head of other domain experts like you. In order to automate the process, you will first have to express the business policies that determine how a dispute is handled in the form of rules.
 
 For this particular case, 2 sets of rules are defined for different stages on the process:
