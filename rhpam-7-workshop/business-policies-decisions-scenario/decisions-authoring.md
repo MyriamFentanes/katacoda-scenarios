@@ -22,7 +22,7 @@ For this particular case, 2 sets of rules are defined for different stages on th
 
 At the moment, all processing is manual. There is a group of agents dedicated to making decisions based on the data of the dispute. This is not only expensive, but also very prone to error and inconsistent.
 
-The cost of processing a dispute for Pecunia Corp. is high and independent of the amount that is being disputed. That is why it's very important to have flexible rules that reduce the processing cost and reduce the processing time. Apart from reducing cost, this will also improve customer customer experience.
+The cost of processing a dispute for Pecunia Corp. is high and independent of the amount that is being disputed. That is why it's very important to have flexible rules that reduce the processing cost and time. Apart from reducing cost, this will also improve customer customer experience.
 
 At the moment, all processing is manual. There is a group of agents dedicated to making decisions based on the data of the dispute. This is not only expensive, but also very prone to error and inconsistent.
 
