@@ -12,19 +12,12 @@ You will learn in this section:
 3- How to use your automated decisions and rules.
 
 
-You have automated some of  the decisions involved in the solving a CC dispute case,
-
-
-***Deploying your decisions***
-
-Once you have completed the definition of your rules, is time to make them available to your partners and customers.
-
 
 
 ***Understanding the deployment process ***
 -----------------------------------
 
-In previous labs we have defined the Business Object Model and the rules and decisions that operate on the model, to import all of the assets back in your space you need to import the following repository. You can watch the video on how to import a repository into your workspace
+In previous labs we have defined the Business Object Model and the rules and decisions that operate on the model. To import all of the assets back into your space you need to import the following repository. You can watch the video on how to import a repository into your workspace
 
 1- Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
@@ -34,7 +27,7 @@ Now we will deploy the rules to process a Credit Card (CC) Dispute.
 
 **Background**
 
-In previous sections we learned that Red Hat Process Automation Manager is a modular platform to develop and run decisions and process in teh diagram below you can see that the component were you as a Business DDomain Expert have been authoring your rules is Business Central for authoring, this is the web console with all the tooling for the different types of user, all the assets that you created are stored in a repository where they are versioned.
+In previous sections we learned that Red Hat Process Automation Manager is a modular platform to develop and run decisions and processes. In the diagram below you can see that the component where you as a Business Domain Expert have been authoring your rules is Business Central for authoring, this is the web console with all the tooling for the different types of users. All the assets that you created are stored in a repository where they are versioned.
 
 <img src="../../assets/middleware/rhpam-7-workshop/rhpam-7-architecture.png" width="600" />
 
