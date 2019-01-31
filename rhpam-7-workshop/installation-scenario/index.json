@@ -51,6 +51,6 @@
     },
     "backend": {
         "port": 8443,
-        "imageid": "openshift-middleware"
+        "imageid": "openshift-middleware-3-7"
     }
 }

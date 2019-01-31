@@ -16,12 +16,9 @@ You are in charge of automating the whole process to solve a dispute, solving a 
 
 What happens when a Credit Card Holder starts a dispute?
 
-A Credit Card Dispute process is not a straightforward process, you don't start at point A and then follow the path to point B, what happens is that depending on the decision made along the process, and most important the data of the case, you will jum back and forth different steps to be able to solve the dispute.
-We have 3 main entities involved in the dispute:
+A Credit Card Dispute process is not a straightforward process, you don't start at point A and then follow the path to point B, what happens is that depending on the decision made along the process, and most important the data of the case, you will jump back and forth different steps to be able to solve the dispute.
+We have several Actors involved in the dispute, review the use case overview (step 1) where all the Actors are listed and defined.
 
-- Credit Card Holder
-- Bank that issues the Credit Card
-- Merchant that sales the products or services.
 
 As we saw earlier since this is a dynamic process, the best way to model it is as a Case, so we can have the flexibility to jump through the steps back and forth as we gather the information necessary to solve it.
 The Issuer will gather information from the Credit Card Holder and the merchant and store it in the Case File. This Case File can be accessed by all of the actors at any time, but you can also apply restrictions to the information.
@@ -65,7 +62,7 @@ The next scenario involves a manual approval and further investigation to determ
 
 5- A knowledge worker reviews the documentation and determines if the documents are complete or if more information and docs are required, you go back to step3
 
-6- If no more documents are needed from the CC Holder a knowledge worker has to determine if the Merchant needs tobe contacted tp request documents and then trigger again a review of the Merchant documentation
+6- If no more documents are needed from the CC Holder a knowledge worker has to determine if the Merchant needs to be contacted through the Card Processing Network to request documents and then trigger again a review of the Merchant documentation.
 
 7- In parallel you have to evaluate the information of the case to determine if a manual approval is needed or you can just solve the case automatically with the information available.
 
