@@ -1,5 +1,5 @@
 
-Firts steps to author a case.
+First steps to author a case.
 -----------------------------
 
 You will learn in this section:
@@ -16,8 +16,8 @@ You are in charge of automating the whole process to solve a dispute, solving a 
 
 What happens when a Credit Card Holder starts a dispute?
 
-A Credit Card Dispute process is not a straightforward process, you don't start at point A and then follow the path to point B, what happens is that depending on the decision made along the process, and most important the data of the case, you will jump back and forth different steps to be able to solve the dispute.
-We have several Actors involved in the dispute, review the use case overview (step 1) where all the Actors are listed and defined.
+A Credit Card Dispute process is not a straightforward process, you don't start at point A and then follow the path to point B. What happens is that depending on the decisions made along the process, and most importantly the data of the case, you will jump back and forth between different steps to solve the dispute.
+We have several Actors involved in the dispute. Review the use case overview (step 1) where all the Actors are listed and defined.
 
 
 As we saw earlier since this is a dynamic process, the best way to model it is as a Case, so we can have the flexibility to jump through the steps back and forth as we gather the information necessary to solve it.
@@ -69,7 +69,7 @@ The next scenario involves a manual approval and further investigation to determ
 *** The Modeler***
 -------------------
 
-To model cases and processes we have 2 modelers available, the layout of both follows the same pattern explained below:
+To model cases and processes we have the modeller based on a technology called Stunner. Let's explore it in more detail.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-explained.png"  width="600" />
 
@@ -181,90 +181,13 @@ Name:  `cardholder`{{copy}}
 
     KPI: false
 
-Name:  `cardholderRiskRating`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
-
-Name:  `caseType`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
-
-Name:  `managerApprovalRequired`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
-
-Name:  `managerReason`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
-
-Name:  `vendorDoc`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type: org.jbpm.document.Document
-
-    Case File: true
-
-    KPI: false
-
-Name:  `vendorDocRequired`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
-
-Name:  `vendorDocReviewed`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
-
-Name:  `customerDocReviewed`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
 
 At the end you should have something like the following:
 
+
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-variables.png"  width="600" />
 
+_NOTE: You may see more variables than the ones you define, we will import the rest of them later on in the next scenario. What is important is for you to know how to define this variables.
 
 ***Roles***
 

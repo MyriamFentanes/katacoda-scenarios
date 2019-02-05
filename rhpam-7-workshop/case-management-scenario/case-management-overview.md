@@ -47,12 +47,12 @@ Case roles are generic participants that will be involved in case handling, and 
 Milestones
 ----------
 
-Milestones are part of the case definition and keeps track of important achievement for a case instance. Some characteristics are:
+Milestones are part of the case definition and keep track of important achievement for a case instance. Some characteristics are:
 
 
 - Milestone can use Case File information as a condition to trigger
 
-- Only then milestone is completed, it will follow to next node. Milestones don't implement any functionality.
+- Only when a milestone is completed, it will follow to next node. Milestones don't implement any functionality.
 
 - Initial milestones usually are marked to autostart, Adhoc Autostart. This means that Milestones don't need a start node to activate.
 
@@ -63,7 +63,7 @@ Milestones are part of the case definition and keeps track of important achievem
 Case Stages
 ------------
 
-- A stage encompasses a set of activities, that are logically bound together.
+A stage encompasses a set of activities, that are logically bound together.
 
 - Several stages can run in parallel, and you can trigger the same stage several times.
 
