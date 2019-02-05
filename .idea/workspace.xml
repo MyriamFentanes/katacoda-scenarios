@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,8 +83,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="480">
-                <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+              <first_editor relative-caret-position="525">
+                <caret line="168" selection-start-line="168" selection-end-line="168" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -241,7 +240,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549405216589" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549405233088" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -281,13 +280,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00117" summary="Adding content to the installation">
-      <created>1548689649091</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1548689649092</updated>
     </task>
     <task id="LOCAL-00118" summary="Adding content to the installation">
       <created>1548693796956</created>
@@ -625,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549404531613</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="Adding content to the installation">
+      <created>1549405227260</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1549405227260</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1180,8 +1179,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="480">
-            <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+          <first_editor relative-caret-position="525">
+            <caret line="168" selection-start-line="168" selection-end-line="168" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
