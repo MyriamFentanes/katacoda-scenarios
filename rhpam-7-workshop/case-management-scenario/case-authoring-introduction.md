@@ -30,42 +30,6 @@ NOTE: In real life the Issuer would deal with the Credit Card Processor and not 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-cc-dispute-diagram-users.png"  width="600" />
 
 
-
-
-Functional requirements of your Case
-------------------------------------
-
-There are several thing that could happen when you dispute a case, we will see 2 different scenarios
-
-***Automated Chargeback***
-
-A credit card dispute over billing errors has a good chance of being resolved in your favor thanks to the Fair Credit Billing Act, which regulates how credit card companies handle these disputes, or depending of the amount of the transaction or your status as a customer you can also qualify for an automated chargeback.
-The process would look like:
-
-1- CC Holder starts the dispute
-
-2- The information of the case is evaluated and the decision of an automated chargeback is taken.
-
-3- The issuer of the Credit Card (CC) will credit into your account the disputed amount.
-
-***Manual Approval***
-
-The next scenario involves a manual approval and further investigation to determine if the dispute is approved or rejected
-
-1- CC Holder starts the dispute
-
-2- The information of the case is evaluated and the decision of a non automated chargeback is taken.
-
-3- A knowledge worker from the issuer bank reviews tha case file and determines the documents needed from the Credit Card Holder to solve the dispute.
-
-4- The CC Holder submits the documents.
-
-5- A knowledge worker reviews the documentation and determines if the documents are complete or if more information and docs are required, you go back to step3
-
-6- If no more documents are needed from the CC Holder a knowledge worker has to determine if the Merchant needs to be contacted through the Card Processing Network to request documents and then trigger again a review of the Merchant documentation.
-
-7- In parallel you have to evaluate the information of the case to determine if a manual approval is needed or you can just solve the case automatically with the information available.
-
 *** The Modeler***
 -------------------
 
@@ -187,7 +151,7 @@ At the end you should have something like the following:
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-variables.png"  width="600" />
 
-_NOTE: You may see more variables than the ones you define, we will import the rest of them later on in the next scenario. What is important is for you to know how to define this variables.
+_NOTE: You may see more variables than the ones you define, we will import the rest of them later on in the next scenario. What is important is for you to know how to define this variables._
 
 ***Roles***
 
@@ -208,8 +172,6 @@ Case Role: `approval-manager`{{copy}}
 Case Cardinality: 1
 
 The cardinality refers to the number of actors that can be mapped to a role.
-
-
 
 
 We have completed the setup of your case. The solution for this lab can be found in the following repo:
