@@ -3,7 +3,6 @@ Case Management Overview
 
 Red Hat Process Automation Manager enables you to automate different pieces of your requirements, in previous scenarios we saw how to automate the decision making regarding solving a Credit Card Dispute, in this scenario we will automate the whole process using Case Management.
 
-<img src="../../assets/middleware/rhpam-7-workshop/rhpam-7-architecture.png" width="600" />
 
 BPM and Case Management
 -----------------------
@@ -28,99 +27,57 @@ Case management can be used for one-off situations for which the process can not
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-rhpam-7-cmmn-pam.png" width="600" />
 
 
-- Business processes are usually modelled as flow charts, with starting points and finite end nodes.
-
-- Cases are not structured, they are dynamic and provide room for dynamic tasks.
-
-- Cases reach a business goal through milestones and their success.
-
-- Cases usually consist of loosely coupled process fragments that can be connected.
-
-What about CMMN ?
------------------------
-
-- Similar constructs and capabilities
-
-- No direct support (yet) for XML format
-
-- Too similar to BPMN 2.0
-
-- Still (too) complex
-
-- Spectrum (vs forcing to choose)
-
-
-
-Case Definition
----------------
-
-- Case must have a Case-Id, default is CASE (example ID-XXXXXXXXXX )
-
-- The Case-Id is the Correlation Key
-
-- Case is an Ad-Hoc process, it means dynamic! (no explicit start nodes)
-
-- Case must have role and user assignments
-
-- Case provides a Case File
-
-- Milestones, stages, sub cases can be defined as well (optional)
-
-- Milestones nodes are defined as BPMN work items
-
-- Every BPMN node is available for a case definition (anyway it is still a BPMN process)
-
-
+Some key differences between BPM and Case Management specification are:
 
 
 Case Roles
 ----------
 
-- Case roles are generic participants that will be involved in case handling
+Case roles are generic participants that will be involved in case handling, and are dynamic, you can specify case roles independently of the existing roles and just map them to interact with the engine. Some characteristics of Case Roles are:
 
-- Different from jBPM roles, used for human tasks or from jBPM APIs
+- Different from BPM roles, used for human tasks to interact with the engine.
 
 - Case roles are on case definition level to make the case definition independent
-
-- Anyway these roles can be assigned to user tasks
 
 - Case roles are typically defined when a new case starts
 
 - Can be modified at any time as long as case instance is active though it will not have effect on tasks already created based on previous role assignment.
 
+
 Milestones
 ----------
 
-Milestones are part of the case definition and keeps track of important achievement for a case instance
+Milestones are part of the case definition and keeps track of important achievement for a case instance. Some characteristics are:
 
-- Milestone actually uses case file as condition to trigger
 
-- Only then milestone will be completed and will follow to next node
+- Milestone can use Case File information as a condition to trigger
 
-- Initial milestones usually are marked to autostart, Adhoc Autostart set to true
+- Only then milestone is completed, it will follow to next node. Milestones don't implement any functionality.
 
-- Subsequent milestones must be triggered when a milestone ends
+- Initial milestones usually are marked to autostart, Adhoc Autostart. This means that Milestones don't need a start node to activate.
 
-- This is achieved using BPMN signals
+- Subsequent milestones can be triggered when a milestone condition triggers, making it easier to track the progress of the Case.
 
-- Signal scope must be Process-Instance
+
 
 Case Stages
 ------------
 
-- A stage encompasses a set of activities.
+- A stage encompasses a set of activities, that are logically bound together.
 
-- APIs to check the stage of a process.
+- Several stages can run in parallel, and you can trigger the same stage several times.
 
-- A conditional expression define the completion logic.
+- A conditional expression define the completion logic of a stage, using the information of the Case File.
+
 
 Dynamic Activities
 -------------------
 
-- Dynamic means process definition that is behind a case has no such node/activity
+Dynamic means in the context of Case Management that the process definition that is behind a case has no such node/activity. You can add this type of activities at when the case is started and running, like discretionary activities. Some characteristics of Dynamic Activities are:
+
 - Cases are not structured, they are dynamic and provide room for dynamic tasks
 - Since dynamic tasks do not have data output definition there is only one way to put output from task/subprocess to the process instance - by name. This means the name of the returned output of a task must match by name process variable to be mapped.
-- Dynamic BPMN activities are
+- Dynamic activities are
 
    - user task
    - service task
