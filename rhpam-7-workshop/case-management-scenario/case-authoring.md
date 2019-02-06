@@ -38,19 +38,19 @@ Another characteristic of a case, is that it has a more dynamic lifecycle, in a 
 Milestones of the Case
 ----------------------
 
-Some of the steps described in the Use Case Overview (step 1) can be active in parallel or after you have completed them you can go back to the same step if necessary. Also some of the steps are discretionary so they might never be triggered. In order to follow the progress of the case we have Milestones, here we will define the milestones or the targets that the dispute has to achieve to be solved.
+Some of the steps described in the Use Case Overview (step 1) can be active in parallel or after you have completed them you can go back to the same step if necessary. Also some of the steps are discretionary so they might never be triggered. In order to follow the progress of the case we have Milestones.We will define the milestones or the targets that the dispute has to achieve to be solved.
 
-- Dispute started
+1- Dispute started
 
-- Documentation received from CC Holder
+2- Documentation received from CC Holder
 
-- Automated Chargeback processing
+3- Automated Chargeback processing
 
-- Manual processing
+4- Manual processing
 
-- Account credited
+5- Account credited
 
-- Dispute rejected
+6- Dispute rejected
 
 
 
