@@ -68,7 +68,7 @@ To create your first Case:
 1- Go to your library view and click on Add Asset, from the asset catalog select Case Definition, configure the following values:
 
 Name: `ChargeDispute`{{copy}}
-Package: `com.fsi_credit_dispute`{{copy}}
+Package: `com.myspace.ccd_project`{{copy}}
 
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-asset-business-legacy.png"  width="600" />

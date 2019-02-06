@@ -84,8 +84,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="378">
-                <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+              <first_editor relative-caret-position="-618">
+                <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -283,7 +283,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549415899029" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549416073357" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -323,13 +323,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00122" summary="Adding content to the installation">
-      <created>1548697420908</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1548697420908</updated>
     </task>
     <task id="LOCAL-00123" summary="Adding content to the installation">
       <created>1548697495557</created>
@@ -667,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549414885440</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="Adding content to the installation">
+      <created>1549415906035</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1549415906036</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1222,8 +1222,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="378">
-            <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <first_editor relative-caret-position="-618">
+            <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
