@@ -57,14 +57,12 @@ Some of the steps described in the Use Case Overview (step 1) can be active in p
 This are the achievable targets to help us track the progress of teh dispute, they don't have any particular order, so you can come back to any of them if something in the Case File data changes
 
 
-***Milestones ***
+*** Defining Milestones ***
 -----------------------------------
 
-We have defined the case variables , if you want to skip to the next step you can import the following repository. You can watch the video on how to import a repository into your workspace
+In the previous step we have defined the case variables, if you did not complete that step, you may import the following repository. You can watch the video on how to import a repository into your workspace
 
-1- Import the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
-
-https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
+https://github.com/MyriamFentanes/case-management-scenario-step3.git
 
 
 To model the milestones of the case:
@@ -76,7 +74,7 @@ Script  `System.out.println("Case started");`{{copy}}
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-script-task.png"  width="600" />
 
-Add and end event of type signal the name of the signal should be the same as the Milestone, so once you've completed Logging that the case has started the signal will trigger a Milestone called Dispute Received.
+Add an end event of type signal and set the signal name to “Dispute Received”, so once you've completed Logging that the case has started the signal will trigger a Milestone called Dispute Received.
 
 Signal Ref:  `Milestone 1: Dispute received`{{copy}}
 
