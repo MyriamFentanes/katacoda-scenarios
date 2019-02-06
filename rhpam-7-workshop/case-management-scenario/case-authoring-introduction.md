@@ -5,7 +5,7 @@ First steps to author a case.
 You will learn in this section:
 
 
-1- How to author your first case.
+1- Requisites to author your first case.
 
 2- What are roles and variables.
 
@@ -151,7 +151,7 @@ At the end you should have something like the following:
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-variables.png"  width="600" />
 
-_NOTE: You may see more variables than the ones you define, we will import the rest of them later on in the next scenario. What is important is for you to know how to define this variables._
+_NOTE: You may see more variables than the ones you have defined, we will import the rest of them later on the lab solution repository. What is important is for you to know how to define this variables._
 
 ***Roles***
 
@@ -177,4 +177,6 @@ The cardinality refers to the number of actors that can be mapped to a role.
 We have completed the setup of your case. The solution for this lab can be found in the following repo:
 
 
-https://github.com/MyriamFentanes/katacoda-scenarios
+https://github.com/MyriamFentanes/case-management-scenario-step3.git
+
+Remember to examine the rest of the variables that were created for you.
