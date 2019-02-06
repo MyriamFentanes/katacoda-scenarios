@@ -5,9 +5,9 @@ Firts steps to author a case.
 You will learn in this section:
 
 
-1- How to author your first case.
+1- How to model a case using Milestones.
 
-2- What are the authoring tools available to you.
+2- How to apply the CMMN specification to Case Modeling .
 
 The Credit Card dispute case
 ----------------------------
