@@ -35,45 +35,10 @@ Another characteristic of a case, is that it has a more dynamic lifecycle, in a 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-case-lifecycle.png"  width="600" />
 
 
-Functional requirements of your Case
-------------------------------------
-
-There are several thing that could happen when you dispute a case, we will see 2 different scenarios
-
-***Automated Chargeback***
-
-A credit card dispute over billing errors has a good chance of being resolved in your favor thanks to the Fair Credit Billing Act, which regulates how credit card companies handle these disputes, or depending of the amount of the transaction or your status as a customer you can also qualify for an automated chargeback.
-The process would look like:
-
-1- CC Holder starts the dispute
-
-2- The information of the case is evaluated and the decision of an automated chargeback is taken.
-
-3- The issuer of the Credit Card (CC) will credit into your account the disputed amount.
-
-***Manual Approval***
-
-The next scenario involves a manual approval and further investigation to determine if the dispute is approved or rejected
-
-1- CC Holder starts the dispute
-
-2- The information of the case is evaluated and the decision of a non automated chargeback is taken.
-
-3- A knowledge worker from the issuer bank reviews tha case file and determines the documents needed from the Credit Card Holder to solve the dispute.
-
-4- The CC Holder submits the documents.
-
-5- A knowledge worker reviews the documentation and determines if the documents are complete or if more information and docs are required, you go back to step3
-
-6- If no more documents are needed from the CC Holder a knowledge worker has to determine if the Merchant needs tobe contacted tp request documents and then trigger again a review of the Merchant documentation
-
-7- In parallel you have to evaluate the information of the case to determine if a manual approval is needed or you can just solve the case automatically with the information available.
-
-
 Milestones of the Case
 ----------------------
 
-Some of the previous steps depicted can be active in parallel or after you have completed them you can go back to the same step if necessary, also some of the steps are discretionary so they might never be triggered. In order to follow the progress of the case we have Milestones, here we will define the milestones or the tragets that the dispute has to achieve to be solved.
+Some of the steps described in the Use Case Overview (step 1) can be active in parallel or after you have completed them you can go back to the same step if necessary. Also some of the steps are discretionary so they might never be triggered. In order to follow the progress of the case we have Milestones, here we will define the milestones or the targets that the dispute has to achieve to be solved.
 
 - Dispute started
 
