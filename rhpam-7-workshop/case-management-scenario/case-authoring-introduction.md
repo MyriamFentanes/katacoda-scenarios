@@ -120,25 +120,6 @@ Name:  `approveChargeback`{{copy}}
 
     KPI: false
 
-Name:  `customerAge`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
-
-Name:  `incidentCount`{{copy}}
-
-    Defined Types: Client (this is the type we created earlier)
-
-    Custom Type:
-
-    Case File: true
-
-    KPI: false
 
 Name:  `cardholder`{{copy}}
 
