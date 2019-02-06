@@ -6,7 +6,7 @@ These requirements are the policies of Pecunia Corp. to solve a Credit Card Disp
 
 ## Background
 
-The cost of processing a credit card dispute is very high, and also critical from the customer experience perspective.
+The cost of processing a credit card dispute is high, and also critical from the customer experience perspective.
 
 Usually the credit card holder is stressed to protect the assets trusted to the bank, therefore one of the requirements for the interaction with the dispute system is the constant feedback to the customer, informing the latest status of the dispute. E.g., who is currently processing the dispute, is additional information from the customer required, has the dispute been automatically accepted, has something gone wrong with the dispute, etc.
 
