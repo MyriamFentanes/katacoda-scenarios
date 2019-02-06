@@ -73,7 +73,7 @@ A stage encompasses a set of activities, that are logically bound together.
 Dynamic Activities
 -------------------
 
-Dynamic means in the context of Case Management that the process definition that is behind a case has no such node/activity. You can add this type of activities at when the case is started and running, like discretionary activities. Some characteristics of Dynamic Activities are:
+In the context of Case Management means that the process definition that is behind a Case has no such dynamic activities. You can add this type of activities when the case is started and running, they are discretionary activities. Some characteristics of Dynamic Activities are:
 
 - Cases are not structured, they are dynamic and provide room for dynamic tasks
 - Since dynamic tasks do not have data output definition there is only one way to put output from task/subprocess to the process instance - by name. This means the name of the returned output of a task must match by name process variable to be mapped.

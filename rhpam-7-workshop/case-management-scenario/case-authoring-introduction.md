@@ -17,7 +17,9 @@ You are in charge of automating the whole process to solve a dispute, solving a 
 What happens when a Credit Card Holder starts a dispute?
 
 A Credit Card Dispute process is not a straightforward process, you don't start at point A and then follow the path to point B. What happens is that depending on the decisions made along the process, and most importantly the data of the case, you will jump back and forth between different steps to solve the dispute.
-We have several Actors involved in the dispute. Review the use case overview (step 1) where all the Actors are listed and defined.
+We have several Actors involved in the dispute.
+
+_NOTE: Review the use case overview (step 1) where all the Actors are listed and defined._
 
 
 As we saw earlier since this is a dynamic process, the best way to model it is as a Case, so we can have the flexibility to jump through the steps back and forth as we gather the information necessary to solve it.
