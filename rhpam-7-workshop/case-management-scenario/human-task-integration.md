@@ -1,6 +1,6 @@
 
-Decisions Integration.
-----------------------
+Human Task Integration.
+-----------------------
 
 You will learn in this section:
 
