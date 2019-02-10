@@ -54,6 +54,8 @@
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nConnect to OCP using oc client`\u001b[m\r\n"
     },
     "backend": {
-        "imageid": "docker"
+        "imageid": "openshift-middleware",
+        "port": 8443
+
     }
 }
