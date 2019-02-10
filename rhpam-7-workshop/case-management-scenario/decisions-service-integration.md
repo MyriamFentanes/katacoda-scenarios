@@ -58,14 +58,14 @@ Rule Flow Group: `automated-chargeback`{{copy}}
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-case-first-business-rule-node.png"  width="600" />
 
-You have just learned how to leverage the Desicions and Rules you author in the previous scenario, when a new case is started you will receive the data to process the Dispute. When you reach a Business Rule node in the Case Model this data stored in the Case variables. The variables can be of primitive type or reference the Object Model will be passed to the rules.
+You have just learned how to leverage the Decisions and Rules you author in the previous scenario, when a new case is started you will receive the data to process the Dispute. When you reach a Business Rule node in the Case Model this data stored in the Case variables. The variables can be of primitive type or reference the Object Model will be passed to the rules.
 
-The evaluation of the rules can produce more data or modify the existing one, and all thsi will be stored in the case variables.
+The evaluation of the rules can produce more data or modify the existing one, and all these will be stored in the case variables.
 
 
 *** Adding the Automatic Chargeback functionality ***
 
-For certain Credit Card Holders when the amount is below a certain threshold, the Issuer will automatically accredit back the dispute amount into the account, without any further processing.
+For specific Credit Card Holders when the amount is below a certain threshold, the Issuer will automatically accredit back the dispute amount into the account, without any further processing.
 
 In our model we have Milestone that marks thar the CC Holder has achieved that target, if you recall from the last scenario the Milestone is triggered by a condition. The Milestone is triggered when the property automated in the Object FraudData is set to true.
 The Rules for automatic-chargeback modify this property and set it to true if the conditions are met.
