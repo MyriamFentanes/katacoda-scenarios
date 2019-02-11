@@ -37,7 +37,7 @@
         ],
         "intro": {
             "text": "intro.md",
-            "data": "courseBase.sh",
+            "courseData": "courseBase.sh",
             "credits": ""
         },
         "finish": {
@@ -51,7 +51,7 @@
         "showdashboard": true,
         "dashboards": [{"name": "Openshift Console", "port": 8443},{"name": "Business Central", "port": 8080}],
         "uilayout": "terminal-iframe",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nstarting your environment`\u001b[m\r\n"
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nConnect to OCP using oc client`\u001b[m\r\n"
     },
     "backend": {
         "imageid": "openshift-middleware",

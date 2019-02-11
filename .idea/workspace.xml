@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/courseBase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/courseBase.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -114,20 +115,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="53" column="93" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
+            <state relative-caret-position="266">
+              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/courseBase.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -190,8 +191,8 @@
         <option value="$PROJECT_DIR$/rhpam-7-workshop-pathway.json" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/index.json" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/decisions-service-integration.md" />
-        <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/courseBase.sh" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json" />
+        <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/courseBase.sh" />
       </list>
     </option>
   </component>
@@ -284,7 +285,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549907834401" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549907943851" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -324,13 +325,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Adding content to the installation">
-      <created>1548711496011</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1548711496011</updated>
     </task>
     <task id="LOCAL-00146" summary="Adding content to the installation">
       <created>1548713215415</created>
@@ -668,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549907791735</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="Adding content to the installation">
+      <created>1549907839629</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1549907839629</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1219,17 +1220,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/courseBase.sh">
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="266">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json">
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/courseBase.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="53" column="93" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
