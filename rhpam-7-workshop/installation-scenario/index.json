@@ -37,6 +37,15 @@
         },
         "finish": {
             "text": "finish.md"
+        },
+        "assets": {
+            "host01" : [
+                {
+                    "file": "init-scenario.sh",
+                    "target": "~/.init/",
+                    "chmod": "+x"
+                }
+            ]
         }
     },
     "files": [
@@ -50,6 +59,9 @@
     },
     "backend": {
         "port": 8443,
-        "imageid": "openshift-middleware"
-    }
+        "imageid": "openshift-middleware-3-7",
+        "port".8443
+    },
+    "environmentsprotocol": "http",
+    "environmentsdomain": ".http-proxy.katacoda.com"
 }
