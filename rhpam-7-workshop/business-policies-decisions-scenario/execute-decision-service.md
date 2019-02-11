@@ -4,7 +4,7 @@ Now that you've created your Decision Service, and have deployed it on the Red H
 
 In this step of our scenario however, we will simply test our service by executing our rules against some input data, and manually validate the response. We will be doing this via the Swagger API documentation. Swagger provides a standard way to describe and document RESTful APIs. The RESTful API of the PAM execution server allows other platforms, for example rich browser applications, or other middleware systems, to easily communicate with the execution server using open standards.
 
-To access the Swagger page of the execution server, navigate to: http://cc-dispute-kieserver-credit-card-dispute.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].http-proxy.katacoda.com/docs
+To access the Swagger page of the execution server, navigate to: http://rhpam7-workshop-kieserver-rhpam7-workshop.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].http-proxy.katacoda.com/docs
 
 You will see the following page.
 
