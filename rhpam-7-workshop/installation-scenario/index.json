@@ -59,7 +59,7 @@
     },
     "backend": {
         "imageid": "openshift-middleware-3-7",
-        "port".8443
+        "port": 8443
     },
     "environmentsprotocol": "http",
     "environmentsdomain": ".http-proxy.katacoda.com"
