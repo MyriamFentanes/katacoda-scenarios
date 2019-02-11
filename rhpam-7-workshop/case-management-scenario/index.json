@@ -37,6 +37,7 @@
         ],
         "intro": {
             "text": "intro.md",
+            "code": "set-env.sh",
             "courseData": "courseBase.sh",
             "credits": ""
         },
@@ -54,7 +55,7 @@
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nConnect to OCP using oc client`\u001b[m\r\n"
     },
     "backend": {
-        "imageid": "openshift-middleware",
+        "imageid": "openshift-middleware-3-7",
         "port": 8443
 
     }
