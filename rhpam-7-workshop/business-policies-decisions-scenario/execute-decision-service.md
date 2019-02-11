@@ -64,7 +64,7 @@ Finally, we provide the body of the request. In the body we pass the data, based
 
 We can see that we pass in the `FraudData`, with a `totalFraudAmount` of 1000.0. We also pass in the `CreditCardHolder` with a *Gold* status.
 
-When we've entered our data, click on the blue *Execute* button to fire the request:
+When we've entered our data, click on the blue *Execute* button to fire the request. When the browser ask for a username and password, use username: `developer`{{copy}} and password: `developer`{{copy}}:
 
 <img src="../../assets/middleware/rhpam-7-workshop/swagger-request.png"  width="600" />
 
