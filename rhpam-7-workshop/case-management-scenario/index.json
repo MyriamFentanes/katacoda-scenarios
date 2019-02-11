@@ -73,7 +73,7 @@
     ],
     "environment": {
         "showdashboard": true,
-        "dashboards": [{"name": "Openshift Console", "port": 8443},{"name": "Business Central", "port": 8080}],
+        "dashboards": [{"name": "Openshift Console", "port": 8443}],
         "uilayout": "terminal-iframe",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nConnect to OCP using oc client`\u001b[m\r\n"
     },

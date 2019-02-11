@@ -37,7 +37,9 @@ So the first and very important task to automate a core business capability is t
 
 Creating the Card Holder entity.
 
-1- Login to business-central web console
+1- Login to business-central web console at http://ccd-project-rhpamcentr-ccd-project.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].http-proxy.katacoda.com/
+
+
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-console.png" width="600" />
 
