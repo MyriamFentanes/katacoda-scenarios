@@ -60,7 +60,7 @@ This are the achievable targets to help us track the progress of teh dispute, th
 *** Defining Milestones ***
 -----------------------------------
 
-1- Login to business-central web console at http://ccd-project-rhpamcentr-ccd-project.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].http-proxy.katacoda.com/
+1- Login to business-central web console at http://ccd-project-rhpamcentr-ccd-project.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
 
 
 In the previous step we have defined the case variables, if you did not complete that step, you may import the following repository. You can watch the video on how to import a repository into your workspace
