@@ -58,7 +58,14 @@ Case Variables and Roles
 
 We have defined the Business Object Model and the Business Decisions on the last lab, so you need to import the following repository. You can watch the video about how to import a repository into your workspace
 
-1- Import the rest of the Domain Model and Decisions by importing the base project for this scenario from the following repository:
+1- Login to business-central web console at http://ccd-project-rhpamcentr-ccd-project.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].http-proxy.katacoda.com/
+
+user: developer
+password: developer
+
+
+
+2- Import the rest of the Domain Model and Decisions by importing the base project for this scenario from the following repository:
 
 https://github.com/MyriamFentanes/case-management-scenario-base.git
 

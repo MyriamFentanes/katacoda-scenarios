@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aaedfc2d-de36-435e-90f6-805308eb5f23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +38,7 @@
         <counts>
           <entry key="iml" value="5" />
           <entry key="json" value="37" />
-          <entry key="md" value="95" />
+          <entry key="md" value="98" />
           <entry key="png" value="3" />
           <entry key="sh" value="27" />
           <entry key="snippet" value="1" />
@@ -53,7 +53,7 @@
           <entry key="IDEA_MODULE" value="5" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="37" />
-          <entry key="Markdown" value="80" />
+          <entry key="Markdown" value="83" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="1" />
@@ -63,7 +63,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="3280" />
-          <entry key="md" value="68953" />
+          <entry key="md" value="68994" />
           <entry key="sh" value="550" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -73,7 +73,7 @@
         <counts>
           <entry key="Bash" value="173" />
           <entry key="JSON" value="3280" />
-          <entry key="Markdown" value="68004" />
+          <entry key="Markdown" value="68045" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -83,38 +83,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/courseBase.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="106" lean-forward="true" selection-start-line="14" selection-start-column="106" selection-end-line="14" selection-end-column="117" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/assets/init-scenario.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="945">
+                <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md">
+        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="216">
-                <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              <first_editor relative-caret-position="523">
+                <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -127,63 +114,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/businessModel.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="164">
-                <caret line="40" lean-forward="true" selection-start-line="39" selection-end-line="40" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/courseBase.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/intro.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="14" selection-start-line="14" selection-end-line="14" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/index.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/installation-scenario/index.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/businessModel.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="156">
-                <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <first_editor relative-caret-position="280">
+                <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -226,7 +158,6 @@
         <option value="$PROJECT_DIR$/rhpam-7-workshop/business-policies-decisions-scenario/decisions-service.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/use-case-overview.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-management-overview.md" />
-        <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/finish.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/human-task-integration.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop-pathway.json" />
@@ -240,6 +171,7 @@
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/index.json" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/businessModel.md" />
         <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md" />
+        <option value="$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md" />
       </list>
     </option>
   </component>
@@ -344,7 +276,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549924271831" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549931308404" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -384,27 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00159" summary="Adding content to the installation">
-      <created>1548860037042</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1548860037042</updated>
-    </task>
-    <task id="LOCAL-00160" summary="Adding content to the installation">
-      <created>1548861194728</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1548861194728</updated>
-    </task>
-    <task id="LOCAL-00161" summary="Adding content to the installation">
-      <created>1548869455569</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1548869455569</updated>
     </task>
     <task id="LOCAL-00162" summary="Adding content to the installation">
       <created>1548869548708</created>
@@ -728,7 +639,28 @@
       <option name="project" value="LOCAL" />
       <updated>1549924063101</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="Adding content to the installation">
+      <created>1549924266761</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1549924266761</updated>
+    </task>
+    <task id="LOCAL-00209" summary="Adding content to the installation">
+      <created>1549924273961</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1549924273961</updated>
+    </task>
+    <task id="LOCAL-00210" summary="Adding content to the installation">
+      <created>1549924279831</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1549924279831</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1107,18 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1830">
-            <caret line="122" selection-start-line="122" selection-end-line="122" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/human-task-integration.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
@@ -1267,8 +1187,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/businessModel.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="164">
-            <caret line="40" lean-forward="true" selection-start-line="39" selection-end-line="40" />
+          <first_editor relative-caret-position="280">
+            <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -1279,8 +1199,20 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="216">
+          <first_editor relative-caret-position="945">
             <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring-introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="523">
+            <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
