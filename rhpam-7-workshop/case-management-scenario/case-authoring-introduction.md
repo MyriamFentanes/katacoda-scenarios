@@ -69,8 +69,8 @@ password: developer
 
 https://github.com/MyriamFentanes/case-management-scenario-base.git
 
-https://youtu.be/LUOw1TrYDWs - automatic!
-[Youtube](https://youtu.be/LUOw1TrYDWs)
+
+[Youtube Importing a project](https://youtu.be/LUOw1TrYDWs)
 
 
 
