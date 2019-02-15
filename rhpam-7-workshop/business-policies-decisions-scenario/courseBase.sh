@@ -21,4 +21,4 @@ ssh root@host01 'for i in {1..200}; do oc annotate route rhpam7-workshop-rhpamce
 
 # Deploy our ReactJS app
 ssh root@host01 'for i in {1..200}; do oc get route rhpam7-workshop-kieserver -n rhpam7-workshop | awk "FNR > 1 {print \$2}" > kie-server-url.txt && break || sleep 2; done'
-ssh root@host01 'for i in {1..200}; do oc new-app - KIE_SERVER_URL:$(cat kie-server-url.txt) --template react-web-app -p SOURCE_REPOSITORY_URL=https://github.com/DuncanDoyle/rhpam7-workshop-reactjs-rules-client -n openshift && break || sleep 2; done'
+ssh root@host01 'for i in {1..200}; do oc new-app - KIE_SERVER_URL:$(cat kie-server-url.txt) --template react-web-app -p SOURCE_REPOSITORY_URL=https://github.com/DuncanDoyle/rhpam7-workshop-reactjs-rules-client -n rhpam7-workshop && break || sleep 2; done'
