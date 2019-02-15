@@ -6,6 +6,8 @@ ssh root@host01 "for i in {1..200}; do oc patch is/rhpam71-businesscentral-opens
 ssh root@host01 "for i in {1..200}; do oc patch is/rhpam71-kieserver-openshift --type='json' -p '[{\"op\": \"replace\", \"path\": \"/spec/tags/0/from/name\", \"value\": \"registry.access.redhat.com/rhpam-7/rhpam71-kieserver-openshift:1.0\"}]' -n openshift && break || sleep 2; done"
 ssh root@host01 'echo "Importing Red Hat Process Automation Manager 7 - Trial template into OpenShift." >> ~/script.log'
 ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/7.1.0.GA/templates/rhpam71-trial-ephemeral.yaml -n openshift && break || sleep 2; done'
+ssh root@host01 'echo "Importing create-react-app-openshift template." >> ~/script.log'
+ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/DuncanDoyle/reactjs-openshift/master/create-react-app-openshift-template.yaml -n openshift && break || sleep 2; done'
 #ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/openshift/origin/v3.7.0/examples/db-templates/postgresql-ephemeral-template.json -n openshift && break || sleep 2; done'
 ssh root@host01 'echo "Logging into OpenShift as developer." >> ~/script.log'
 #ssh root@host01 'for i in {1..200}; do oc login localhost:8443 -u developer -p developer --insecure-skip-tls-verify=true && break || sleep 2; done'
@@ -18,6 +20,5 @@ ssh root@host01 'echo "Patching Business Central OpenShift route to increase pro
 ssh root@host01 'for i in {1..200}; do oc annotate route rhpam7-workshop-rhpamcentr --overwrite haproxy.router.openshift.io/timeout=3600s -n rhpam7-workshop && break || sleep 2; done'
 
 # Deploy our ReactJS app
-ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/DuncanDoyle/reactjs-openshift/master/create-react-app-openshift-template.yaml -n openshift && break || sleep 2; done'
-ssh root@host01 'for i in {1..200}; do oc get route rhpam7-workshop-kieserver -n rhpam7-workshop | awk "FNR > 1 {print $2}" > kie-server-url.txt && break || sleep 2; done'
+ssh root@host01 'for i in {1..200}; do oc get route rhpam7-workshop-kieserver -n rhpam7-workshop | awk "FNR > 1 {print \$2}" > kie-server-url.txt && break || sleep 2; done'
 ssh root@host01 'for i in {1..200}; do oc new-app - KIE_SERVER_URL:$(cat kie-server-url.txt) --template react-web-app -p SOURCE_REPOSITORY_URL=https://github.com/DuncanDoyle/rhpam7-workshop-reactjs-rules-client -n openshift && break || sleep 2; done'
