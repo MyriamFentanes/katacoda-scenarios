@@ -69,6 +69,10 @@ password: developer
 
 https://github.com/MyriamFentanes/case-management-scenario-base.git
 
+https://youtu.be/LUOw1TrYDWs - automatic!
+[Youtube](https://youtu.be/LUOw1TrYDWs)
+
+
 
 To create your first Case:
 
