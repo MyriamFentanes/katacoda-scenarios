@@ -81,6 +81,8 @@ Now you will import the rest of the Business Object Model from a predefined repo
 
 8- Watch the video on how to import a repository into your workspace.
 
+[Youtube Importing a project](https://youtu.be/LUOw1TrYDWs)
+
 
 9- Create the rest of the Domain Model by importing the project Domain Model CC Dispute  from the following repository:
 
