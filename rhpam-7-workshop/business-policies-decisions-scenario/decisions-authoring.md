@@ -54,33 +54,7 @@ We have defined the Business Object Model in the previous lab. As the workshop p
 
 https://github.com/MyriamFentanes/business-policies-decisions-scenario-step2
 
-We will now create the rules to process a Credit Card (CC) Dispute automatically, meaning, processing a dispute without the need of any human intervention.
 
-1. Select the project ccd-project in the space MySpace
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-asset-ccd-project.png"  width="600" />
-
-2. You will see the Domain Object Model as the only assets listed. Click on the blue button `Add Asset` on the right upper corner of the Library View.
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-ccd-bom-project.png"  width="600" />
-
-3. Int the "Add Asset" screen, select "Decision" from the drop-down filter menu to filter on decision assets.
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-add-assets-filter.png"  width="600" />
-
-4. Select `Guided Rule` from the filtered catalog of Wizards.
-
-5. Set the following data in the creation wizard:
-
-Name: `automated-chargeback`{{copy}}
-
-Package: `com.myspace.ccd_project`{{copy}}
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new.png"  width="600" />
-
-6. Click ok. You should see a banner in green telling you that the asset was success fully created. The UI will display the wizard that allows you to author your rule.
-
-<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-wizard.png"  width="600" />
 
 
 ### Decision Tables
@@ -204,7 +178,10 @@ Your decision table should look like this. Click Save.
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-first-row.png"  width="600" />
 
-Apply the same procedure for the rest of the rules.
+Apply the same procedure for the rest of the rules. At the end you should have something like the following:
+
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-decision-table-complete.png"  width="600" />
 
 
 
@@ -214,6 +191,33 @@ Guided Rules are one of the various types of rules you can create in Business Ce
 
 In the case of the rules for automatic chargeback we are evaluating only the Credit Card Holder. So lets create the rule.
 First we need to tell the rule what object or collection of objects is going to be evaluated. Rules have a very basic syntax, and basically consist of 3 parts. You have the _WHEN_ section, also known as the Left Hand Side (LHS) or Constraint. This is the part of the rule in which you define the discrimination criteria that is applied to the Credit Card Holders objects to discriminate the card holders that qualify for an automated chargeback.
+
+
+1. Select the project ccd-project in the space MySpace
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-asset-ccd-project.png"  width="600" />
+
+2. You will see the Domain Object Model as the only assets listed. Click on the blue button `Add Asset` on the right upper corner of the Library View.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-ccd-bom-project.png"  width="600" />
+
+3. Int the "Add Asset" screen, select "Decision" from the drop-down filter menu to filter on decision assets.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-add-assets-filter.png"  width="600" />
+
+4. Select `Guided Rule` from the filtered catalog of Wizards.
+
+5. Set the following data in the creation wizard:
+
+Name: `automated-chargeback`{{copy}}
+
+Package: `com.myspace.ccd_project`{{copy}}
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new.png"  width="600" />
+
+6. Click ok. You should see a banner in green telling you that the asset was success fully created. The UI will display the wizard that allows you to author your rule.
+
+<img src="../../assets/middleware/rhpam-7-workshop/business-central-guided-rule-new-wizard.png"  width="6
 
 1. You will see 4 tabs in the wizard panel. Select the tab that says "Data Objects"
 
