@@ -1,8 +1,8 @@
 # Calling your Decision Service
 
-Now that you've created your Decision Service, and have deployed it on the Red Hat Process Automation Manager execution server, it's time to test the service. There are various ways in which you can test a Decision Service. Common practice is to write test-cases for individual rules, groups of rules, and your entire service. These test-cases can then be automatically executed when the code and rules of your service are compiled and packaged. This provides the guarantee that your service is tested properly before it's deployed into a production environment. It ensures that the logic that is executed and the decision that are made are correct and according to specification. Red Hat Process Automation Manager provides full support for these kind of testing scenarios.
+In the previous step we've interacted with the Decision Service via a web-application. In this step we'll have a closer look at the RESTful API used in the communication between the web-application and the Decision Service. We will be using the Swagger API documentation for this.
 
-In this step of our scenario however, we will simply test our service by executing our rules against some input data, and manually validate the response. We will be doing this via the Swagger API documentation. Swagger provides a standard way to describe and document RESTful APIs. The RESTful API of the PAM execution server allows other platforms, for example rich browser applications, or other middleware systems, to easily communicate with the execution server using open standards.
+Swagger provides a standard way to describe and document RESTful APIs. The RESTful API of the PAM execution server allows other platforms, for example rich browser applications, or other middleware systems, to easily communicate with the execution server using open standards.
 
 To access the Swagger page of the execution server, navigate to: http://rhpam7-workshop-kieserver-rhpam7-workshop.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].http-proxy.katacoda.com/docs
 

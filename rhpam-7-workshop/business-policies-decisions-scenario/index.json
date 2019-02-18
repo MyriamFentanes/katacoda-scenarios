@@ -22,6 +22,10 @@
                 "text": "decisions-service.md"
             },
             {
+                "title": "Test a decision service",
+                "text": "test-decision-service.md"
+            },
+            {
                 "title": "Execute a decision service",
                 "text": "execute-decision-service.md"
             }
