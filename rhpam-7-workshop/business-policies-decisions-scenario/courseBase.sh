@@ -1,6 +1,6 @@
 #!/bin/bash
 ssh root@host01 'echo "Importing Red Hat Process Automation Manager 7 Image Streams into OpenShift." >> ~/script.log'
-ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/7.2.0.GA/rhpam72-image-streams.yaml -n openshift && break || sleep 2; done'
+#ssh root@host01 'for i in {1..200}; do oc create -f https://raw.githubusercontent.com/jboss-container-images/rhpam-7-openshift-image/7.2.0.GA/rhpam72-image-streams.yaml -n openshift && break || sleep 2; done'
 ssh root@host01 'echo "Patching Image Streams." >> ~/script.log'
 ssh root@host01 "for i in {1..200}; do oc patch is/rhpam72-businesscentral-openshift --type='json' -p '[{\"op\": \"replace\", \"path\": \"/spec/tags/0/from/name\", \"value\": \"registry.access.redhat.com/rhpam-7/rhpam72-businesscentral-openshift:1.1\"}]' -n openshift && break || sleep 2; done"
 ssh root@host01 "for i in {1..200}; do oc patch is/rhpam72-kieserver-openshift --type='json' -p '[{\"op\": \"replace\", \"path\": \"/spec/tags/0/from/name\", \"value\": \"registry.access.redhat.com/rhpam-7/rhpam72-kieserver-openshift:1.1\"}]' -n openshift && break || sleep 2; done"
