@@ -5,9 +5,9 @@ Decisions Integration.
 You will learn in this section:
 
 
-1- How to further enhance your Case Model.
+1- How to reuse the Decision making assets inside a Case Management definition.
 
-2- Integrating Decisions in the Case Model.
+2- How to configure and use a Business Rule Node inside a Case Management Definition.
 
 The Credit Card dispute case
 ----------------------------

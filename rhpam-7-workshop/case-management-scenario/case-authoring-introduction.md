@@ -171,9 +171,11 @@ Case Cardinality: 1
 The cardinality refers to the number of actors that can be mapped to a role.
 
 
-We have completed the setup of your case. The solution for this lab can be found in the following repo:
-
+We have completed the setup of your case by defining the variables and the roles. The full definition can be found in the following repo:
+NOTE: You will have to delete your current project first and then import the repository
 
 https://github.com/MyriamFentanes/case-management-scenario-step3.git
+
+
 
 Remember to examine the rest of the variables that were created for you.

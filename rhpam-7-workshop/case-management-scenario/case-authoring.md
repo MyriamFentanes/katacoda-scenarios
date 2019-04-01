@@ -4,10 +4,11 @@ Firts steps to author a case.
 
 You will learn in this section:
 
+1- What are Milestones and When to use them.
 
-1- How to model a case using Milestones.
+2- How to model a case using Milestones.
 
-2- How to apply the CMMN specification to Case Modeling .
+3- How to apply the CMMN specification to Case Modeling .
 
 The Credit Card dispute case
 ----------------------------
@@ -90,6 +91,8 @@ Ad hoc autostart: false
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-milestone-dispute-received.png"  width="600" />
 
+Ad hoc nodes with no incoming connections can be configured with the Adhoc autostart property, which is a property of the node itself. These tasks are triggered automatically when the case instance is started. In this case, we are configuring the Milestone to be triggered by an event and not automatically.
+
 3- Save your process.
 
 
@@ -121,4 +124,6 @@ Condition:none
 
 Name:  `Milestone 5:  Dispute rejected`{{copy}}
 Condition:none
+
+Here you have learned how to use Milestones in your case, now you are able to track the progress of the case using this milestones.
 
