@@ -114,16 +114,23 @@ Select constant as the value and type
 In here we are checking that the variable customerDocReviewed is true to trigger Milestone 2: Customer doc received and consider that target as achieved. We will repeat the same process for the other milestones we defined at the beginning.
 
 Name:  `Milestone 3: Automated Chargeback`{{copy}}
-Condition:`org.kie.api.runtime.process.CaseData(data.get("automated") == true)`{{copy}}
+Condition:`org.kie.api.runtime.process.CaseData(data.get("caseType") == "automated")`{{copy}}
+Ad hoc autostart: false
 
-This Milestones will be triggered by a signal
+Name:  `Milestone 4: Standard Processing`{{copy}}
+Condition:`org.kie.api.runtime.process.CaseData(data.get("caseType") == "standard")`{{copy}}
+Ad hoc autostart: false
 
-Name:  `Milestone 4: Account credited`{{copy}}
+These Milestones will be triggered by a signal
+
+Name:  `Milestone 5: Account credited`{{copy}}
 Condition:none
+Ad hoc autostart: false
 
 
-Name:  `Milestone 5:  Dispute rejected`{{copy}}
+Name:  `Milestone 6:  Dispute rejected`{{copy}}
 Condition:none
+Ad hoc autostart: false
 
 Here you have learned how to use Milestones in your case, now you are able to track the progress of the case using this milestones.
 
