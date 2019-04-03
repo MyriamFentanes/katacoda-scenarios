@@ -39,7 +39,7 @@ Another characteristic of a case, is that it has a more dynamic lifecycle, in a 
 Milestones of the Case
 ----------------------
 
-In order to track the progress of a case instance, we need to define the relevant milestones for the customer. When during the execution does the Credit Card Holder have to be informed that an important goal has been achieved? Some of these goals  can be attained in parallel or after you have completed them you can go back in the process and trigger the milestone again if necessary. Also some of the milestones are discretionary so they might never be triggered. In order to follow the progress of the case we have  the Milestone node .The following is a list of the milestones or the targets that the dispute can achieve to be solved.
+In order to track the progress of a case instance, we need to define the relevant milestones for the customer. A milestone has to be defined to inform the Credit Card Holder that an important goal has been achieved. Some of these goals  can be attained in parallel or after you have completed them you can go back in the process and trigger the milestone again if necessary. Also some of the milestones are discretionary so they might never be triggered. In order to follow the progress of the case we have  the Milestone node .The following is a list of the milestones or the targets that the dispute can achieve to be solved.
 
 1- Dispute started
 
