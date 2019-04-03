@@ -39,7 +39,7 @@ Another characteristic of a case, is that it has a more dynamic lifecycle, in a 
 Milestones of the Case
 ----------------------
 
-Some of the steps described in the Use Case Overview (step 1) can be active in parallel or after you have completed them you can go back to the same step if necessary. Also some of the steps are discretionary so they might never be triggered. In order to follow the progress of the case we have Milestones.We will define the milestones or the targets that the dispute has to achieve to be solved.
+In order to track the progress of a case instance, we need to define the relevant milestones for the customer. When during the execution does the Credit Card Holder have to be informed that an important goal has been achieved? Some of these goals  can be attained in parallel or after you have completed them you can go back in the process and trigger the milestone again if necessary. Also some of the milestones are discretionary so they might never be triggered. In order to follow the progress of the case we have  the Milestone node .The following is a list of the milestones or the targets that the dispute can achieve to be solved.
 
 1- Dispute started
 
@@ -47,7 +47,7 @@ Some of the steps described in the Use Case Overview (step 1) can be active in p
 
 3- Automated Chargeback processing
 
-4- Manual processing
+4- Standard processing
 
 5- Account credited
 
@@ -55,7 +55,7 @@ Some of the steps described in the Use Case Overview (step 1) can be active in p
 
 
 
-This are the achievable targets to help us track the progress of teh dispute, they don't have any particular order, so you can come back to any of them if something in the Case File data changes
+This are the achievable targets to help us track the progress of teh dispute, they don't have any particular order, so you can come back to any of them if something in the Case File data changes. Next you will learn how to define Milestones inside your Case Definition.
 
 
 *** Defining Milestones ***
@@ -143,5 +143,5 @@ Condition:none
 
 Ad hoc autostart: false
 
-Here you have learned how to use Milestones in your case, now you are able to track the progress of the case using this milestones.
+Here you have learned how to use Milestones in your case, now you are able to track the progress of the case using these milestones.
 
