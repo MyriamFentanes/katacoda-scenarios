@@ -55,7 +55,7 @@ In order to track the progress of a case instance, we need to define the relevan
 
 
 
-This are the achievable targets to help us track the progress of teh dispute, they don't have any particular order, so you can come back to any of them if something in the Case File data changes. Next you will learn how to define Milestones inside your Case Definition.
+This are the achievable targets to help us track the progress of the dispute, they don't have any particular order, so you can come back to any of them if something in the Case File data changes. Next you will learn how to model Milestones inside your Case Definition.
 
 
 *** Defining Milestones ***
@@ -143,5 +143,7 @@ Condition:none
 
 Ad hoc autostart: false
 
-Here you have learned how to use Milestones in your case, now you are able to track the progress of the case using these milestones.
+Here you have learned how to use Milestones in your case, now you are able to track the progress of the case using these milestones. To import the solution repository delete your current project and import:
+
+https://github.com/MyriamFentanes/case-management-scenario-step4.git
 

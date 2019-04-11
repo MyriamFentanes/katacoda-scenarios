@@ -65,7 +65,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="3280" />
-          <entry key="md" value="70825" />
+          <entry key="md" value="70925" />
           <entry key="sh" value="572" />
           <entry key="txt" value="361" />
           <entry key="yml" value="125" />
@@ -75,7 +75,7 @@
         <counts>
           <entry key="Bash" value="195" />
           <entry key="JSON" value="3280" />
-          <entry key="Markdown" value="69876" />
+          <entry key="Markdown" value="69976" />
           <entry key="PLAIN_TEXT" value="1687" />
           <entry key="YAML" value="125" />
         </counts>
@@ -97,8 +97,8 @@
         <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="123">
-                <caret line="41" column="216" selection-start-line="41" selection-start-column="216" selection-end-line="41" selection-end-column="216" />
+              <first_editor relative-caret-position="843">
+                <caret line="147" column="68" selection-start-line="147" selection-start-column="68" selection-end-line="147" selection-end-column="68" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -231,7 +231,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="memory&#9;ACTION&#9;MemoryView.EnableTrackingWithClosedWindow" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554264454037" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554963321074" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -271,13 +271,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535662622093</updated>
-    </task>
-    <task id="LOCAL-00173" summary="Adding content to the installation">
-      <created>1549416488096</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1549416488096</updated>
     </task>
     <task id="LOCAL-00174" summary="Adding content to the installation">
       <created>1549416710378</created>
@@ -615,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554264448388</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="Adding content to the installation">
+      <created>1554265632550</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1554265632551</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1168,8 +1168,8 @@
     <entry file="file://$PROJECT_DIR$/rhpam-7-workshop/case-management-scenario/case-authoring.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="123">
-            <caret line="41" column="216" selection-start-line="41" selection-start-column="216" selection-end-line="41" selection-end-column="216" />
+          <first_editor relative-caret-position="843">
+            <caret line="147" column="68" selection-start-line="147" selection-start-column="68" selection-end-line="147" selection-end-column="68" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
