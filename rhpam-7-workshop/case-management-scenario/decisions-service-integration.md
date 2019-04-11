@@ -36,7 +36,7 @@ The process would look like:
 
 In the previous step we defined the Milestones of the case, import the Case Model from the following repository:
 
-https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
+https://github.com/MyriamFentanes/case-management-scenario-step4.git
 
 To be able to decide the type of processing of the Credit Card Dispute we need to apply the rules for automatic chargeback processing that we automated in the previous scenario. The rules look something like this:
 
