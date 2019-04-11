@@ -103,5 +103,10 @@ You have just integrated rules in your case, to modify the execution flow by tri
 It's important to remember that the Case instance is constantly listening to changes in the Object Model or case variables if they are marked as CaseFile variables. If a variable changes, this will automatically trigger Milestones giving your case a Data driven type of execution.
 
 
+To import the repository with the solution for this step, delete your current project and import:
+
+https://github.com/MyriamFentanes/case-management-scenario-step5.git
+
+
 
 
