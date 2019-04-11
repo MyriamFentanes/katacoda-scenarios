@@ -28,12 +28,7 @@
             {
                 "title": "Integrating the case with Human Tasks ",
                 "text": "human-task-integration.md"
-            },
-            {
-                "title": "Executing Credit Card Dispute Case",
-                "text": "human-task-integration.md"
             }
-
         ],
         "intro": {
             "text": "intro.md",
