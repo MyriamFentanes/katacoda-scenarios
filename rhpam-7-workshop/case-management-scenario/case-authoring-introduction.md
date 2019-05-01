@@ -76,9 +76,9 @@ https://github.com/MyriamFentanes/case-management-scenario-base.git
 
 To create your first Case:
 
-1- Go to your library view and click on Add Asset, from the asset catalog select Case Definition, configure the following values:
+1- Go to your library view and click on Add Asset, from the asset catalog select Case Definition (legacy), configure the following values:
 
-Name: `ChargeDispute`{{copy}}
+Name: `ChargeDispute`{{copy}}  
 Package: `com.myspace.ccd_project`{{copy}}
 
 
@@ -93,7 +93,7 @@ Package: `com.myspace.ccd_project`{{copy}}
 
 Name:  `customerStatus`{{copy}}
 
-    Defined Types: Client (this is the type we created earlier)
+    Defined Types: String
 
     Custom Type:
 
@@ -103,7 +103,7 @@ Name:  `customerStatus`{{copy}}
 
 Name:  `totalFraudAmount`{{copy}}
 
-    Defined Types: Client (this is the type we created earlier)
+    Defined Types: Float
 
     Custom Type:
 
@@ -113,7 +113,7 @@ Name:  `totalFraudAmount`{{copy}}
 
 Name:  `fraudData`{{copy}}
 
-    Defined Types: Client (this is the type we created earlier)
+    Defined Types: FraudData
 
     Custom Type:
 
@@ -123,7 +123,7 @@ Name:  `fraudData`{{copy}}
 
 Name:  `approveChargeback`{{copy}}
 
-    Defined Types: Client (this is the type we created earlier)
+    Defined Types: Boolean
 
     Custom Type:
 
@@ -134,7 +134,7 @@ Name:  `approveChargeback`{{copy}}
 
 Name:  `cardholder`{{copy}}
 
-    Defined Types: Client (this is the type we created earlier)
+    Defined Types: CreditCardHolder
 
     Custom Type:
 
