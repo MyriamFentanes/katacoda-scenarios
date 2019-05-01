@@ -54,10 +54,10 @@ Like in the previous step we will start the Manual processing once the Mielstone
 
 1-  Add a node of type User Task to the Milestone 5: Manual Processing . In the properties panel add the following information:
 
-Name:  `Request information to the CC Holder`{{copy}}
-Task Name:  `Request information to the CC Holder`{{copy}}
-Task Type: User
-group: `dispute-manager `{{copy}}
+Name:  `Request information to the CC Holder`{{copy}}  
+Task Name:  `Request information to the CC Holder`{{copy}}  
+Task Type: User  
+group: `dispute-manager `{{copy}}  
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-manual-processing-req-doc-user-task.png"  width="600" />
 
@@ -83,20 +83,21 @@ Name: `fraudAmount`
 Data Type: `String`  
 Source: `caseFile_totalFraudAmount`
 
-3- Generate the task Task form by clicking on the option on the upper menu
+3- Generate the task Task form by clicking on the option on the upper menu.
+Your form will look something like this:
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-manual-processing-req-doc-user-task-form.png"  width="600" />
 
-4- Add a second task this time assigned to the credit card holder to upload extra information required and documents. Input the following information.
+4- Add a second task this time assigned to the credit card holder to upload extra information required and documents. Input the following information. We won't worry about adding input and output assignments for this task.
 
-Name:  `Submit Requested Information`{{copy}}
-Task Name:  `Submit Requested Information{{copy}}
-Task Type: User
-group: `dispute-manager `{{copy}}
+Name: `Submit Requested Information`{{copy}}  
+Task Name: `Submit Requested Information`{{copy}}  
+Task Type: User  
+group: `dispute-manager`{{copy}}  
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-manual-processing-submit-doc-user-task.png"  width="600" />
 
-***Documents**
+***Documents***
 
 Documents
 -  Documents are special variables inside a process/case
@@ -105,19 +106,19 @@ Documents
 
 5- Next we will add the rules to determine the risk of the Dispute. Add a node of type Business Rule to the Milestone: Dispute started. In the properties panel add the following information:
 
-Name:  `Calculate risk`{{copy}}
-Task Type: Business Rule
-Rule Flow Group: `calculate-risk`{{copy}}
+Name:  `Calculate risk`{{copy}}  
+Task Type: Business Rule  
+Rule Flow Group: `calculate-risk`{{copy}}  
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-manual-processing-calculate-risk.png"  width="600" />
 
 
 6-  Add a node of type User Task  after the Business Rule . In the properties panel add the following information:
 
-Name:  `Manual Approval`{{copy}}
-Task Name:  `Manual Approval`{{copy}}
-Task Type: User
-group: `dispute-manager `{{copy}}
+Name:  `Manual Approval`{{copy}}  
+Task Name:  `Manual Approval`{{copy}}  
+Task Type: User  
+group: `dispute-manager`{{copy}}  
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-manual-processing-approve-dispute.png"  width="600" />
 
