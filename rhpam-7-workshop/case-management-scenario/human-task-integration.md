@@ -45,7 +45,7 @@ We will now implement the logic for Manual Processing
 
 In the previous step we defined the Milestones of the case, and modeled the automatic chargeback functionality import the Case Model from the following repository:
 
-https://github.com/MyriamFentanes/fsi-credit-card-dispute-case.git
+https://github.com/MyriamFentanes/case-management-scenario-step5.git
 
 The evaluation to decide if a chargeback should be automatic is the first step after the Dispute is started, we implemented that logic in the previous scenario, so we'll start assuming the chargeback was manual and the Milestone 5: Manual Processing was triggered.
 
@@ -71,9 +71,19 @@ In the assignments section is where you will define what is the data is needed i
 
 - Data Outputs- Information that we need from the user and that will be stored in the Case Variables
 
-The definition of the inputs and outputs as well as the assignments of that data to variables of the case is done in this wizard. Request information to the CC Holder Data I/O
+The definition of the inputs and outputs as well as the assignments of that data to variables of the case is done using this wizard.
 
-3- Generate the task Task form by clicking on teh option on the upper menu
+Type: `Input`  
+Name: `cardHolder`  
+Data Type: `CreditCardHolder`  
+Source: `caseFile_cardHolder`
+
+Type: `Input`  
+Name: `fraudAmount`  
+Data Type: `String`  
+Source: `caseFile_totalFraudAmount`
+
+3- Generate the task Task form by clicking on the option on the upper menu
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-manual-processing-req-doc-user-task-form.png"  width="600" />
 
