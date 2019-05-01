@@ -73,9 +73,8 @@ To model the milestones of the case:
 
 1- Select from the Object Library Panel a Node of type  Start event then add a Script node connected to this start event. On the properties panel for the Script node enter the following:
 
-Name: `Log Case Started`{{copy}}
-
-Script  `System.out.println("Case started");`{{copy}}
+Name: `Log Case Started`{{copy}}  
+Script  `System.out.println("Case started");`{{copy}}  
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-designer-script-task.png"  width="600" />
 
@@ -102,8 +101,7 @@ In this example we saw that Milestone can be triggered by signals, you can add l
 
 4- Add a second Milestone
 
-Name:  `Milestone 2: Customer doc received`{{copy}}
-
+Name:  `Milestone 2: Customer doc received`{{copy}}  
 Ad hoc autostart: false
 
 5- Look in the properties panel for the assignments section and click on the V icon, select the source property on the input assignment condition.
@@ -116,34 +114,24 @@ Select constant as the value and type
 
 In here we are checking that the variable customerDocReviewed is true to trigger Milestone 2: Customer doc received and consider that target as achieved. We will repeat the same process for the other milestones we defined at the beginning.
 
-Name:  `Milestone 3: Automated Chargeback`{{copy}}
-
-Condition:`org.kie.api.runtime.process.CaseData(data.get("caseType") == "automated")`{{copy}}
-
+Name:  `Milestone 3: Automated Chargeback`{{copy}}  
+Condition:`org.kie.api.runtime.process.CaseData(data.get("caseType") == "automated")`{{copy}}  
 Ad hoc autostart: false
 
-Name:  `Milestone 4: Standard Processing`{{copy}}
-
-Condition:`org.kie.api.runtime.process.CaseData(data.get("caseType") == "standard")`{{copy}}
-
+Name:  `Milestone 4: Standard Processing`{{copy}}  
+Condition:`org.kie.api.runtime.process.CaseData(data.get("caseType") == "standard")`{{copy}}  
 Ad hoc autostart: false
 
 These Milestones will be triggered by a signal
 
-Name:  `Milestone 5: Account credited`{{copy}}
+Name:  `Milestone 5: Account credited`{{copy}}  
+Condition:none  
+Ad hoc autostart: false  
 
-Condition:none
-
-Ad hoc autostart: false
-
-
-Name:  `Milestone 6:  Dispute rejected`{{copy}}
-
-Condition:none
-
-Ad hoc autostart: false
+Name:  `Milestone 6:  Dispute rejected`{{copy}}  
+Condition:none  
+Ad hoc autostart: false  
 
 Here you have learned how to use Milestones in your case, now you are able to track the progress of the case using these milestones. To import the solution repository delete your current project and import:
 
 https://github.com/MyriamFentanes/case-management-scenario-step4.git
-
