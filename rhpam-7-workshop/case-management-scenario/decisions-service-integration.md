@@ -48,9 +48,9 @@ The evaluation to decide if a chargeback should be automatic is the first step a
 
 1-  Add a node of type Business Rule to the Milestone: Dispute started. In the properties panel add the following information:
 
-Name:  `Check for automated chargeback`{{copy}}
-Task Type: Business Rule
-Rule Flow Group: `automated-chargeback`{{copy}}
+Name:  `Check for automated chargeback`{{copy}}  
+Task Type: Business Rule  
+Rule Flow Group: `automated-chargeback`{{copy}}  
 
 
 2- Add and end event node after the Business Rule "Check for automated chargeback"
@@ -79,9 +79,9 @@ The last step to finish the dispute is to accredit the fraud amount back to the 
 2- Add a node of type Script to the Milestone 3: Automated Chargeback Processing, input the following information to the Node in the properties panel.
 
 
-Name:  `Accredit the Fraud Amount to CC  Holder`{{copy}}
-Task Type: Script
-Script:`System.out.println("Amount accredited into the account");`{{copy}}
+Name:  `Accredit the Fraud Amount to CC  Holder`{{copy}}  
+Task Type: Script  
+Script:`System.out.println("Amount accredited into the account");`{{copy}}  
 
 Here we are simulating the call to an external service, that will actually accredit the account.
 
@@ -91,8 +91,8 @@ Finally since the account was accredited due to the automatic processing we will
 
 3- Add and End Event of type signal after the Script node and input the following information.
 
-Name:  `Account Acredited`{{copy}}
-SignalRef: `Milestone 4: Account Acredited`{{copy}}
+Name:  `Account Acredited`{{copy}}  
+SignalRef: `Milestone 4: Account Acredited`{{copy}}  
 
 <img src="../../assets/middleware/rhpam-7-workshop/business-central-case-automated-chargeback-end-event.png"  width="600" />
 
@@ -106,7 +106,3 @@ It's important to remember that the Case instance is constantly listening to cha
 To import the repository with the solution for this step, delete your current project and import:
 
 https://github.com/MyriamFentanes/case-management-scenario-step5.git
-
-
-
-
